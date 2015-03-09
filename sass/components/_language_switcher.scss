@@ -1,0 +1,26 @@
+@import "base";
+
+.language-switcher {
+  position: absolute;
+  right: 0;
+  bottom: -5em;
+  li {
+    list-style: none;
+    background: rgba(255,255,255,.9);
+    @include border-top-left-radius($border-radius);
+    @include border-bottom-left-radius($border-radius);
+    border: 3px solid $secondary;
+    border-right: 0;
+    @include box-shadow($box-shadow);
+    a {
+      display: block;
+      padding: .5em 1em;
+      color: $greyer;
+      font-weight: bold;
+      &:hover {
+        color: $primary;
+        text-decoration: none;
+      }
+    }
+  }
+}

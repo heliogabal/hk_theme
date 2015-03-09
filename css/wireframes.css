@@ -1,0 +1,34 @@
+/**
+ * @file
+ * Wireframes Styling
+ *
+ * Add wireframes to the basic layout elements.
+ */
+div.krumo-root {
+  z-index: 112 !important;
+}
+
+/****************
+OUR CUSTOM MIXINS
+*****************/
+/***********
+~VARIABLES
+***********/
+/* Warm grey von Natascha, war #d1d3d2 */
+/* Dunkelgrau von Natascha */
+/* Rot von Natascha */
+/* Light warm grey von Natascha */
+/* Schriftfarbe von Natascha */
+/***********
+~BREAKPOINTS
+***********/
+.with-wireframes #header,
+.with-wireframes #main,
+.with-wireframes #content,
+.with-wireframes #navigation,
+.with-wireframes .region-sidebar-first,
+.with-wireframes .region-sidebar-second,
+.with-wireframes #footer,
+.with-wireframes .region-bottom {
+  outline: 1px solid #ccc;
+}

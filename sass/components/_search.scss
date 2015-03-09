@@ -1,0 +1,112 @@
+@import "base";
+/* Purchasing price facet */
+
+.block-facetapi {
+  float: left;
+  margin-right: 2em;
+  h2 {
+  /*line-height: 30px;
+  padding-bottom: 8%;*/
+  }
+}
+.view-wohnungssuche {
+  clear: left;
+}
+.select2-container .select2-choice {
+  height: 2.5em;
+  line-height: 2em;
+}
+.select2-drop-active {
+  border-width: 0 2px 2px;
+  border-color: -moz-use-text-color $primary $primary;
+}
+.select2-chosen {
+  height: 2.2em;
+  line-height: 2em;
+}
+.select2-container .select2-choice .select2-arrow {
+  top: 3px;
+}
+.select2-dropdown-open .select2-choice .select2-arrow {
+  width: 0;
+}
+.select2-search {
+  display: none;
+}
+// .select2-drop-active, .select2-dropdown-open {
+//   border: 2px solid;
+//   border-color: -moz-use-text-color $primary $primary;
+// }
+.select2-container-active .select2-choice, .select2-container-active .select2-choices {
+  border: 2px solid $primary;
+}
+.search-api-ranges-widget, .search-api-ranges-widget .range-box-left, .search-api-ranges-widget .range-box-right {
+  position: relative;
+}
+.search-api-ranges-widget .text-range {
+  display: none;
+}
+.form-submit, button, input[type="button"], input[type="reset"], input[type="submit"] {
+  padding: 0.4em 1.1em 0.4em 1.2em;
+}
+.views-exposed-widget.views-submit-button {
+    padding-top: 0.7em;
+}
+.search-api-ranges-widget .form-item-range-from input, .search-api-ranges-widget .form-item-range-to input {
+  float: left;
+  padding: 0;
+}
+.search-api-ranges-widget .form-submit {
+  display: none;
+}
+.search-api-ranges-widget .range-box-left .form-item, .search-api-ranges-widget .range-box-right .form-item {
+  margin-top: 0;
+}
+.search-api-ranges-widget .range-box-left, .search-api-ranges-widget .range-box-right {
+  position: absolute;
+  top: -30px;
+}
+.search-api-ranges-widget .range-box-left label, .search-api-ranges-widget .range-box-right label {
+  display: none;
+}
+.search-api-ranges-widget .range-box-left {
+  left: 0;
+}
+.search-api-ranges-widget .range-box-right {
+  right: 0;
+}
+.search-api-ranges-widget .range-box-right .form-item-range-to input {
+  text-align: right;
+}
+.search-api-ranges-widget .range-slider-box {
+  display: block;
+  margin-top: 45px;
+  padding: 0 10px 1em;
+}
+.search-api-ranges-widget .form-item-range-from input, .search-api-ranges-widget .form-item-range-to input {
+  background: none repeat scroll 0 0 transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 16px;
+  width: auto;
+}
+
+/* Tile Design */
+.not-front.page-kaufen #main {
+  background: transparent;
+  border: 0;
+}
+.tile {
+    background: #fff;
+    border: 2px solid $secondary;
+    @include border-radius(5px);
+    @include box-shadow($box-shadow);
+    float: left;
+    margin: 0 2.5% 2em 0;
+    padding: 1em;
+    width: 47%;
+    img {
+      float: left;
+      margin-right: 1em;
+    }
+}

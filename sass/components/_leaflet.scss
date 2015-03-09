@@ -1,0 +1,268 @@
+@import "base";
+.view-display-id-map_page {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+.section-karte-solr .view-display-id-map_page {
+  dislay: none;
+}
+.front .view-display-id-map_page {
+  opacity: 1;
+}
+/* Karte Vollbild */
+.leaflet-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto !important;
+}
+#content {
+  z-index: 101;
+  position: relative;
+}
+.front #content {
+  position: static;
+}
+.not-front {
+  .view-display-id-map_page {
+    opacity: .25;
+    z-index: -1;
+  }
+  #main {
+    margin-top: 40px;
+    padding: 2em;
+    z-index: 101;
+    background: #fff;
+    border-right: 2px solid $secondary;
+    border-left: 2px solid $secondary;
+    border-bottom: 2px solid $secondary;
+  }
+}
+/* Handler positionieren */
+.leaflet-top {
+  top: 100px;
+}
+.leaflet-bottom {
+  bottom: 70px;
+}
+.view-apartment .leaflet-bottom {
+  bottom: 0px;
+}
+/* Exposed Form Suche
+#views-exposed-form-karte-block {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+    left: 30%;
+    padding: 1em;
+    position: absolute;
+    top: 400px;
+    z-index: 1000;
+}*/
+#views-exposed-form-karte-block {
+  padding: 0 1em;
+  height: 100px !important;
+  overflow: hidden;
+  .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: $helvetica-neue;
+    font-size: 1em;
+    height: 2.5em;
+    line-height: 1.5;
+  }
+}
+
+.ui-dialog {
+  width: 600px !important;
+  height: auto !important;
+  border: 2px solid $secondary;
+  .ui-dialog-titlebar {
+    line-height: 0;
+    padding: 0;
+    .ui-dialog-titlebar-close {
+        margin: -23px -23px 0 0;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+    }
+  }
+  .ui-widget-header {
+    background: #fff !important;
+    border: 0 !important;
+    .ui-icon-closethick {
+      background: url(../images/Icon_x_Kreis.png) no-repeat scroll 0 0;
+      width: 40px;
+      height: 40px;
+    }
+    .ui-state-hover, .ui-state-focus {
+      background: none;
+      border: 0;
+      color: transparent;
+      border-radius: 0;
+    }
+  }
+}
+
+// .views-widget-filter-zimmer {
+//     clear: left;
+// }
+.views-exposed-form .views-exposed-widget .form-submit {
+    margin-top: 0;
+}
+
+.panel-3col-33-stacked .center-wrapper {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.6);
+    margin-top: 600px;
+    position: relative;
+    float: left;
+    z-index: 5;
+    padding: 0 1em;
+}
+.leaflet-container a.leaflet-popup-close-button {
+    background: none repeat scroll 0 0 transparent;
+    color: $black;
+    font: bold 16px/14px Tahoma,Verdana,sans-serif;
+    height: 14px;
+    padding: 4px 4px 0 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    width: 18px;
+    z-index: 1;
+}
+.leaflet-popup-content-wrapper {
+    @include border-radius($border-radius);
+    border: 2px solid $primary;
+    padding: .5em;
+    position: relative;
+    text-align: left;
+}
+.leaflet-popup-content {
+    line-height: 1.4;
+    margin: 0;
+    display: table;
+    width: 550px !important;
+    h2 {
+        font-size: 1em;
+        line-height: 1.2;
+        margin: 0;
+    }
+    h3 {
+      a {
+        color: #000 !important;
+      }
+    }
+    img {
+      float: left;
+      margin-right: 1em;
+    }
+    .right {
+      margin: 0 1em;
+    }
+}
+/* MarkeCluster overriding libraries/leaflet_markecluster/dist/MarkerClusterDefault.css*/
+.marker-cluster-small {
+  background-color: rgba(181, 226, 140, 0.6);
+  }
+.marker-cluster-small div {
+  background-color: rgba(110, 204, 57, 0.6);
+  }
+
+.marker-cluster-medium {
+  background-color: rgba(241, 211, 87, 0.6);
+  }
+.marker-cluster-medium div {
+  background-color: rgba(240, 194, 12, 0.6);
+  }
+
+.marker-cluster-large {
+  background-color: rgba(253, 156, 115, 0.6);
+  }
+.marker-cluster-large div {
+  background-color: rgba(241, 128, 23, 0.6);
+  }
+
+  /* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {
+  background-color: rgb(181, 226, 140);
+  }
+.leaflet-oldie .marker-cluster-small div {
+  background-color: rgb(110, 204, 57);
+  }
+
+.leaflet-oldie .marker-cluster-medium {
+  background-color: rgb(241, 211, 87);
+  }
+.leaflet-oldie .marker-cluster-medium div {
+  background-color: rgb(240, 194, 12);
+  }
+
+.leaflet-oldie .marker-cluster-large {
+  background-color: rgb(253, 156, 115);
+  }
+.leaflet-oldie .marker-cluster-large div {
+  background-color: rgb(241, 128, 23);
+}
+
+.marker-cluster {
+  background: none;
+  border-radius: 0;
+  }
+.marker-cluster div:before {
+    color: $primary;
+    content: "";
+    font-family: hk;
+    font-size: 32px;
+    margin-right: -21px;
+}
+.marker-cluster div {
+  width: 0;
+  height: 0;
+  margin-left: 0;
+  margin-top: 0;
+  /*background: url("../images/Icon_House.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+
+  text-align: center;
+  border-radius: 0;
+  font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  }
+.marker-cluster span {
+    line-height: 38px;
+    padding-right: 2px;
+    color: #fff;
+    font-weight: bold;
+}
+.marker-cluster div:hover, .marker-cluster span:hover {
+    transform: scale(1.2);
+  }
+
+/* Search Form */
+
+#block-views-exp-karten-kaufen,
+#block-views-exp-karten-map-page,
+.view-filters {
+    left: 50%;
+    margin-left: -25%;
+    position: relative;
+    top: 0px;
+    z-index: 112;
+    width: 75%;
+}
+
+.section-apartment #block-views-exp-karten-kaufen,
+.section-users #block-views-exp-karten-kaufen {
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin-left: 0;
+}

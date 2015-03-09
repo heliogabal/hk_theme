@@ -1,0 +1,22 @@
+.section-favoriten #main {
+  background: transparent;
+  border: 0;
+}
+.favoriten {
+  .view-content > div {
+    background: #fff;
+    @include border-radius($border-radius);
+    @include box-shadow($box-shadow);
+    float: left;
+    width: 45%;
+    margin: 0 1em 1em 0;
+    padding: .5em;
+    img {
+      float: left;
+      margin-right: 1em;
+    }
+    h2 {
+      font-size:  1em;
+    }
+  }
+}
