@@ -8,7 +8,7 @@ drupal_add_library('system', 'ui.tooltip');
 function hk_theme_preprocess_html(&$variables, $hook) {
   // Add variables and paths needed for HTML5 and responsive support.
   $variables['base_path'] = base_path();
-  $variables['path_to_bear_skin'] = drupal_get_path('theme', 'bear_skin');
+  $variables['path_to_bear_skin'] = drupal_get_path('theme', 'hk_theme');
 }
 
 /**
