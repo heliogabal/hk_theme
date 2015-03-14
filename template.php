@@ -102,3 +102,24 @@ function hk_theme_ctools_plugin_post_alter(&$plugin, &$info) {
     $plugin['render last'] = TRUE;
   }
 }
+
+/**
+ * Implements template_preprocess_views_view().
+ */
+// function hk_theme_preprocess_views_view(&$vars) {
+//   $view = $vars['view'];
+//   $content_only = array('apartment');
+//     if (in_array($view->name, $content_only)) {
+//       $vars['theme_hook_suggestions'] = array('views_view__content_only');
+//     }
+// }
+/**
+ * Implements template_preprocess_views_view_unformatted().
+ */
+function hk_theme_preprocess_views_view_unformatted(&$vars) {
+  $view = $vars['view'];
+  $content_only = array('apartment');
+    if (in_array($view->name, $content_only)) {
+      $vars['theme_hook_suggestions'] = array('views_view_unformatted__content_only');
+    }
+}

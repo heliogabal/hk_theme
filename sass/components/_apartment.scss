@@ -14,7 +14,7 @@ h1#page-title {
 .node-type-apartment {
   .ds-2col-stacked-fluid {
     .group-header {
-      margin-bottom: -50px;
+      margin-bottom: -25px;
     }
     .group-left {
       margin-right: -316px;
@@ -30,8 +30,8 @@ h1#page-title {
   .view-apartment {
     /*float: right;
     position: relative;
-    width: 28%;*/
-    position: relative;
+    width: 28%;
+    position: relative;*/
     .leaflet-top {
       display: none;
     }
@@ -41,7 +41,8 @@ h1#page-title {
     position: static;
     }
   }
-  .field-name-field-apart-no {
+  .objekt-id, .field-name-field-apart-no {
+    display: inline-block;
     color: $dark;
     font-weight: bold;
     margin-top: 1em;
@@ -50,6 +51,7 @@ h1#page-title {
     color: $dark;
     font-weight: normal;
     font-size: 14px;
+    margin-top: 1em;
   }
   .field-name-field-apart-living-space {
     .label-inline {
@@ -59,9 +61,8 @@ h1#page-title {
       position: absolute;
       bottom: 5px;
     }
-    width: 32%;
     padding: .5em .2em 1.5em .2em;
-    display: inline-block;
+    display: table-cell;
     position: relative;
     font-size: 1.5em;
     font-weight: bold;
@@ -77,9 +78,8 @@ h1#page-title {
       position: absolute;
       bottom: 5px;
     }
-    width: 18%;
     padding: .5em .2em 1.5em .2em;
-    display: inline-block;
+    display: table-cell;
     position: relative;
     font-size: 1.5em;
     font-weight: bold;
@@ -95,9 +95,8 @@ h1#page-title {
       position: absolute;
       bottom: 5px;
     }
-    width: 50%;
     padding: .5em .2em 1.5em .2em;
-    display: inline-block;
+    display: table-cell;
     position: relative;
     font-size: 1.5em;
     font-weight: bold;

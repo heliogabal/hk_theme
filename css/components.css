@@ -644,6 +644,7 @@ OUR CUSTOM MIXINS
 }
 .not-front #main {
   margin-top: 40px;
+  margin-bottom: 100px;
   padding: 2em;
   z-index: 101;
   background: #fff;
@@ -658,11 +659,15 @@ OUR CUSTOM MIXINS
 }
 
 .leaflet-bottom {
-  bottom: 70px;
+  bottom: 60px;
 }
 
 .view-apartment .leaflet-bottom {
   bottom: 0px;
+}
+
+.view-apartment .leaflet-popup-content {
+  width: 200px !important;
 }
 
 /* Exposed Form Suche
@@ -780,6 +785,12 @@ OUR CUSTOM MIXINS
 }
 .leaflet-popup-content .right {
   margin: 0 1em;
+}
+.leaflet-popup-content .wo {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin: .5em 0;
 }
 
 /* MarkeCluster overriding libraries/leaflet_markecluster/dist/MarkerClusterDefault.css*/
@@ -925,7 +936,7 @@ h1#page-title {
 }
 
 .node-type-apartment .ds-2col-stacked-fluid .group-header {
-  margin-bottom: -50px;
+  margin-bottom: -25px;
 }
 .node-type-apartment .ds-2col-stacked-fluid .group-left {
   margin-right: -316px;
@@ -940,8 +951,8 @@ h1#page-title {
 .node-type-apartment .view-apartment {
   /*float: right;
   position: relative;
-  width: 28%;*/
-  position: relative;
+  width: 28%;
+  position: relative;*/
 }
 .node-type-apartment .view-apartment .leaflet-top {
   display: none;
@@ -951,7 +962,8 @@ h1#page-title {
   width: 300px;
   position: static;
 }
-.node-type-apartment .field-name-field-apart-no {
+.node-type-apartment .objekt-id, .node-type-apartment .field-name-field-apart-no {
+  display: inline-block;
   color: #4b4b4b;
   font-weight: bold;
   margin-top: 1em;
@@ -960,11 +972,11 @@ h1#page-title {
   color: #4b4b4b;
   font-weight: normal;
   font-size: 14px;
+  margin-top: 1em;
 }
 .node-type-apartment .field-name-field-apart-living-space {
-  width: 32%;
   padding: .5em .2em 1.5em .2em;
-  display: inline-block;
+  display: table-cell;
   position: relative;
   font-size: 1.5em;
   font-weight: bold;
@@ -985,9 +997,8 @@ h1#page-title {
   bottom: 5px;
 }
 .node-type-apartment .field-name-field-apart-rooms {
-  width: 18%;
   padding: .5em .2em 1.5em .2em;
-  display: inline-block;
+  display: table-cell;
   position: relative;
   font-size: 1.5em;
   font-weight: bold;
@@ -1003,9 +1014,8 @@ h1#page-title {
   bottom: 5px;
 }
 .node-type-apartment .field-name-field-apart-price {
-  width: 50%;
   padding: .5em .2em 1.5em .2em;
-  display: inline-block;
+  display: table-cell;
   position: relative;
   font-size: 1.5em;
   font-weight: bold;
@@ -1115,10 +1125,13 @@ h1#page-title {
 }
 .wrapper.footer #footer img {
   float: left;
+  position: fixed;
+  bottom: 0.5em;
+  opacity: .9;
 }
 .wrapper.footer #footer .menu-footer ul {
   float: left;
-  margin: 0;
+  margin: 0 0 0 17em;
 }
 .wrapper.footer #footer .menu-footer ul li {
   float: left;
