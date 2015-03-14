@@ -53,15 +53,40 @@ OUR CUSTOM MIXINS
  *
  * Contributing author: Tyler Smith (@mbmufffin)
  */
-/* Browser Resets */
-.flex-container a:active,
-.flexslider a:active,
+/*
+ * jQuery FlexSlider v2.4.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ *
+ */
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url("fonts/flexslider-icon.eot");
+  src: url("fonts/flexslider-icon.eot?#iefix") format("embedded-opentype"), url("fonts/flexslider-icon.woff") format("woff"), url("fonts/flexslider-icon.ttf") format("truetype"), url("fonts/flexslider-icon.svg#flexslider-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+.flex-container a:hover,
+.flex-slider a:hover,
 .flex-container a:focus,
-.flexslider a:focus {
+.flex-slider a:focus {
   outline: none;
 }
 
 .slides,
+.slides > li,
 .flex-control-nav,
 .flex-direction-nav {
   margin: 0;
@@ -69,8 +94,13 @@ OUR CUSTOM MIXINS
   list-style: none;
 }
 
-/* FlexSlider Necessary Styles
-*********************************/
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
 .flexslider {
   margin: 0;
   padding: 0;
@@ -81,19 +111,13 @@ OUR CUSTOM MIXINS
   -webkit-backface-visibility: hidden;
 }
 
-/* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {
   width: 100%;
   display: block;
 }
 
-.flex-pauseplay span {
-  text-transform: capitalize;
-}
-
-/* Clearfix for the .slides element */
-.slides:after {
-  content: ".";
+.flexslider .slides:after {
+  content: "\0020";
   display: block;
   clear: both;
   visibility: hidden;
@@ -101,36 +125,49 @@ OUR CUSTOM MIXINS
   height: 0;
 }
 
-html[xmlns] .slides {
+html[xmlns] .flexslider .slides {
   display: block;
 }
 
-* html .slides {
+* html .flexslider .slides {
   height: 1%;
 }
 
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
-.no-js .slides > li:first-child {
+.no-js .flexslider .slides > li:first-child {
   display: block;
 }
 
-/* FlexSlider Default Theme
-*********************************/
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
 .flexslider {
-  margin: 0 0 1em;
-  background: #fff;
-  /*border: 4px solid #fff;*/
+  background: #ffffff;
+  border: 4px solid #ffffff;
   position: relative;
-  /*-webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; box-shadow: 0 1px 4px rgba(0,0,0,.2); -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2);*/
   zoom: 1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.flexslider .slides {
+  zoom: 1;
+}
+
+.flexslider .slides img {
+  height: auto;
 }
 
 .flex-viewport {
   max-height: 2000px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
   transition: all 1s ease;
 }
 
@@ -138,65 +175,112 @@ html[xmlns] .slides {
   max-height: 300px;
 }
 
-.flexslider .slides {
-  zoom: 1;
-}
-
-/*.carousel li {margin-right: 5px}*/
 .carousel li {
-  margin-right: 0;
+  margin-right: 5px;
 }
 
-/* Direction Nav */
 .flex-direction-nav {
   *height: 0;
 }
 
 .flex-direction-nav a {
-  width: 30px;
-  height: 30px;
-  margin: -20px 0 0;
+  text-decoration: none;
   display: block;
-  background: url(../images/bg_direction_nav.png) no-repeat 0 0;
+  width: 40px;
+  height: 60px;
+  line-height: 1.5;
+  margin: -20px 0 0;
+  padding: 5em 0;
   position: absolute;
   top: 50%;
   z-index: 10;
-  cursor: pointer;
-  text-indent: -9999px;
+  overflow: hidden;
   opacity: 0;
-  -webkit-transition: all .3s ease;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.flex-direction-nav .flex-next {
-  background-position: 100% 0;
-  right: -36px;
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
 }
 
 .flex-direction-nav .flex-prev {
-  left: -36px;
+  left: -50px;
 }
 
-.flexslider:hover .flex-next {
-  opacity: 0.8;
-  right: 5px;
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
 }
 
-.flexslider:hover .flex-prev {
-  opacity: 0.8;
-  left: 5px;
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 10px;
 }
 
-.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;
 }
 
 .flex-direction-nav .flex-disabled {
-  opacity: 0.3 !important;
-  filter: alpha(opacity=30);
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
   cursor: default;
 }
 
-/* Control Nav */
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f004';
+}
+
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+
+.flex-pauseplay a .flex-play:before {
+  content: '\f003';
+}
+
 .flex-control-nav {
   width: 100%;
   position: absolute;
@@ -219,11 +303,13 @@ html[xmlns] .slides {
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   text-indent: -9999px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  -o-border-radius: 20px;
   border-radius: 20px;
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
 .flex-control-paging li a:hover {
@@ -251,9 +337,15 @@ html[xmlns] .slides {
 
 .flex-control-thumbs img {
   width: 100%;
+  height: auto;
   display: block;
   opacity: .7;
   cursor: pointer;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .flex-control-thumbs img:hover {
@@ -265,33 +357,20 @@ html[xmlns] .slides {
   cursor: default;
 }
 
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {
     opacity: 1;
-    left: 0;
+    left: 10px;
   }
 
   .flex-direction-nav .flex-next {
     opacity: 1;
-    right: 0;
+    right: 10px;
   }
 }
-.flexslider-views-slideshow-main-frame-row {
-  position: relative;
-}
-
-.views-field.views-field-field-slideshow-tagline {
-  bottom: 0;
-  color: #fff;
-  position: absolute;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.flexslider li p {
-  background: transparent;
-}
-
 div.krumo-root {
   z-index: 112 !important;
 }
@@ -972,10 +1051,20 @@ h1#page-title {
   color: #4b4b4b;
   font-weight: normal;
   font-size: 14px;
-  margin-top: 1em;
+  margin: .5em 0 1em 3px;
+}
+.node-type-apartment .field-name-field-apart-commission .label-inline {
+  font-weight: normal;
+}
+.node-type-apartment .field-name-ds-flag-merken a.flag {
+  position: static;
+  text-indent: 0;
+  width: auto;
+  color: #4b4b4b;
+  padding: 0.5em 2.5em;
 }
 .node-type-apartment .field-name-field-apart-living-space {
-  padding: .5em .2em 1.5em .2em;
+  padding: .5em .3em 1.5em .3em;
   display: table-cell;
   position: relative;
   font-size: 1.5em;
@@ -997,7 +1086,7 @@ h1#page-title {
   bottom: 5px;
 }
 .node-type-apartment .field-name-field-apart-rooms {
-  padding: .5em .2em 1.5em .2em;
+  padding: .5em 1em 1.5em 1em;
   display: table-cell;
   position: relative;
   font-size: 1.5em;
@@ -1012,9 +1101,10 @@ h1#page-title {
   font-weight: normal;
   position: absolute;
   bottom: 5px;
+  margin-left: -22%;
 }
 .node-type-apartment .field-name-field-apart-price {
-  padding: .5em .2em 1.5em .2em;
+  padding: .5em .3em 1.5em .3em;
   display: table-cell;
   position: relative;
   font-size: 1.5em;
@@ -1048,9 +1138,10 @@ h1#page-title {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+  padding: .5em 0;
 }
 .node-type-apartment .apartmerkmale .views-field {
-  padding: .5em;
+  padding: .2em .5em;
 }
 .node-type-apartment .apartmerkmale .views-field .views-label {
   color: #4b4b4b;
@@ -1063,7 +1154,7 @@ h1#page-title {
   font-weight: bold;
 }
 .node-type-apartment .apartmerkmale .views-field:nth-of-type(odd) {
-  background: #cbc1ba;
+  background: #e3e5e3;
 }
 
 .ui-widget {
@@ -1106,9 +1197,18 @@ h1#page-title {
   height: auto !important;
 }
 
+.field-name-field-apart-floor-plan {
+  float: left;
+  width: 150px;
+  margin: 5px 5px 0 5px;
+}
+
+#thumbslide {
+  margin-left: 165px;
+}
 #thumbslide img {
-  margin: 0 10px;
-  width: 160px;
+  margin: 0 5px;
+  width: 150px;
 }
 
 .wrapper.footer {
@@ -1305,4 +1405,51 @@ a.flagged, a.unflag-action {
 
 a.fav_active i, .favorite i.icon-hk-icon-favorite {
   color: #c61c2c;
+}
+
+#colorbox {
+  background: #fff;
+  z-index: 10000;
+  position: relative;
+  border: 4px solid #cbc1ba;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#cboxLoadedContent {
+  padding: 2em;
+}
+
+#cboxClose.cbox-close-plain {
+  position: absolute;
+  text-indent: -9999px;
+  top: -.5em;
+  right: -.5em;
+  width: 1em;
+  height: 1em;
+}
+
+#cboxClose.cbox-close-plain::before {
+  font-family: "hk";
+  color: #cbc1ba;
+  content: "";
+  display: inline-block;
+  font-size: 2.5em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  width: 1em;
+  z-index: 10001;
 }
