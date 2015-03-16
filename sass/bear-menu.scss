@@ -61,7 +61,7 @@ body {
 
 // New box model, small reset, global stuff
 #{$selector} {
-  font: bold 1em $helvetica-neue;
+  font: 600 1em $helvetica-neue;
   * {
     @include box-sizing(border-box);
   }
@@ -150,8 +150,11 @@ body {
   //  </nav>
   ul {
     position: absolute;
-    top: 100%; left: 0;
-    z-index: 1;
+    top: 100%;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    background: rgba(255,255,255,0.9);
     opacity: 0;
     visibility: hidden;
     margin: 2 * $gutter 0 0 0;

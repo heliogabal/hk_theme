@@ -32,6 +32,7 @@ OUR CUSTOM MIXINS
 ***********/
 body {
   color: #1a1a1a;
+  font-weight: 400;
 }
 body a {
   color: #0091ea;
@@ -51,11 +52,21 @@ html, body, button, input, select, textarea {
 
 h1, h2, h3, h4, h5 {
   /*@include bearfont-titles;*/
-  font-weight: 700;
+  font-weight: 300;
+}
+
+strong, b {
+  font-weight: 500;
 }
 
 #main {
   clear: both;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 #page {

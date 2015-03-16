@@ -20,16 +20,21 @@
 body {
   color: $black;
   @include m-links;
+  font-weight: 400;
 }
 html, body, button, input, select, textarea {
   /*@include bearfont-main;*/
 }
 h1, h2, h3, h4, h5 {
   /*@include bearfont-titles;*/
-  font-weight: 700;
+  font-weight: 300;
+}
+strong, b {
+  font-weight: 500;
 }
 #main {
   clear: both;
+  @include border-bottom-radius($border-radius);
 }
 #page {
   min-width: 300px;

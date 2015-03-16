@@ -110,3 +110,14 @@
       margin-right: 1em;
     }
 }
+
+/* Hide Search Bar first on all pages but front and buy */
+
+.not-front {
+  .page-kaufen #block-views-exp-karten-kaufen {
+    display: block;
+  }
+  #block-views-exp-karten-kaufen {
+    display: none;
+  }
+}
