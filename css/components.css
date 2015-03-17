@@ -529,6 +529,7 @@ OUR CUSTOM MIXINS
 /* Purchasing price facet */
 .block-facetapi {
   float: left;
+  z-index: 112;
   margin-right: 2em;
 }
 .block-facetapi h2 {
