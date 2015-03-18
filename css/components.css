@@ -1220,39 +1220,39 @@ h1#page-title {
   width: 150px;
 }
 
-.wrapper.footer {
+.footer {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 101;
   position: relative;
 }
-.wrapper.footer #footer {
+.footer footer {
   margin-left: auto;
   margin-right: auto;
   max-width: 1400px;
   position: relative;
   width: 90%;
 }
-.wrapper.footer #footer img {
+.footer footer img {
   float: left;
   position: fixed;
   bottom: 0.5em;
   opacity: .9;
 }
-.wrapper.footer #footer .menu-footer ul {
+.footer footer .menu-footer ul {
   float: left;
   margin: 0 0 0 17em;
 }
-.wrapper.footer #footer .menu-footer ul li {
+.footer footer .menu-footer ul li {
   float: left;
 }
-.wrapper.footer #footer .menu-footer ul li a {
+.footer footer .menu-footer ul li a {
   color: #fff;
   font-weight: bold;
   padding: 0.5em 1em 1.5em;
   display: block;
   border-top: 4px solid transparent;
 }
-.wrapper.footer #footer .menu-footer ul li a:hover {
+.footer footer .menu-footer ul li a:hover {
   text-decoration: none;
   border-top: 4px solid #fff;
 }
