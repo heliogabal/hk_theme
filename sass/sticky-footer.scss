@@ -15,7 +15,7 @@ html, body {
   padding-bottom: $footer-height;
 }  /* must be same height as the footer */
 
-#footer {
+footer {
   position: relative;
   margin-top: -$footer-height; /* negative value of footer height */
   height: $footer-height;

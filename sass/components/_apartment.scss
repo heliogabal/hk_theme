@@ -176,9 +176,13 @@ h1#page-title {
       transform: rotate(45deg);
     }
   }
+  .field-group-accordion-active + .group-sonstiges {
+    display: block;
+  }
   .field-group-accordion-item {
     padding: 0;
     border: 0;
+    height: auto !important;
   }
   .ui-accordion .ui-accordion-content {
     height: auto !important;
@@ -188,6 +192,12 @@ h1#page-title {
   float: left;
   width: 150px;
   margin: 5px 5px 0 5px;
+  > a {
+    display:none;
+  }
+  > a:first-child {
+    display: block;
+  }
 }
 #thumbslide {
   margin-left: 165px;

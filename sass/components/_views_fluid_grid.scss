@@ -1,6 +1,6 @@
 @import "base";
 ul.views-fluid-grid-items-border-radius li.views-fluid-grid-item {
-  border-radius: 4px;
+  border-radius: $border-radius;
 }
 ul.views-fluid-grid-items-box-shadow li.views-fluid-grid-item {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);

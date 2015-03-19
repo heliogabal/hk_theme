@@ -143,18 +143,25 @@
     width: 18px;
     z-index: 1;
 }
-.leaflet-popup-content-wrapper {
+.leaflet-popup-content-wrapper,
+.group-card {
     @include border-radius($border-radius);
     border: 2px solid $primary;
     padding: .5em;
     position: relative;
     text-align: left;
+    background: #fff;
 }
-.leaflet-popup-content {
-    line-height: 1.4;
-    margin: 0;
-    display: table;
-    width: 550px !important;
+.group-card {
+  border: 2px solid $secondary;
+}
+.group-card:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0px;
+}
     h2 {
         font-size: 1em;
         line-height: 1.2;
@@ -162,13 +169,19 @@
     }
     h3 {
       a {
-        color: #000 !important;
+        color: #000;
       }
     }
     img {
       float: left;
       margin-right: 1em;
     }
+.leaflet-popup-content {
+    line-height: 1.4;
+    margin: 0;
+    display: table;
+    width: 550px !important;
+
     .right {
       margin: 0 1em;
     }

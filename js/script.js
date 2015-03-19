@@ -67,7 +67,7 @@
 //                   e.preventDefault();
 //                 });
          $( 'a[title="Suchen"]').click(function(e) {
-                   $( "#block-views-exp-karten-map_page,#block-views-exp-karten-kaufen" ).toggle();
+                   $( "#block-views-exp-karten-map_page,#block-views-exp-karten-kaufen,#block-views-exp-karten-mieten" ).toggle();
                    e.preventDefault();
                  });
 

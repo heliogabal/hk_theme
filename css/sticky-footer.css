@@ -30,7 +30,7 @@ html, body {
 }
 
 /* must be same height as the footer */
-#footer {
+footer {
   position: relative;
   margin-top: -60px;
   /* negative value of footer height */
@@ -38,7 +38,7 @@ html, body {
   clear: both;
 }
 @media (max-width: 1200px) {
-  #footer .block {
+  footer .block {
     padding: 0 20px;
   }
 }

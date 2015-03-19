@@ -93,7 +93,8 @@
 }
 
 /* Tile Design */
-.not-front.page-kaufen #main {
+.not-front.page-kaufen #main,
+.not-front.page-mieten #main{
   background: transparent;
   border: 0;
 }
@@ -114,11 +115,9 @@
 
 /* Hide Search Bar first on all pages but front and buy */
 
-.not-front {
-  .page-kaufen #block-views-exp-karten-kaufen {
+.not-front #block-views-exp-karten-kaufen {
+    display: none;
+}
+.page-kaufen #block-views-exp-karten-kaufen {
     display: block;
   }
-  #block-views-exp-karten-kaufen {
-    display: none;
-  }
-}
