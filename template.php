@@ -29,6 +29,12 @@ function hk_theme_links($variables) {
  */
 function hk_theme_preprocess_page(&$vars) {
   $vars['user_menu'] =  theme('links', array('links' => menu_navigation_links('user-menu'), 'attributes' => array('class '=> array('links', 'site-menu'))));
+
+  // Extra Template für Colorbox Load
+  if (isset ($_GET['template']) && $_GET['template'] == 'colorbox') {
+      $vars['theme_hook_suggestions'][] = 'page__colorbox';
+      module_invoke('admin_menu', 'suppress');
+  }
 }
 
 /***********************

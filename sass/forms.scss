@@ -69,18 +69,21 @@
   // -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
   // box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
   margin-right: 10px;
-  a {
-    color: #fff;
-  }
   @include breakpoint ($breakpoint-small-width) {
     clear: both;
     float: left;
   }
 }
-.full {
+a.full {
   width: 100%;
-  padding: .5em 1em;
+  padding: 0;
   margin: 1em 0;
+  color: #fff !important;
+  display: block;
+  padding: .6em 1em;
+  &:hover {
+    text-decoration: none;
+  }
 }
 .form-item { /* Wrapper for a form element (or group of form elements) and its label */
   margin: 1.5em 0;

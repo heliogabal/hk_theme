@@ -68,9 +68,6 @@ OUR CUSTOM MIXINS
   border-radius: 5px;
   margin-right: 10px;
 }
-.btn a {
-  color: #fff;
-}
 @media (max-width: 400px) {
   .btn {
     clear: both;
@@ -78,10 +75,16 @@ OUR CUSTOM MIXINS
   }
 }
 
-.full {
+a.full {
   width: 100%;
-  padding: .5em 1em;
+  padding: 0;
   margin: 1em 0;
+  color: #fff !important;
+  display: block;
+  padding: .6em 1em;
+}
+a.full:hover {
+  text-decoration: none;
 }
 
 .form-item {
