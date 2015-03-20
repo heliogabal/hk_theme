@@ -1,7 +1,8 @@
 @import "base";
 .group-card {
   position: relative;
-  margin-botom: 1rem;
+  margin-bottom: 1em;
+  @include box-shadow($box-shadow);
 }
 .page-projekte {
   .flexslider {

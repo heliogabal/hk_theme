@@ -138,7 +138,8 @@ a.full:hover {
 .form-item .form-text, .form-item .form-textarea, .form-item .form-file {
   min-height: 30px;
   line-height: 30px;
-  border: 1px solid #CCCCCC;
+  border: 2px solid #cbc1ba;
+  border-radius: 4px;
   font-size: 90%;
   color: #666666;
 }

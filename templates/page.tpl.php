@@ -34,6 +34,7 @@
           <?php endif; ?>
       <div id="navigation" tabindex="-1">
         <?php print render($page['navigation']); ?>
+        <a class="map-link" lang="de" href="/"><img src="/sites/all/themes/hk_theme/images/Icon_Map.png" alt="Back to Map" /></a>
       </div><!-- /#navigation -->
     </div>
     </div>
@@ -59,6 +60,10 @@
           <h1 class="title" id="page-title"><?php print $title; ?></h1>
         <?php endif; ?>
         <?php print render($title_suffix); ?>
+        <?php
+        // $block = module_invoke('views', 'block_view', '-exp-karten-kaufen');
+        // print render($block['content']);
+        ?>
         <?php print render($page['content']); ?>
         <?php print $feed_icons; ?>
       </div><!-- /#content -->
