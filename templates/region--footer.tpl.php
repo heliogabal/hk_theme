@@ -10,7 +10,7 @@
 <?php if ($content): ?>
   <footer class="<?php print $classes; ?>">
       <a href="/" title="Home">
-        <img width="256" height="48" alt="" src="http://hk.dev.drupalforgood.eu/sites/hk.dev.drupalforgood.eu/files/signet_bg.png" class="media-element file-default">
+        <img width="256" height="48" alt="" src="/sites/all/themes/hk_theme/images/signet_bg.png" class="media-element file-default">
       </a>
     <?php print $content; ?>
   </footer>
