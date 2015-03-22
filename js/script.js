@@ -13,27 +13,27 @@
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 (function ($, Drupal, window, document, undefined) {
 
-(function ($) {
-  Drupal.behaviors.BearScripts = {
-    attach: function (context, settings) {
+// (function ($) {
+//   Drupal.behaviors.BearScripts = {
+//     attach: function (context, settings) {
 
-      $('#content select.form-select').select2();
-      $(":file").filestyle({buttonText: "Find file"});
-      if ($('#navigation .block-menu').length) {
-        $('#navigation .block-menu').prepend('<input type="checkbox" id="button"><label for="button" onclick>Menu</label>');
-      }
-      if ($('#navigation .menu-block-wrapper').length) {
-        $('#navigation .menu-block-wrapper').prepend('<input type="checkbox" id="button"><label for="button" onclick>Menu</label>');
-      }
+      //$('#content select.form-select').select2();
+      //$(":file").filestyle({buttonText: "Find file"});
+      // if ($('#navigation .block-menu').length) {
+      //   $('#navigation .block-menu').prepend('<input type="checkbox" id="button"><label for="button" onclick>Menu</label>');
+      // }
+      // if ($('#navigation .menu-block-wrapper').length) {
+      //   $('#navigation .menu-block-wrapper').prepend('<input type="checkbox" id="button"><label for="button" onclick>Menu</label>');
+      // }
 
 
 
 
       //$('.equalheight').eqHeight();
 
-    }
-  }
-}(jQuery));
+//     }
+//   }
+// }(jQuery));
 
 (function ($) {
   Drupal.behaviors.ResponsiveScripts = {
@@ -51,17 +51,18 @@
  (function($) {
      Drupal.behaviors.leafletMap = {
          attach: function(context, settings) {
-//                   /* RH Kartensuche */
-//                    $('.view-karte', context).once(function(){
-//         $( ".front #views-exposed-form-karte-block" ).dialog({
-//             height: "auto",
-//             width: "600",
-//             resizable: "false",
-//             closeOnEscape: "true",
-//             hide: { effect: "explode", duration: "1000" },
-//             position: { my: "center bottom", at: "center bottom", offset: "-170 -100", collision: "fit flip", of: ".view-karte" }
-//           });
-//         });
+//    /* RH Kartensuche */
+      // $('.view-karten', context).once(function(){
+      //   $( ".front #views-exposed-form-karten-map-page" ).dialog({
+      //       height: "auto",
+      //       width: "600",
+      //       resizable: "false",
+      //       closeOnEscape: "true",
+      //       hide: { effect: "explode", duration: "1000" },
+      //       position: { my: "center bottom", at: "center bottom", offset: "-170 -100", collision: "fit flip", of: ".view-karten" }
+      //     });
+      //   });
+
 //         $( 'a[href="/kaufen"]' ).click(function(e) {
 //                   $( ".front #views-exposed-form-karte-block" ).dialog( "open" );
 //                   e.preventDefault();
@@ -98,3 +99,15 @@
 })(jQuery);
 
 })(jQuery, Drupal, this, this.document);
+
+/* Flexslider infinite Carousel to be implemented
+jQuery('.flexslider').flexslider({
+  animation: 'slide',
+  animationLoop: false,
+  end : function(slider){
+    jQuery('.flexslider .slides li').each(function(){
+      slider.addSlide('<li>'+jQuery(this).context.innerHTML+'</li>', slider.count);
+      jQuery('.flexslider .slides').append('<li>'+jQuery(this).context.innerHTML+'</li>');
+    });
+  }
+});*/

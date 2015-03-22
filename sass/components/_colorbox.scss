@@ -12,26 +12,27 @@
 #cboxClose.cbox-close-plain {
   position: absolute;
   text-indent: -9999px;
-  top: -.5em;
-  right: -.5em;
-  width: 1em;
-  height: 1em;
+  top: -.4em;
+  right: -.4em;
+  width: 40px;
+  height:40px;
+  background: url(../images/Icon_x_Kreis.png) no-repeat;
 }
-#cboxClose.cbox-close-plain::before {
-  font-family: "hk";
-  color: $secondary;
-  content: "";
-  display: inline-block;
-  font-size: 2.5em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 1em;
-    margin-left: 0.2em;
-    margin-right: 0.2em;
-    text-align: center;
-    text-decoration: inherit;
-    text-transform: none;
-    width: 1em;
-    z-index: 10001;
-}
+// #cboxClose.cbox-close-plain::before {
+//   font-family: "hk";
+//   color: $secondary;
+//   content: "";
+//   display: inline-block;
+//   font-size: 2.5em;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: normal;
+//     line-height: 1em;
+//     margin-left: 0.2em;
+//     margin-right: 0.2em;
+//     text-align: center;
+//     text-decoration: inherit;
+//     text-transform: none;
+//     width: 1em;
+//     z-index: 10001;
+// }
