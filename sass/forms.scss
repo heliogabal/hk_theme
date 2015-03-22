@@ -22,7 +22,14 @@
   }
 }
 
-/* IMporting some boostrap elements */
+.field-widget-phone-textfield {
+  th, tr.even, tr.odd {
+    background: #fff;
+    border: 0;
+  }
+}
+
+/* Importing some boostrap elements */
 
 [class^="icon-"], [class*=" icon-"] {
   display: inline-block;
@@ -131,7 +138,8 @@ a.full {
   .form-text, .form-textarea, .form-file {
     min-height: 30px;
     line-height: 30px;
-    border: 1px solid #CCCCCC;
+    border: 2px solid $secondary;
+    @include border-radius($border-radius);
     font-size: 90%;
     color: #666666;
   }
@@ -173,7 +181,7 @@ a.full {
     box-shadow: none;
   }
   &:focus {
-    border: 1px solid #61AEE2;
+    border: 2px solid $primary;
     background: #f9f9f9;
   }
 }

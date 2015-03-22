@@ -33,7 +33,10 @@ function hk_theme_preprocess_page(&$vars) {
   // Extra Template für Colorbox Load
   if (isset ($_GET['template']) && $_GET['template'] == 'colorbox') {
       $vars['theme_hook_suggestions'][] = 'page__colorbox';
-      module_invoke('admin_menu', 'suppress');
+      function hk_theme_page_alter(&$page) {
+        unset($page['page_top']['toolbar']);
+        unset($page['page_top']['admin_menu']);
+      }
   }
 }
 
