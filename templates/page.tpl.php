@@ -80,10 +80,17 @@
           <?php print $sidebar_second; ?>
         </aside><!-- /.sidebars -->
       <?php endif; ?>
-
     </div><!-- /#main -->
   </div>
+    <?php // More Like This Block
+   // $block = module_invoke('views', 'block_view', 'karten-mlt');
+   // print render($block);
+   // With Title
+   $block = block_load('views', 'karten-mlt');
+   print drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))))
+   ?>
 </div><!-- /#page -->
+
 <div class="wrapper footer">
   <?php print render($page['footer']); ?>
 </div>
