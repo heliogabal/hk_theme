@@ -138,6 +138,8 @@ a.full {
   .form-text, .form-textarea, .form-file {
     min-height: 30px;
     line-height: 30px;
+    border: 2px solid $secondary;
+    @include border-radius($border-radius);
     border: 2px solid #cbc1ba;
     border-radius: 4px;
     font-size: 90%;
