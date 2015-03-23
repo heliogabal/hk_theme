@@ -45,7 +45,7 @@ body {
   box-sizing: border-box;
 }
 #navigation .block-menu ul, #navigation .menu-block-wrapper ul {
-  margin: 33px 0 0 6.25em;
+  margin: 33px 0 0 2em;
   padding: 0;
   list-style: none;
   /*@include border-radius(3px);*/
