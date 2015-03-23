@@ -100,14 +100,14 @@
 
 })(jQuery, Drupal, this, this.document);
 
-/* Flexslider infinite Carousel to be implemented
-jQuery('.flexslider').flexslider({
-  animation: 'slide',
-  animationLoop: false,
-  end : function(slider){
-    jQuery('.flexslider .slides li').each(function(){
-      slider.addSlide('<li>'+jQuery(this).context.innerHTML+'</li>', slider.count);
-      jQuery('.flexslider .slides').append('<li>'+jQuery(this).context.innerHTML+'</li>');
-    });
-  }
-});*/
+ //Flexslider infinite Carousel to be implemented
+// jQuery('.flexslider').flexslider({
+//   animation: 'slide',
+//   animationLoop: false,
+//   end : function(slider){
+//     jQuery('.flexslider .slides li').each(function(){
+//       slider.addSlide('<li>'+jQuery(this).context.innerHTML+'</li>', slider.count);
+//       jQuery('.flexslider .slides').append('<li>'+jQuery(this).context.innerHTML+'</li>');
+//     });
+//   }
+// });
