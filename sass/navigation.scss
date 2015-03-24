@@ -9,8 +9,8 @@ a.map-link {
   position: absolute;
   right: 0;
   bottom: -5em;
-  border: 1px solid $secondary;
-  border-width: 3px 0 3px 3px;
+  border: $border;
+  border-width: 1px 0 1px 1px;
   background: rgba(255, 255, 255, 0.9);
   @include box-shadow($box-shadow);
   @include border-bottom-left-radius($border-radius);
