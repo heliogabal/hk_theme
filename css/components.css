@@ -633,7 +633,11 @@ OUR CUSTOM MIXINS
 
 .select2-drop-active {
   border-width: 0 2px 2px;
-  border-color: -moz-use-text-color #c61c2c #c61c2c;
+  border-color: #c61c2c;
+}
+
+.select2-drop.select2-drop-above.select2-drop-active {
+  border-top: 2px solid #c61c2c;
 }
 
 .select2-chosen {
@@ -866,8 +870,12 @@ OUR CUSTOM MIXINS
   line-height: 1.5;
 }
 
+.front #block-views-exp-karten-map-page {
+  margin-left: 0;
+}
+
 .ui-dialog {
-  width: 600px !important;
+  width: 710px !important;
   height: auto !important;
   border: 2px solid #cbc1ba;
 }
@@ -876,7 +884,7 @@ OUR CUSTOM MIXINS
   padding: 0;
 }
 .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
-  margin: -23px -23px 0 0;
+  margin: -35px -12px 0 0;
   padding: 0;
   position: absolute;
   right: 0;
@@ -893,6 +901,7 @@ OUR CUSTOM MIXINS
   width: 40px;
   height: 40px;
 }
+.ui-dialog .ui-widget-header .ui-state-default, .ui-dialog .ui-widget-header .ui-widget-content .ui-state-default, .ui-dialog .ui-widget-header .ui-widget-header .ui-state-default,
 .ui-dialog .ui-widget-header .ui-state-hover, .ui-dialog .ui-widget-header .ui-state-focus {
   background: none;
   border: 0;
@@ -902,6 +911,10 @@ OUR CUSTOM MIXINS
 
 .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 0;
+}
+
+.views-exposed-form .views-exposed-widget {
+  height: 2.5em;
 }
 
 .panel-3col-33-stacked .center-wrapper {
@@ -1287,8 +1300,15 @@ h1#page-title {
 }
 
 .ui-widget {
-  font: 1em 'HelveticaNeueW01-45Ligh';
-  line-height: 1.5;
+  font: 1em/1.5 "Neue Helvetica W01";
+}
+
+.ui-widget-content {
+  color: #1a1a1a;
+}
+
+.ui-helper-reset {
+  font: 1em/1.5 "Neue Helvetica W01";
 }
 
 .field-group-accordion h3 {
@@ -1420,7 +1440,7 @@ OUR CUSTOM MIXINS
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  border: 1px solid #cbc1ba;
+  border: 2px solid #cbc1ba;
   border-right: 0;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);

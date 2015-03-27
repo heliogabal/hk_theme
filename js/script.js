@@ -52,23 +52,23 @@
      Drupal.behaviors.leafletMap = {
          attach: function(context, settings) {
 //    /* RH Kartensuche */
-      // $('.view-karten', context).once(function(){
-      //   $( ".front #views-exposed-form-karten-map-page" ).dialog({
-      //       height: "auto",
-      //       width: "600",
-      //       resizable: "false",
-      //       closeOnEscape: "true",
-      //       hide: { effect: "explode", duration: "1000" },
-      //       position: { my: "center bottom", at: "center bottom", offset: "-170 -100", collision: "fit flip", of: ".view-karten" }
-      //     });
-      //   });
+      $('.front', context).once(function(){
+        $( "#block-views-exp-karten-map-page").dialog({
+            height: "auto",
+            width: "710",
+            resizable: "false",
+            closeOnEscape: "true",
+            hide: { effect: "explode", duration: "1000" },
+            position: { my: "center bottom", at: "center-170 bottom-100", collision: "fit flip", of: ".view-display-id-map_page" }
+          });
+        });
 
 //         $( 'a[href="/kaufen"]' ).click(function(e) {
 //                   $( ".front #views-exposed-form-karte-block" ).dialog( "open" );
 //                   e.preventDefault();
 //                 });
          $( 'a[title="Suchen"]').click(function(e) {
-                   $( "#block-views-exp-karten-map_page,#block-views-exp-karten-kaufen,#block-views-exp-karten-mieten" ).toggle();
+                   $( ".front .ui-dialog,#block-views-exp-karten-kaufen,#block-views-exp-karten-mieten").toggle();
                    e.preventDefault();
                  });
 

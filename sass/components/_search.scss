@@ -19,7 +19,10 @@
 }
 .select2-drop-active {
   border-width: 0 2px 2px;
-  border-color: -moz-use-text-color $primary $primary;
+  border-color: $primary;
+}
+.select2-drop.select2-drop-above.select2-drop-active {
+  border-top: 2px solid $primary;
 }
 .select2-chosen {
   height: 2.2em;

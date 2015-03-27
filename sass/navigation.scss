@@ -10,7 +10,7 @@ a.map-link {
   right: 0;
   bottom: -5em;
   border: $border;
-  border-width: 1px 0 1px 1px;
+  border-width: 2px 0 2px 2px;
   background: rgba(255, 255, 255, 0.9);
   @include box-shadow($box-shadow);
   @include border-bottom-left-radius($border-radius);

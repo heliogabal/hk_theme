@@ -164,8 +164,13 @@ h1#page-title {
   }
 }
 .ui-widget {
-  font: 1em 'HelveticaNeueW01-45Ligh';
-  line-height: 1.5;
+  font: 1em/1.5 "Neue Helvetica W01";
+}
+.ui-widget-content {
+  color: $black;
+}
+.ui-helper-reset {
+  font: 1em/1.5 "Neue Helvetica W01";
 }
 .field-group-accordion {
   h3 {

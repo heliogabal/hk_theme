@@ -79,16 +79,19 @@
     line-height: 1.5;
   }
 }
+.front #block-views-exp-karten-map-page {
+  margin-left: 0;
+}
 
 .ui-dialog {
-  width: 600px !important;
+  width: 710px !important;
   height: auto !important;
   border: 2px solid $secondary;
   .ui-dialog-titlebar {
     line-height: 0;
     padding: 0;
     .ui-dialog-titlebar-close {
-        margin: -23px -23px 0 0;
+        margin: -35px -12px 0 0;
         padding: 0;
         position: absolute;
         right: 0;
@@ -105,6 +108,7 @@
       width: 40px;
       height: 40px;
     }
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default,
     .ui-state-hover, .ui-state-focus {
       background: none;
       border: 0;
@@ -119,6 +123,9 @@
 // }
 .views-exposed-form .views-exposed-widget .form-submit {
     margin-top: 0;
+}
+.views-exposed-form .views-exposed-widget {
+  height: 2.5em;
 }
 
 .panel-3col-33-stacked .center-wrapper {
