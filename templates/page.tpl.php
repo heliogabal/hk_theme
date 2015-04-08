@@ -87,7 +87,8 @@
    // print render($block);
    // With Title
    $block = block_load('views', 'karten-mlt');
-   print drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))))
+   $block_render = _block_get_renderable_array(_block_render_blocks(array($block)));
+   print drupal_render($block_render);
    ?>
 </div><!-- /#page -->
 
