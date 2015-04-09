@@ -186,28 +186,6 @@ aside.sidebars {
 }
 
 /***********
-~SLIDESHOW
-***********/
-
-.flexslider {
-  background: none repeat scroll 0 0 #FFFFFF;
-  border: 0;
-  border-radius:0;
-  /*border: 5px solid #FFFFFF;*/
-  margin: 30px 0;
-  position: relative;
-}
-.flexslider li p {
-  text-align: center;
-  font-size: 110%;
-  background: #f5f5f5;
-  margin: 0;
-  padding: 10px 0;
-  font-size: 90%;
-  @include bearfont-titles;
-}
-
-/***********
 ~FOOTER
 ***********/
 

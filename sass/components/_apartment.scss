@@ -62,23 +62,24 @@ h1#page-title {
       text-indent: 0;
       width: auto;
       color: $dark;
-      padding: 0.5em 2.5em;
+      padding: .5em 0 .5em 2.5em;
     }
   }
   a.expose {
     color: $dark;
-    margin: 1em .5em;
     display: inline-block;
-    background: url(../images/Icon_Print.png) no-repeat;
+    background: url(../images/Icon_Print.png) 1px 0 no-repeat;
+    height: 40px;
+    padding: .5em 0 .5em 2.5em;
   }
-  .fa.expose:before {
-    font-family: FontAwesome;
-    content: "\f02f";
-    color: $secondary;
-    font-size: 1.5em;
-    margin: 0 .2em;
-    display: inline-block;
-  }
+  // .fa.expose:before {
+  //   font-family: FontAwesome;
+  //   content: "\f02f";
+  //   color: $secondary;
+  //   font-size: 1.5em;
+  //   margin: 0 .2em;
+  //   display: inline-block;
+  // }
   .field-name-field-apart-living-space {
     .label-inline {
       color: $dark;
@@ -140,6 +141,22 @@ h1#page-title {
   }
   .field-name-apartment-characteristics {
     margin: .5em 0;
+  }
+  .ausstattung {
+    .label-above {
+      color: $dark;
+      font-weight: normal;
+      margin-top: .5em;
+    }
+    ul {
+      margin-top: .2em;
+      padding: 0;
+      li {
+        list-style: none;
+        background: url(../images/Icon_Check.png) -10px 50% no-repeat;
+        padding: .25em 0 .25em 30px;
+      }
+    }
   }
   .apartmerkmale {
     margin: .5em 0;
