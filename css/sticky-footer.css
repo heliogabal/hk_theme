@@ -26,15 +26,15 @@ html, body {
 
 #main {
   overflow: auto;
-  padding-bottom: 70px;
+  padding-bottom: 65px;
 }
 
 /* must be same height as the footer */
 footer {
   position: relative;
-  margin-top: -70px;
+  margin-top: -65px;
   /* negative value of footer height */
-  height: 70px;
+  height: 65px;
   clear: both;
 }
 @media (max-width: 1200px) {

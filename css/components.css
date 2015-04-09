@@ -1404,14 +1404,12 @@ h1#page-title {
 }
 .footer footer img {
   float: left;
-  position: fixed;
-  bottom: 0.5em;
-  margin-left: 2em;
-  opacity: .9;
+  margin: .5em 2em .5em 0;
 }
 .footer footer .menu-footer ul {
   float: left;
-  margin: 0 0 0 17em;
+  margin: 0;
+  padding: 0;
 }
 .footer footer .menu-footer ul li {
   float: left;
