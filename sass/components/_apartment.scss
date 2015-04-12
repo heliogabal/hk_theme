@@ -91,11 +91,12 @@ h1#page-title {
     padding: .5em .3em 1.5em .3em;
     display: table-cell;
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
     text-align: center;
     border: 2px solid $secondary;
     @include border-left-radius($border-radius);
+    width: 35%;
   }
   .field-name-field-apart-rooms {
     .label-inline {
@@ -110,7 +111,7 @@ h1#page-title {
     padding: .5em 1em 1.5em 1em;
     display: table-cell;
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
     text-align: center;
     border-top: 2px solid $secondary;
@@ -127,11 +128,12 @@ h1#page-title {
     padding: .5em .3em 1.5em .3em;
     display: table-cell;
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
     text-align: center;
     border: 2px solid $secondary;
     @include border-right-radius($border-radius);
+    width: 50%;
   }
   .apartaddress {
     right: 0;
