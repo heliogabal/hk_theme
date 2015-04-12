@@ -1211,7 +1211,7 @@ h1#page-title {
   padding: .5em .3em 1.5em .3em;
   display: table-cell;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: bold;
   text-align: center;
   border: 2px solid #cbc1ba;
@@ -1221,6 +1221,7 @@ h1#page-title {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  width: 35%;
 }
 .node-type-apartment .field-name-field-apart-living-space .label-inline {
   color: #4b4b4b;
@@ -1233,7 +1234,7 @@ h1#page-title {
   padding: .5em 1em 1.5em 1em;
   display: table-cell;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: bold;
   text-align: center;
   border-top: 2px solid #cbc1ba;
@@ -1251,7 +1252,7 @@ h1#page-title {
   padding: .5em .3em 1.5em .3em;
   display: table-cell;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: bold;
   text-align: center;
   border: 2px solid #cbc1ba;
@@ -1261,6 +1262,7 @@ h1#page-title {
   -moz-border-radius-bottomright: 5px;
   -webkit-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  width: 50%;
 }
 .node-type-apartment .field-name-field-apart-price .label-inline {
   color: #4b4b4b;
@@ -1385,9 +1387,11 @@ h1#page-title {
 #thumbslide {
   margin-left: 165px;
 }
-#thumbslide img {
+#thumbslide li {
   margin: 0 5px;
-  width: 150px;
+}
+#thumbslide img {
+  margin: 0;
 }
 
 .footer {

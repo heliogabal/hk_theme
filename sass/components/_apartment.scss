@@ -243,8 +243,11 @@ h1#page-title {
 }
 #thumbslide {
   margin-left: 165px;
-  img {
+  li {
     margin: 0 5px;
-    width: 150px;
+    // width: 150px;
+  }
+  img {
+    margin: 0;
   }
 }
