@@ -9,14 +9,20 @@
 #cboxLoadedContent {
   padding: 2em;
 }
+#cboxWrapper, #cboxContent, #cboxLoadedContent {
+  overflow: auto !important;
+  overflow-x: hidden !important;
+}
 #cboxClose.cbox-close-plain {
   position: absolute;
   text-indent: -9999px;
-  top: -.4em;
-  right: -.4em;
+  top: -1em;
+  right: -1em;
   width: 40px;
   height:40px;
   background: url(../images/Icon_x_Kreis.png) no-repeat;
+  z-index: 10001;
+  opacity: 1;
 }
 // #cboxClose.cbox-close-plain::before {
 //   font-family: "hk";
@@ -36,3 +42,22 @@
 //     width: 1em;
 //     z-index: 10001;
 // }
+
+/* Anfrage in Colorbox */
+#colorbox {
+  .tabledrag-toggle-weight-wrapper {
+    display: none;
+  }
+  tbody {
+    border: 0;
+  }
+  td {
+    padding: 0;
+  }
+  .field-multiple-drag {
+    display: none;
+  }
+  #edit-field-contact-telefon-und-add-more {
+    display: none;
+  }
+}

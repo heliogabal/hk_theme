@@ -1590,12 +1590,36 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
   padding: 2em;
 }
 
+#cboxWrapper, #cboxContent, #cboxLoadedContent {
+  overflow: auto !important;
+  overflow-x: hidden !important;
+}
+
 #cboxClose.cbox-close-plain {
   position: absolute;
   text-indent: -9999px;
-  top: -.4em;
-  right: -.4em;
+  top: -1em;
+  right: -1em;
   width: 40px;
   height: 40px;
   background: url(../images/Icon_x_Kreis.png) no-repeat;
+  z-index: 10001;
+  opacity: 1;
+}
+
+/* Anfrage in Colorbox */
+#colorbox .tabledrag-toggle-weight-wrapper {
+  display: none;
+}
+#colorbox tbody {
+  border: 0;
+}
+#colorbox td {
+  padding: 0;
+}
+#colorbox .field-multiple-drag {
+  display: none;
+}
+#colorbox #edit-field-contact-telefon-und-add-more {
+  display: none;
 }
