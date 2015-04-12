@@ -1570,6 +1570,39 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
 .view-merkliste .views-row-odd {
   float: right;
 }
+.view-display-id-kaufen h2,
+.page-mieten h2,
+.view-merkliste h2 {
+  margin-top: 1em;
+}
+.view-display-id-kaufen .field-name-field-apart-price,
+.page-mieten .field-name-field-apart-price,
+.view-merkliste .field-name-field-apart-price {
+  display: inline;
+}
+.view-display-id-kaufen .field-name-field-apart-price::before,
+.page-mieten .field-name-field-apart-price::before,
+.view-merkliste .field-name-field-apart-price::before {
+  content: " / ";
+}
+.view-display-id-kaufen .address,
+.page-mieten .address,
+.view-merkliste .address {
+  margin-top: 1em;
+}
+.view-display-id-kaufen .address i,
+.page-mieten .address i,
+.view-merkliste .address i {
+  font-size: 1.75em;
+  margin-left: -15px;
+  margin-top: -5px;
+}
+.view-display-id-kaufen .address .apartaddress,
+.page-mieten .address .apartaddress,
+.view-merkliste .address .apartaddress {
+  display: inline-block;
+  margin-left: .75em;
+}
 
 #colorbox {
   background: #fff;
