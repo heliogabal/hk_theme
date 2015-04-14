@@ -4,10 +4,10 @@
 // Based on Animenu: https://github.com/catalinred/Animenu
 
 // Variables
-$subMenuItemWidth: 250px;     // Minimum width for submenus' items
+$subMenuItemWidth: 100%;     // Minimum width for submenus' items
 $baseMenuBackground: transparent;     // Base color theme
 $baseMenuBackgroundHover: transparent;    // When main item is hovered
-$secondaryMenuBackground: transparent;  // Secondary color (highlights, triangles...)
+$secondaryMenuBackground: rgba(255,255,255,.9);  // Secondary color (highlights, triangles...)
 $baseMenuColor: $black;        // Proper menu items color
 $baseMenuColorHover: $primary;
 $gutter: 1em;           // Base gutter
@@ -153,17 +153,22 @@ body {
     top: 100%;
     left: 0;
     z-index: 10000;
-    width: 100%;
+    width: $subMenuItemWidth;
     background: rgba(255,255,255,0.9);
     opacity: 0;
     visibility: hidden;
     margin: 2 * $gutter 0 0 0;
+    background: $secondaryMenuBackground;
     /*@include menu-background(lighten($baseMenuBackground, 15%), false);*/
     @include transition-property("margin, opacity");
     @include transition-duration(".15s");
     @include transition-timing-function(ease-in-out);
+    &:hover {
+      border-top: 4px solid $primary;
+    }
     li {
       display: block;
+      width: $subMenuItemWidth;
       /*@include box-shadow(0 1px 0 lighten($baseMenuBackground, 5%),
                 0 2px 0 lighten($baseMenuBackground, 25%));*/
       &:first-child > a {
