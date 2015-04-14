@@ -177,6 +177,18 @@ body {
   border-color: rgba(255, 255, 255, 0.9);
 }
 
+/* Service Menu */
+#navigation #block-menu-menu-service-menu ul:hover {
+  border: 0;
+}
+#navigation #block-menu-menu-service-menu ul li {
+  width: 40px;
+}
+#navigation #block-menu-menu-service-menu ul li a:hover {
+  border: 0;
+  background: none;
+}
+
 @media screen and (max-width: 800px) {
   #navigation .block-menu > ul, #navigation .menu-block-wrapper > ul, #navigation .block-menu > ul ul, #navigation .menu-block-wrapper > ul ul {
     visibility: visible;

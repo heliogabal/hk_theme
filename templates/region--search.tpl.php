@@ -8,7 +8,7 @@
  */
 ?>
 <?php if ($content): ?>
-  <div id="help" class="<?php print $classes; ?>">
+  <div id="search" class="<?php print $classes; ?>">
     <?php print $content; ?>
   </div>
 <?php endif; ?>

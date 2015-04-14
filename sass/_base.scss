@@ -141,14 +141,14 @@ OUR CUSTOM MIXINS
 }
 @mixin m-links {
   a {
-    color: $blue;
+    color: $primary;
     text-decoration: none;
     &:hover {
       color: #443C45;
       text-decoration: underline;
     }
     &:visited {
-      color: $blue;
+      color: $primary;
     }
   }
 }

@@ -737,9 +737,23 @@ OUR CUSTOM MIXINS
   width: auto;
 }
 
+/* Current Search Block */
+#search .form-item {
+  margin-top: 0;
+}
+
+.block-current-search {
+  float: left;
+}
+.block-current-search .current-search-item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Tile Design */
-.not-front.page-kaufen #main,
-.not-front.page-mieten #main {
+.not-front.page-buy #main,
+.not-front.page-rent #main {
   background: transparent;
   border: 0;
 }
@@ -766,11 +780,14 @@ OUR CUSTOM MIXINS
 }
 
 /* Hide Search Bar first on all pages but front and buy */
-.not-front #block-views-exp-karten-kaufen {
+.not-front #block-views-exp-karten-kaufen,
+.not-front #search {
   display: none;
 }
 
-.page-kaufen #block-views-exp-karten-kaufen {
+.page-kaufen #block-views-exp-karten-kaufen,
+.page-buy #search,
+.page-rent #search {
   display: block;
 }
 

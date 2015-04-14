@@ -64,6 +64,7 @@
         // $block = module_invoke('views', 'block_view', '-exp-karten-kaufen');
         // print render($block['content']);
         ?>
+        <?php print render($page['search']); ?>
         <?php print render($page['content']); ?>
         <?php print $feed_icons; ?>
       </div><!-- /#content -->

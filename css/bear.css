@@ -35,7 +35,7 @@ body {
   font-weight: 400;
 }
 body a {
-  color: #0091ea;
+  color: #c61c2c;
   text-decoration: none;
 }
 body a:hover {
@@ -43,7 +43,7 @@ body a:hover {
   text-decoration: underline;
 }
 body a:visited {
-  color: #0091ea;
+  color: #c61c2c;
 }
 
 html, body, button, input, select, textarea {

@@ -195,5 +195,20 @@ body {
   }
 }
 
+/* Service Menu */
+#navigation #block-menu-menu-service-menu {
+  ul {
+    &:hover {
+      border: 0;
+    }
+    li {
+      width: 40px;
+      a:hover {
+        border:0;
+        background: none;
+      }
+    }
+  }
+}
 // Last but not least: the responsive stuff
 @import "bear-menu-responsive";
