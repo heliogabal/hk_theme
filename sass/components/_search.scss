@@ -97,6 +97,7 @@
 
 /* Current Search Block */
 #search {
+  min-height: auto !important;
   .form-item {
     margin-top: 0;
     margin-bottom: 1em;
@@ -107,6 +108,7 @@
 }
 .block-current-search {
   float: right;
+  margin-right: 1.5em;
   .current-search-item {
     ul {
       list-style: none;
