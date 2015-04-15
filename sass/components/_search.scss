@@ -4,7 +4,7 @@
 .block-facetapi {
   float: left;
   z-index: 112;
-  margin-right: 2em;
+  margin-right: 1em;
   h2 {
   /*line-height: 30px;
   padding-bottom: 8%;*/
@@ -99,10 +99,14 @@
 #search {
   .form-item {
     margin-top: 0;
+    margin-bottom: 1em;
+  }
+  #block-facetapi-vih09czclfztb71ymoja1b30xzodyv0m {
+    clear: left;
   }
 }
 .block-current-search {
-  float: left;
+  float: right;
   .current-search-item {
     ul {
       list-style: none;

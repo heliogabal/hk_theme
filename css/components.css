@@ -627,7 +627,7 @@ OUR CUSTOM MIXINS
 .block-facetapi {
   float: left;
   z-index: 112;
-  margin-right: 2em;
+  margin-right: 1em;
 }
 .block-facetapi h2 {
   /*line-height: 30px;
@@ -740,10 +740,14 @@ OUR CUSTOM MIXINS
 /* Current Search Block */
 #search .form-item {
   margin-top: 0;
+  margin-bottom: 1em;
+}
+#search #block-facetapi-vih09czclfztb71ymoja1b30xzodyv0m {
+  clear: left;
 }
 
 .block-current-search {
-  float: left;
+  float: right;
 }
 .block-current-search .current-search-item ul {
   list-style: none;
@@ -904,7 +908,7 @@ OUR CUSTOM MIXINS
 }
 
 .ui-dialog {
-  width: 710px !important;
+  width: 570px !important;
   height: auto !important;
   border: 2px solid #cbc1ba;
 }

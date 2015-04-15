@@ -53,7 +53,7 @@
          attach: function(context, settings) {
 //    /* RH Kartensuche */
       $('.front', context).once(function(){
-        $( "#block-views-exp-karten-map-page").dialog({
+        $( "#block-views-exp-karten-map-page, #search").dialog({
             height: "auto",
             width: "710",
             resizable: "false",
@@ -68,7 +68,7 @@
 //                   e.preventDefault();
 //                 });
          $( 'a[title="Suchen"]').click(function(e) {
-                   $( ".front .ui-dialog,#block-views-exp-karten-kaufen,#block-views-exp-karten-mieten").toggle();
+                   $( ".front .ui-dialog,.front #search,#block-views-exp-karten-kaufen,#block-views-exp-karten-mieten").toggle();
                    e.preventDefault();
                  });
 
