@@ -209,6 +209,13 @@ body {
       }
     }
   }
+  .title-hide {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+  }
 }
 // Last but not least: the responsive stuff
 @import "bear-menu-responsive";

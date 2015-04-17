@@ -188,6 +188,13 @@ body {
   border: 0;
   background: none;
 }
+#navigation #block-menu-menu-service-menu .title-hide {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
 
 @media screen and (max-width: 800px) {
   #navigation .block-menu > ul, #navigation .menu-block-wrapper > ul, #navigation .block-menu > ul ul, #navigation .menu-block-wrapper > ul ul {

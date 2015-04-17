@@ -52,23 +52,24 @@
      Drupal.behaviors.leafletMap = {
          attach: function(context, settings) {
 //    /* RH Kartensuche */
-      $('.front', context).once(function(){
-        $( "#block-views-exp-karten-map-page, #search").dialog({
+   //   $('.front', context).on("load",function(){
+        $( ".front #block-views-exp-karten-map-page, .front #search").dialog({
             height: "auto",
-            width: "710",
+            width: "700",
             resizable: "false",
             closeOnEscape: "true",
-            hide: { effect: "explode", duration: "1000" },
+            //hide: { effect: "explode", duration: "1000" },
+            hide: "false",
             position: { my: "center bottom", at: "center-170 bottom-100", collision: "fit flip", of: ".view-display-id-map_page" }
           });
-        });
+    //    });
 
 //         $( 'a[href="/kaufen"]' ).click(function(e) {
 //                   $( ".front #views-exposed-form-karte-block" ).dialog( "open" );
 //                   e.preventDefault();
 //                 });
-         $( 'a[title="Suchen"]').click(function(e) {
-                   $( ".front .ui-dialog,.front #search,#block-views-exp-karten-kaufen,#block-views-exp-karten-mieten").toggle();
+         $( '#block-menu-menu-service-menu .menu li:nth-child(3)').click(function(e) {
+                   $( ".ui-dialog,#block-views-exp-karten-kaufen,#block-views-exp-karten-mieten").toggle();
                    e.preventDefault();
                  });
 
