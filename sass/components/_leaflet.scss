@@ -195,9 +195,42 @@
     .wo {
       float: left;
       clear: both;
-      width: 100%;
+      width: 45%;
       margin: .5em 0;
+      i {
+        font-size: 1.6em;
+        line-height: 1;
+        margin: -0.15em 0.2em 0 -0.5em;
+      }
     }
+    .apart {
+      color: $greyer;
+      display: table;
+      float: right;
+      width: 51%;
+      clear: right;
+      span {
+        display: table-cell;
+        width: 30%;
+        padding-right: 1em;
+        .rooms {
+          width: 10%;
+        }
+    }
+  }
+  .tablehead {
+    display: table;
+    float: right;
+    width: 51%;
+    span {
+      display: table-cell;
+      width: 30%;
+      padding-right: 1em;
+      .rooms {
+        width: 10%;
+      }
+    }
+  }
 }
 /* MarkeCluster overriding libraries/leaflet_markecluster/dist/MarkerClusterDefault.css*/
 .marker-cluster-small {

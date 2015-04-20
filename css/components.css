@@ -641,6 +641,11 @@ OUR CUSTOM MIXINS
 .select2-container .select2-choice {
   height: 2.5em;
   line-height: 2em;
+  color: #91988e;
+}
+
+.select2-results {
+  color: #91988e;
 }
 
 .select2-drop-active {
@@ -1031,8 +1036,41 @@ img {
 .leaflet-popup-content .wo {
   float: left;
   clear: both;
-  width: 100%;
+  width: 45%;
   margin: .5em 0;
+}
+.leaflet-popup-content .wo i {
+  font-size: 1.6em;
+  line-height: 1;
+  margin: -0.15em 0.2em 0 -0.5em;
+}
+.leaflet-popup-content .apart {
+  color: #91988e;
+  display: table;
+  float: right;
+  width: 51%;
+  clear: right;
+}
+.leaflet-popup-content .apart span {
+  display: table-cell;
+  width: 30%;
+  padding-right: 1em;
+}
+.leaflet-popup-content .apart span .rooms {
+  width: 10%;
+}
+.leaflet-popup-content .tablehead {
+  display: table;
+  float: right;
+  width: 51%;
+}
+.leaflet-popup-content .tablehead span {
+  display: table-cell;
+  width: 30%;
+  padding-right: 1em;
+}
+.leaflet-popup-content .tablehead span .rooms {
+  width: 10%;
 }
 
 /* MarkeCluster overriding libraries/leaflet_markecluster/dist/MarkerClusterDefault.css*/

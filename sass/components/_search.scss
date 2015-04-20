@@ -16,6 +16,10 @@
 .select2-container .select2-choice {
   height: 2.5em;
   line-height: 2em;
+  color: $greyer;
+}
+.select2-results {
+  color: $greyer;
 }
 .select2-drop-active {
   border-width: 0 2px 2px;
