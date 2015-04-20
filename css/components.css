@@ -745,15 +745,15 @@ OUR CUSTOM MIXINS
   margin-top: 0;
   margin-bottom: 1em;
 }
-#search #block-facetapi-vih09czclfztb71ymoja1b30xzodyv0m {
+#search .front .preis {
   clear: left;
 }
 
-.block-current-search {
+.ergebnis {
   float: right;
   margin-right: 1.5em;
 }
-.block-current-search .current-search-item ul {
+.ergebnis .current-search-item ul {
   list-style: none;
   margin: 0;
   padding: 0;
