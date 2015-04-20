@@ -213,8 +213,11 @@
         display: table-cell;
         width: 30%;
         padding-right: 1em;
-        .rooms {
-          width: 10%;
+        &.id {
+          width: 25%;
+        }
+        &.rooms {
+          width: 15%;
         }
     }
   }
@@ -226,8 +229,11 @@
       display: table-cell;
       width: 30%;
       padding-right: 1em;
-      .rooms {
-        width: 10%;
+      &.id {
+          width: 25%;
+        }
+      &.rooms {
+        width: 15%;
       }
     }
   }

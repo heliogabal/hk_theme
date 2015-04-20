@@ -1056,8 +1056,11 @@ img {
   width: 30%;
   padding-right: 1em;
 }
-.leaflet-popup-content .apart span .rooms {
-  width: 10%;
+.leaflet-popup-content .apart span.id {
+  width: 25%;
+}
+.leaflet-popup-content .apart span.rooms {
+  width: 15%;
 }
 .leaflet-popup-content .tablehead {
   display: table;
@@ -1069,8 +1072,11 @@ img {
   width: 30%;
   padding-right: 1em;
 }
-.leaflet-popup-content .tablehead span .rooms {
-  width: 10%;
+.leaflet-popup-content .tablehead span.id {
+  width: 25%;
+}
+.leaflet-popup-content .tablehead span.rooms {
+  width: 15%;
 }
 
 /* MarkeCluster overriding libraries/leaflet_markecluster/dist/MarkerClusterDefault.css*/
