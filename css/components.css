@@ -1500,6 +1500,7 @@ OUR CUSTOM MIXINS
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+  width: 55px;
 }
 .language-switcher li a {
   display: block;

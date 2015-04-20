@@ -15,6 +15,7 @@ a.map-link {
   @include box-shadow($box-shadow);
   @include border-bottom-left-radius($border-radius);
   @include border-top-left-radius($border-radius);
+  width: 55px;
   img {
     margin: 0 .4em 0 .5em;
   }

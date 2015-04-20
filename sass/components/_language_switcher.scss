@@ -12,6 +12,7 @@
     border: 2px solid $secondary;
     border-right: 0;
     @include box-shadow($box-shadow);
+    width: 55px;
     a {
       display: block;
       padding: .5em 1em;

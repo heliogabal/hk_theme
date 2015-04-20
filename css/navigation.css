@@ -36,6 +36,7 @@ a.map-link {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
+  width: 55px;
 }
 a.map-link img {
   margin: 0 .4em 0 .5em;
