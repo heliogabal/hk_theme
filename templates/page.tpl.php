@@ -83,14 +83,11 @@
       <?php endif; ?>
     </div><!-- /#main -->
   </div>
-    <?php // More Like This Block
-   // $block = module_invoke('views', 'block_view', 'karten-mlt');
-   // print render($block);
-   // With Title
+<!--     <?php // More Like This Block
    $block = block_load('views', 'karten-mlt');
    $block_render = _block_get_renderable_array(_block_render_blocks(array($block)));
    print drupal_render($block_render);
-   ?>
+   ?> -->
 </div><!-- /#page -->
 
 <div class="wrapper footer">
