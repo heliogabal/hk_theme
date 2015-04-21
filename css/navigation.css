@@ -105,15 +105,27 @@ li a.active {
 }
 
 .region-navigation #block-menu-menu-service-menu {
-  float: right;
+  position: absolute;
+  right: 0;
+}
+@media (min-width: 1024px) {
+  .region-navigation #block-menu-menu-service-menu {
+    position: static;
+    float: right;
+  }
 }
 .region-navigation #block-menu-menu-service-menu ul.menu {
   position: static;
   visibility: visible;
   z-index: 10;
   opacity: 1;
-  margin: 35px 0 0 2em;
   background: transparent;
+  margin: 1em 0 0 0;
+}
+@media (min-width: 1024px) {
+  .region-navigation #block-menu-menu-service-menu ul.menu {
+    margin: 35px 0 0 2em;
+  }
 }
 .region-navigation #block-menu-menu-service-menu ul.menu li a {
   width: auto;
@@ -145,7 +157,7 @@ ul.primary {
   padding: 0;
   border-bottom: none;
 }
-@media (max-width: 400px) {
+@media (max-width: 320px) {
   ul.primary {
     border-bottom: none;
   }

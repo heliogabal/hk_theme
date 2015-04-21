@@ -798,6 +798,12 @@ OUR CUSTOM MIXINS
   display: none;
 }
 
+@media (max-width: 320px) {
+  #search, .front .ui-dialog {
+    display: none !important;
+  }
+}
+
 .page-kaufen #block-views-exp-karten-kaufen,
 .page-buy #search,
 .page-rent #search {
@@ -864,7 +870,7 @@ OUR CUSTOM MIXINS
   z-index: -1;
 }
 .not-front #main {
-  margin-top: 40px;
+  margin-top: 2px;
   margin-bottom: 100px;
   padding: 2em;
   z-index: 101;
@@ -872,6 +878,11 @@ OUR CUSTOM MIXINS
   border-right: 2px solid #cbc1ba;
   border-left: 2px solid #cbc1ba;
   border-bottom: 2px solid #cbc1ba;
+}
+@media (min-width: 768px) {
+  .not-front #main {
+    margin-top: 40px;
+  }
 }
 
 /* Handler positionieren */
@@ -1212,14 +1223,25 @@ h1#page-title {
   margin-bottom: -25px;
 }
 .node-type-apartment .ds-2col-stacked-fluid .group-left {
-  margin-right: -316px;
-  padding-right: 316px;
   width: 100%;
   float: left;
 }
+@media (min-width: 1024px) {
+  .node-type-apartment .ds-2col-stacked-fluid .group-left {
+    margin-right: -316px;
+    padding-right: 316px;
+  }
+}
 .node-type-apartment .ds-2col-stacked-fluid .group-right {
-  float: right;
-  width: 300px;
+  float: left;
+  width: 100%;
+  max-with: 500px;
+}
+@media (min-width: 1024px) {
+  .node-type-apartment .ds-2col-stacked-fluid .group-right {
+    float: right;
+    width: 300px;
+  }
 }
 .node-type-apartment .view-apartment {
   /*float: right;
@@ -1231,9 +1253,16 @@ h1#page-title {
   display: none;
 }
 .node-type-apartment .view-apartment .leaflet-container {
-  height: 300px !important;
-  width: 300px;
+  width: 100%;
+  min-height: 300px;
+  max-height: 500px;
   position: static;
+}
+@media (min-width: 1024px) {
+  .node-type-apartment .view-apartment .leaflet-container {
+    height: 300px !important;
+    width: 300px;
+  }
 }
 .node-type-apartment .objekt-id, .node-type-apartment .field-name-field-apart-no {
   display: inline-block;
@@ -1329,13 +1358,21 @@ h1#page-title {
   bottom: 5px;
 }
 .node-type-apartment .apartaddress {
-  right: 0;
-  text-align: right;
-  top: -50px;
+  margin: .5em 0 1em 0;
+  float: left;
   width: 100%;
+}
+@media (min-width: 1024px) {
+  .node-type-apartment .apartaddress {
+    float: none;
+    right: 0;
+    text-align: right;
+    top: -50px;
+  }
 }
 .node-type-apartment .field-name-apartment-characteristics {
   margin: .5em 0;
+  max-width: 560px;
 }
 .node-type-apartment .ausstattung .label-above {
   color: #4b4b4b;
@@ -1459,17 +1496,46 @@ h1#page-title {
   margin: 0;
 }
 
+div.krumo-root {
+  z-index: 112 !important;
+}
+
+/****************
+OUR CUSTOM MIXINS
+*****************/
+/***********
+~VARIABLES
+***********/
+/* Warm grey von Natascha, war #d1d3d2 */
+/* Dunkelgrau von Natascha */
+/* Rot von Natascha */
+/* Light warm grey von Natascha */
+/* Schriftfarbe von Natascha */
+/***********
+~BREAKPOINTS
+***********/
 .footer {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 101;
   position: relative;
+  float: left;
+}
+@media (min-width: 768px) {
+  .footer {
+    float: none;
+  }
 }
 .footer footer {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1400px;
   position: relative;
-  width: 90%;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .footer footer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+  }
 }
 .footer footer img {
   float: left;
@@ -1632,8 +1698,18 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
 .view-merkliste .views-row-even,
 .view-merkliste .views-row-odd {
   float: left;
-  width: 49%;
+  width: 100%;
   margin-bottom: 1em;
+}
+@media (min-width: 1024px) {
+  .view-display-id-kaufen .views-row-even,
+  .view-display-id-kaufen .views-row-odd,
+  .page-mieten .views-row-even,
+  .page-mieten .views-row-odd,
+  .view-merkliste .views-row-even,
+  .view-merkliste .views-row-odd {
+    width: 49%;
+  }
 }
 .view-display-id-kaufen .views-row-odd,
 .page-mieten .views-row-odd,

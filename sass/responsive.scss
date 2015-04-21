@@ -1,4 +1,17 @@
-@media screen and (max-width: 1200px) {
+@import "base";
+@include breakpoint($breakpoint-small-width) {
+
+}
+@include breakpoint($breakpoint-med-small-width) {
+
+}
+@include breakpoint($breakpoint-medium-width) {
+
+}
+@include breakpoint($breakpoint-large-width) {
+
+}
+@include breakpoint($breakpoint-full-width) {
   .region-navigation #block-menu-menu-service-menu ul.menu,
   #navigation .block-menu ul, #navigation .menu-block-wrapper ul {
     margin-left: 0;

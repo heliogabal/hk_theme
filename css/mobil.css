@@ -16,9 +16,22 @@ OUR CUSTOM MIXINS
 /***********
 ~BREAKPOINTS
 ***********/
-@media (max-width: 1280px) {
-  .region-navigation #block-menu-menu-service-menu ul.menu,
-  #navigation .block-menu ul, #navigation .menu-block-wrapper ul {
-    margin-left: 0;
+@media screen and (max-width: max-width 321px) {
+  #page .container, #page .wrapper.main {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  #page .wrapper.navigation {
+    position: static;
+    height: auto;
+  }
+
+  .footer footer {
+    width: 100%;
+  }
+
+  .front #search {
+    display: none;
   }
 }

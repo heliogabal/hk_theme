@@ -1,27 +1,37 @@
 @import "base";
 
-$footer-height: 65px;
+$footer-height: auto;
+@include breakpoint($br-tablet) {
+  $footer-height: 65px;
+  html, body {
+    height: 100%;
+  }
 
-html, body {
-  height: 100%;
+  #page {
+    min-height: 100%;
+  }
+  #main {
+    overflow: auto;
+  }
 }
-
-#page {
-  min-height: 100%;
-}
-
 #main {
-  overflow: auto;
-  padding-bottom: $footer-height;
+
+  @include breakpoint($br-tablet) {
+    padding-bottom: $footer-height;
+  }
 }  /* must be same height as the footer */
 
 footer {
   position: relative;
-  margin-top: -$footer-height; /* negative value of footer height */
-  height: $footer-height;
+  @include breakpoint($br-tablet) {
+    margin-top: -$footer-height; /* negative value of footer height */
+    height: $footer-height;
+    margin-top: -$footer-height; /* negative value of footer height */
+    height: $footer-height;
+  }
   clear: both;
   .block {
-    @include breakpoint ($breakpoint-full-width) {
+    @include breakpoint($br-tablet) {
       padding: 0 20px;
     }
   }

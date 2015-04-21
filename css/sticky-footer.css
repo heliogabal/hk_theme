@@ -16,28 +16,41 @@ OUR CUSTOM MIXINS
 /***********
 ~BREAKPOINTS
 ***********/
-html, body {
-  height: 100%;
-}
+@media (min-width: 768px) {
+  html, body {
+    height: 100%;
+  }
 
-#page {
-  min-height: 100%;
-}
+  #page {
+    min-height: 100%;
+  }
 
-#main {
-  overflow: auto;
-  padding-bottom: 65px;
+  #main {
+    overflow: auto;
+  }
+}
+@media (min-width: 768px) {
+  #main {
+    padding-bottom: 65px;
+  }
 }
 
 /* must be same height as the footer */
 footer {
   position: relative;
-  margin-top: -65px;
-  /* negative value of footer height */
-  height: 65px;
   clear: both;
 }
-@media (max-width: 1200px) {
+@media (min-width: 768px) {
+  footer {
+    margin-top: -65px;
+    /* negative value of footer height */
+    height: 65px;
+    margin-top: -65px;
+    /* negative value of footer height */
+    height: 65px;
+  }
+}
+@media (min-width: 768px) {
   footer .block {
     padding: 0 20px;
   }

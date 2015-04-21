@@ -17,14 +17,21 @@ h1#page-title {
       margin-bottom: -25px;
     }
     .group-left {
-      margin-right: -316px;
-      padding-right: 316px;
-      width: 100%;
-      float: left;
+        width: 100%;
+        float: left;
+      @include breakpoint($br-desk) {
+        margin-right: -316px;
+        padding-right: 316px;
+      }
     }
     .group-right {
-      float: right;
-      width: 300px;
+      float: left;
+      width: 100%;
+      max-with: 500px;
+      @include breakpoint($br-desk) {
+        float: right;
+        width: 300px;
+      }
     }
   }
   .view-apartment {
@@ -36,9 +43,14 @@ h1#page-title {
       display: none;
     }
     .leaflet-container {
-    height: 300px !important;
-    width: 300px;
-    position: static;
+      width: 100%;
+      min-height: 300px;
+      max-height: 500px;
+      position: static;
+      @include breakpoint($br-desk) {
+      height: 300px !important;
+      width: 300px;
+      }
     }
   }
   .objekt-id, .field-name-field-apart-no {
@@ -136,13 +148,19 @@ h1#page-title {
     width: 50%;
   }
   .apartaddress {
-    right: 0;
-    text-align: right;
-    top: -50px;
+    margin: .5em 0 1em 0;
+    float: left;
     width: 100%;
+    @include breakpoint($br-desk) {
+      float: none;
+      right: 0;
+      text-align: right;
+      top: -50px;
+    }
   }
   .field-name-apartment-characteristics {
     margin: .5em 0;
+    max-width: 560px;
   }
   .ausstattung {
     .label-above {

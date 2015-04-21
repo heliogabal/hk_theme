@@ -10,7 +10,10 @@
   .views-row-even,
   .views-row-odd {
     float: left;
+    width: 100%;
+    @include breakpoint($br-desk) {
     width: 49%;
+    }
     // padding: .5em;
     margin-bottom: 1em;
     // background: #fff;

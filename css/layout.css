@@ -30,24 +30,35 @@ OUR CUSTOM MIXINS
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   #page .wrapper {
     padding: 0 20px;
   }
 }
 #page .container,
 #page .wrapper.main {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1400px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #page .container,
+  #page .wrapper.main {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
 #page .wrapper.navigation {
   width: 100%;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  height: 90px;
-  z-index: 102;
-  position: fixed;
   background: rgba(255, 255, 255, 0.9);
+  position: static;
+}
+@media (min-width: 768px) {
+  #page .wrapper.navigation {
+    height: 90px;
+    z-index: 102;
+    position: fixed;
+  }
 }
 
 /*.footer {
@@ -140,7 +151,7 @@ body.front h1#page-title {
 .sidebar-first #content:last-child {
   margin-right: 0%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .sidebar-first #content {
     *zoom: 1;
     float: left;
@@ -190,7 +201,7 @@ body.front h1#page-title {
 .sidebar-first .region-sidebar-first:last-child {
   margin-right: 0%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .sidebar-first .region-sidebar-first {
     *zoom: 1;
     float: left;
@@ -240,7 +251,7 @@ body.front h1#page-title {
 .sidebar-second #content:last-child {
   margin-right: 0%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .sidebar-second #content {
     *zoom: 1;
     float: left;
@@ -288,7 +299,7 @@ body.front h1#page-title {
 .sidebar-second .region-sidebar-first:last-child, .sidebar-second .region-sidebar-second:last-child {
   margin-right: 0%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .sidebar-second .region-sidebar-first, .sidebar-second .region-sidebar-second {
     *zoom: 1;
     float: left;
@@ -340,7 +351,7 @@ body.front h1#page-title {
 .two-sidebars #content:last-child {
   margin-right: 0%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .two-sidebars #content {
     *zoom: 1;
     float: left;
@@ -390,7 +401,7 @@ body.front h1#page-title {
 .two-sidebars .region-sidebar-first:last-child {
   margin-right: 0%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .two-sidebars .region-sidebar-first {
     *zoom: 1;
     float: left;
@@ -438,7 +449,7 @@ body.front h1#page-title {
 .two-sidebars .region-sidebar-second:last-child {
   margin-right: 0%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .two-sidebars .region-sidebar-second {
     *zoom: 1;
     float: left;

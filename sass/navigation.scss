@@ -87,14 +87,22 @@ li a.active {
 
 .region-navigation {
   #block-menu-menu-service-menu {
-    float: right;
+    position: absolute;
+    right: 0;
+    @include breakpoint($br-desk) {
+      position: static;
+      float: right;
+    }
       ul.menu {
         position: static;
         visibility: visible;
         z-index: 10;
         opacity: 1;
-        margin: 35px 0 0 2em;
         background: transparent;
+        margin: 1em 0 0 0;
+        @include breakpoint($br-desk) {
+          margin: 35px 0 0 2em;
+        }
         li a {
           width: auto;
           padding: 0;

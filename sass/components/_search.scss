@@ -149,6 +149,11 @@
 .not-front #search {
     display: none;
 }
+#search, .front .ui-dialog {
+  @include breakpoint($breakpoint-small-width) {
+    display: none !important;
+  }
+}
 .page-kaufen #block-views-exp-karten-kaufen,
 .page-buy #search,
 .page-rent #search {

@@ -81,7 +81,7 @@ Theming for the panels layouts included in our theme at layouts/
     margin-right: 0%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .three-columns-top-and-bottom-rows .column.left {
     *zoom: 1;
     float: left;
@@ -107,7 +107,7 @@ Theming for the panels layouts included in our theme at layouts/
     margin-right: 0%;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 480px) {
   .three-columns-top-and-bottom-rows .column.left {
     position: static;
     left: 0;
@@ -178,7 +178,7 @@ Theming for the panels layouts included in our theme at layouts/
     margin-right: 0%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .three-columns-top-and-bottom-rows .column.center {
     *zoom: 1;
     float: left;
@@ -204,7 +204,7 @@ Theming for the panels layouts included in our theme at layouts/
     margin-right: 0%;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 480px) {
   .three-columns-top-and-bottom-rows .column.center {
     position: static;
     left: 0;
@@ -268,7 +268,7 @@ Theming for the panels layouts included in our theme at layouts/
     margin-right: 0%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .three-columns-top-and-bottom-rows .column.right {
     display: block;
     clear: both;
@@ -338,7 +338,7 @@ Theming for the panels layouts included in our theme at layouts/
     margin-right: 0%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .sidebar-left-top-and-bottom-rows .column.left {
     *zoom: 1;
     float: left;
@@ -364,7 +364,7 @@ Theming for the panels layouts included in our theme at layouts/
     margin-right: 0%;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 480px) {
   .sidebar-left-top-and-bottom-rows .column.left {
     position: static;
     left: 0;
@@ -435,7 +435,7 @@ Theming for the panels layouts included in our theme at layouts/
     margin-right: 0%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .sidebar-left-top-and-bottom-rows .column.center {
     *zoom: 1;
     float: left;
@@ -461,7 +461,7 @@ Theming for the panels layouts included in our theme at layouts/
     margin-right: 0%;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 480px) {
   .sidebar-left-top-and-bottom-rows .column.center {
     position: static;
     left: 0;
@@ -502,7 +502,7 @@ Theming for the panels layouts included in our theme at layouts/
 .sidebar-left-top-and-bottom-rows .column.center .content-body:last-child {
   margin-right: 0%;
 }
-@media (max-width: 400px) {
+@media (max-width: 320px) {
   .sidebar-left-top-and-bottom-rows .column.center .content-body {
     position: static;
     left: 0;
@@ -571,7 +571,7 @@ Theming for the panels layouts included in our theme at layouts/
     margin-right: 0%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .sidebar-right-top-and-bottom-rows .column.right {
     position: static;
     left: 0;
@@ -642,7 +642,7 @@ Theming for the panels layouts included in our theme at layouts/
     margin-right: 0%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .sidebar-right-top-and-bottom-rows .column.center {
     position: static;
     left: 0;
@@ -683,7 +683,7 @@ Theming for the panels layouts included in our theme at layouts/
 .sidebar-right-top-and-bottom-rows .column.center .content-body:last-child {
   margin-right: 0%;
 }
-@media (max-width: 400px) {
+@media (max-width: 320px) {
   .sidebar-right-top-and-bottom-rows .column.center .content-body {
     position: static;
     left: 0;
@@ -748,7 +748,7 @@ Theming for the panels layouts included in our theme at layouts/
     margin-right: 0%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .sidebar-right-cleared-top-and-bottom-rows .column.right {
     position: static;
     left: 0;
@@ -815,7 +815,7 @@ Theming for the panels layouts included in our theme at layouts/
     margin-right: 0%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .sidebar-right-cleared-top-and-bottom-rows .column.center {
     position: static;
     left: 0;
@@ -856,7 +856,7 @@ Theming for the panels layouts included in our theme at layouts/
 .sidebar-right-cleared-top-and-bottom-rows .column.center .content-body:last-child {
   margin-right: 0%;
 }
-@media (max-width: 400px) {
+@media (max-width: 320px) {
   .sidebar-right-cleared-top-and-bottom-rows .column.center .content-body {
     position: static;
     left: 0;
@@ -919,7 +919,7 @@ Theming for the panels layouts included in our theme at layouts/
 .two-columns-top-and-bottom-rows .column.right:last-child {
   margin-right: 0%;
 }
-@media (max-width: 650px) {
+@media (max-width: 480px) {
   .two-columns-top-and-bottom-rows .column.left, .two-columns-top-and-bottom-rows .column.right {
     display: block;
     clear: both;

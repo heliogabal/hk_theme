@@ -66,7 +66,13 @@ body {
     @include box-sizing(border-box);
   }
   ul {
-    margin: 33px 0 0 2em;
+    margin: 0;
+    @media screen and (min-width: 678px) {
+      margin: 33px 0 .5em 0;
+    }
+    @include breakpoint($br-desk) {
+      margin: 33px 0 0 2em;
+    }
     padding: 0;
     list-style: none;
     /*@include border-radius(3px);*/

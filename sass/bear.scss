@@ -41,10 +41,15 @@ strong, b {
 }
 #navigation {
   width: 100%;
-  padding: 0 0 15px 0;
+  /*padding: 0 0 15px 0;*/
 }
 #logo {
-  padding: 0 1em;
+  @include breakpoint($br-desk) {
+    padding: 0 1em;
+  }
+  img {
+    margin-right: 0;
+  }
 }
 @include breakpoint ($breakpoint-small-width) {
   ul.primary li, ul.secondary li {
