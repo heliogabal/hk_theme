@@ -195,7 +195,7 @@
     .wo {
       float: left;
       clear: both;
-      width: 45%;
+      width: 100%;
       margin: .5em 0;
       i {
         font-size: 1.6em;
@@ -206,35 +206,23 @@
     .apart {
       color: $greyer;
       display: table;
-      float: right;
-      width: 51%;
+      float: left;
+      width: 100%;
       clear: right;
       span {
         display: table-cell;
-        width: 30%;
-        padding-right: 1em;
-        &.id {
-          width: 25%;
-        }
-        &.rooms {
-          width: 15%;
-        }
+        width: 20%;
+        padding: 0.5em 1em 0.5em 0;
     }
   }
   .tablehead {
     display: table;
-    float: right;
-    width: 51%;
+    float: left;
+    width: 100%;
     span {
       display: table-cell;
-      width: 30%;
-      padding-right: 1em;
-      &.id {
-          width: 25%;
-        }
-      &.rooms {
-        width: 15%;
-      }
+      width: 20%;
+      padding: 0.5em 1em 0.5em 0;
     }
   }
 }

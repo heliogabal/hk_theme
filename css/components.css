@@ -1036,7 +1036,7 @@ img {
 .leaflet-popup-content .wo {
   float: left;
   clear: both;
-  width: 45%;
+  width: 100%;
   margin: .5em 0;
 }
 .leaflet-popup-content .wo i {
@@ -1047,36 +1047,24 @@ img {
 .leaflet-popup-content .apart {
   color: #91988e;
   display: table;
-  float: right;
-  width: 51%;
+  float: left;
+  width: 100%;
   clear: right;
 }
 .leaflet-popup-content .apart span {
   display: table-cell;
-  width: 30%;
-  padding-right: 1em;
-}
-.leaflet-popup-content .apart span.id {
-  width: 25%;
-}
-.leaflet-popup-content .apart span.rooms {
-  width: 15%;
+  width: 20%;
+  padding: 0.5em 1em 0.5em 0;
 }
 .leaflet-popup-content .tablehead {
   display: table;
-  float: right;
-  width: 51%;
+  float: left;
+  width: 100%;
 }
 .leaflet-popup-content .tablehead span {
   display: table-cell;
-  width: 30%;
-  padding-right: 1em;
-}
-.leaflet-popup-content .tablehead span.id {
-  width: 25%;
-}
-.leaflet-popup-content .tablehead span.rooms {
-  width: 15%;
+  width: 20%;
+  padding: 0.5em 1em 0.5em 0;
 }
 
 /* MarkeCluster overriding libraries/leaflet_markecluster/dist/MarkerClusterDefault.css*/
