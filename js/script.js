@@ -99,6 +99,30 @@
   }
 })(jQuery);
 
+// Wohnungsliste Suche toggle
+(function ($) {
+Drupal.behaviors.wohnungstoggle = function(context) {
+$('a.apart:not(:first-child)').css("display","none");
+var toggleMinus = 'sites/herbert-kohlmeyer.de/files/bullet_toggle_minus.png';
+var togglePlus = 'sites/herbert-kohlmeyer.de/files/bullet_toggle_plus.png';
+var show = Drupal.t("Show All");
+var hide = Drupal.t("Hide");
+
+$('.view-Suche table').not('.cols-1').children('thead').after('<tfoot class="toggle"><tr><td colspan="6">&nbsp;</td><td class="clickable"><img src="' + togglePlus + ' "alt=" ' + show + ' " /><strong class="show">' + show + '</strong></td></tr></tfoot>');
+
+//$('.wohnungsliste table tfoot td:last-child').addClass('clickable');
+$('.view-Suche .clickable').click(function() {
+    var toggleSrc = $(this).find('img').attr('src');
+    if ( toggleSrc == toggleMinus ) {
+      $(this).find('img').attr('src', togglePlus).attr('alt'," ' + show + ' ").after('<strong class="show">' + show + '</strong>').parents('table').find('tbody tr').slice(1).css("display","none").parents('table').find('strong.hide').remove();
+    } else{
+      $(this).find('img').attr('src', toggleMinus).attr('alt'," ' + hide + ' ").after('<strong class="hide">' + hide + '</strong>').parents('table').find('tbody tr').slice(1).css("display","table-row").parents('table').find('strong.show').remove();
+    };
+});
+}
+})(jQuery);
+// Wohnungsliste Suche toggle Ende
+
 })(jQuery, Drupal, this, this.document);
 
  //Flexslider infinite Carousel to be implemented
