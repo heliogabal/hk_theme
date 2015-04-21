@@ -156,11 +156,11 @@ settings[sticky_footer]            = 1
 
 plugins[panels][layouts] = panels-layouts
 
-breakpoints[mobile] = (min-width: 0px)
-breakpoints[narrow] = (min-width: 560px)
-breakpoints[desk] = (min-width: 851px)
-breakpoints[wide] = (min-width: 1200px)
 breakpoints[tv] = only screen and (min-width: 3456px)
+breakpoints[wide] = (min-width: 1200px)
+breakpoints[desk] = (min-width: 851px)
+breakpoints[narrow] = (min-width: 560px)
+breakpoints[mobile] = (min-width: 0px)
 multipliers[mobile][] = 1.5x
 multipliers[mobile][] = 2x
 
