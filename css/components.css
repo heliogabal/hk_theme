@@ -1365,7 +1365,9 @@ h1#page-title {
 @media (min-width: 1024px) {
   .node-type-apartment .apartaddress {
     float: none;
+    position: relative;
     right: 0;
+    margin: 0;
     text-align: right;
     top: -50px;
   }
