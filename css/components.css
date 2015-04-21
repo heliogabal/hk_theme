@@ -1362,7 +1362,7 @@ h1#page-title {
   float: left;
   width: 100%;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .node-type-apartment .apartaddress {
     float: none;
     position: relative;

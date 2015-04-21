@@ -151,7 +151,7 @@ h1#page-title {
     margin: .5em 0 1em 0;
     float: left;
     width: 100%;
-    @include breakpoint($br-desk) {
+    @media screen and (min-width: 1025px) {
       float: none;
       position: relative;
       right: 0;
