@@ -1133,34 +1133,36 @@ img {
   border-radius: 0;
 }
 
-.marker-cluster div:before {
-  color: #c61c2c;
-  content: "";
-  font-family: hk;
-  font-size: 32px;
-  margin-right: -21px;
-}
-
+/*.marker-cluster div:before {
+    color: $primary;
+    content: "";
+    font-family: hk;
+    font-size: 32px;
+    margin-right: -21px;
+}*/
 .marker-cluster div {
-  width: 0;
-  height: 0;
+ /* width: 32px;
+  height: 42px;
   margin-left: 0;
   margin-top: 0;
-  /*background: url("../images/Icon_House.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+  background: url("../images/Icon_House2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+
   text-align: center;
   border-radius: 0;
-  font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;*/
+  background: rgba(0, 0, 0, 0);
 }
 
 .marker-cluster span {
-  line-height: 38px;
-  padding-right: 2px;
   color: #fff;
   font-weight: bold;
+  position: absolute;
+  top: 6px;
+  left: 11px;
 }
 
 .marker-cluster div:hover, .marker-cluster span:hover {
-  transform: scale(1.2);
+  /*transform: scale(1.2);*/
 }
 
 /* Search Form */
