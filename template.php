@@ -35,6 +35,18 @@ function hk_theme_preprocess_page(&$vars) {
       $vars['theme_hook_suggestions'][] = 'page__colorbox';
       module_invoke('admin_menu_suppress(TRUE)');
   }
+  // redirect to the buy page set for mobile devices, as the map does not work well for them.
+  $detect = mobile_detect_get_object();
+  $is_mobile = $detect->isMobile();
+  $is_tablet = $detect->isTablet();
+  if (drupal_is_front_page()) {
+    //$GLOBALS['conf']['cache'] = FALSE;
+    if ($is_mobile) {
+      $redirect = '/buy';
+      drupal_goto($redirect);
+    }
+  }
+
 }
 
 /***********************
