@@ -56,7 +56,7 @@ function hk_theme_preprocess_page(&$vars) {
 */
 
 function hk_theme_js_alter (&$javascript) {
-  $javascript[libraries_get_path('leaflet_markercluster') . '/dist/leaflet_markercluster.js']['data'] = drupal_get_path('theme',$GLOBALS['theme']) . '/js/leaflet_markercluster.js';
+  $javascript[libraries_get_path('leaflet_markercluster') . '/dist/leaflet.markercluster.js']['data'] = drupal_get_path('theme',$GLOBALS['theme']) . '/js/leaflet.markercluster.js';
 }
 
 /***********************
