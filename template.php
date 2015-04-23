@@ -36,7 +36,7 @@ function hk_theme_preprocess_page(&$vars) {
       module_invoke('admin_menu_suppress(TRUE)');
   }
   // redirect to the buy page set for mobile devices, as the map does not work well for them.
-  if module_exists('mobile_detect') {
+  if (module_exists('mobile_detect')) {
     $detect = mobile_detect_get_object();
     $is_mobile = $detect->isMobile();
     $is_tablet = $detect->isTablet();
