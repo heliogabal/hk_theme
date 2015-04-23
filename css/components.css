@@ -1041,6 +1041,9 @@ img {
   display: table;
   width: 550px !important;
 }
+.leaflet-popup-content h2 {
+  margin-right: 1em;
+}
 .leaflet-popup-content .right {
   margin: 0 1em;
 }
@@ -1056,16 +1059,22 @@ img {
   margin: -0.15em 0.2em 0 -0.5em;
 }
 .leaflet-popup-content .apart {
-  color: #91988e;
+  color: #1a1a1a;
   display: table;
   float: left;
   width: 100%;
   clear: right;
 }
+.leaflet-popup-content .apart:nth-child(odd) {
+  background: #eff2f1;
+}
 .leaflet-popup-content .apart span {
   display: table-cell;
   width: 20%;
   padding: 0.5em 1em 0.5em 0;
+}
+.leaflet-popup-content .apart span .id {
+  padding-left: 3px !important;
 }
 .leaflet-popup-content .tablehead {
   display: table;

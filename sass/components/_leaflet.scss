@@ -191,7 +191,9 @@
     margin: 0;
     display: table;
     width: 550px !important;
-
+    h2 {
+      margin-right: 1em;
+    }
     .right {
       margin: 0 1em;
     }
@@ -207,15 +209,21 @@
       }
     }
     .apart {
-      color: $greyer;
+      color: $black;
       display: table;
       float: left;
       width: 100%;
       clear: right;
+      &:nth-child(odd) {
+        background: $grey;
+      }
       span {
         display: table-cell;
         width: 20%;
         padding: 0.5em 1em 0.5em 0;
+        .id {
+          padding-left: 3px !important;
+        }
     }
   }
   .tablehead {
