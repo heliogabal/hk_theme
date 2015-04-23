@@ -93,8 +93,8 @@
 (function ($) {
   Drupal.behaviors.ServiceMenu = {
     attach: function (context, settings) {
-
-    $('a.menu__link[href="tel:493078087080"]').tooltip();
+    $('#block-menu-menu-service-menu .menu li:nth-child(2)').tooltip();
+    e.preventDefault();
     }
   }
 })(jQuery);
