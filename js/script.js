@@ -93,8 +93,10 @@
 (function ($) {
   Drupal.behaviors.ServiceMenu = {
     attach: function (context, settings) {
-    $('#block-menu-menu-service-menu .menu li:nth-child(2)').tooltip();
-    e.preventDefault();
+      $('#block-menu-menu-service-menu .menu li:nth-child(2)').click(function(e) {
+        $(this).tooltip();
+        e.preventDefault();
+      });
     }
   }
 })(jQuery);
