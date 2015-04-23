@@ -51,6 +51,14 @@ function hk_theme_preprocess_page(&$vars) {
 
 }
 
+/**
+* Load modified markercluster js
+*/
+
+function hk_theme_js_alter (&$javascript) {
+  $javascript[libraries_get_path('leaflet_markercluster') . '/dist/leaflet_markercluster.js']['data'] = drupal_get_path('theme',$GLOBALS['theme']) . '/js/leaflet_markercluster.js';
+}
+
 /***********************
 Let's load some CSS on specific targets - uncomment to use
 ************************/
