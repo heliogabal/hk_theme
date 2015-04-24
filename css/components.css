@@ -628,6 +628,7 @@ OUR CUSTOM MIXINS
   float: left;
   z-index: 112;
   margin-right: 1em;
+  height: 4em;
 }
 .block-facetapi h2 {
   /*line-height: 30px;
@@ -744,7 +745,7 @@ OUR CUSTOM MIXINS
 
 /* Current Search Block */
 #search {
-  min-height: auto !important;
+  min-height: 8.5em !important;
 }
 #search .form-item {
   margin-top: 0;

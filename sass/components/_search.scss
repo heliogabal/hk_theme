@@ -5,6 +5,7 @@
   float: left;
   z-index: 112;
   margin-right: 1em;
+  height: 4em;
   h2 {
   /*line-height: 30px;
   padding-bottom: 8%;*/
@@ -101,7 +102,7 @@
 
 /* Current Search Block */
 #search {
-  min-height: auto !important;
+  min-height: 8.5em !important;
   .form-item {
     margin-top: 0;
     margin-bottom: 1em;
