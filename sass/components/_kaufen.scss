@@ -10,7 +10,10 @@
   .views-row-even,
   .views-row-odd {
     float: left;
+    width: 100%;
+    @include breakpoint($br-desk) {
     width: 49%;
+    }
     // padding: .5em;
     margin-bottom: 1em;
     // background: #fff;
@@ -25,4 +28,26 @@
   .views-row-odd {
     float: right;
   }
+  h2 {
+    margin-top: 1em;
+  }
+  .field-name-field-apart-price {
+    display: inline;
+  }
+  .field-name-field-apart-price::before {
+    content: " / ";
+  }
+  .address {
+    margin-top: 1em;
+    i {
+    font-size: 1.75em;
+    margin-left: -15px;
+    margin-top: -5px;
+  }
+    .apartaddress {
+      display: inline-block;
+      margin-left: .75em;
+    }
+  }
+
 }

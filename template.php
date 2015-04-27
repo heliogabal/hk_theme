@@ -33,8 +33,30 @@ function hk_theme_preprocess_page(&$vars) {
   // Extra Template für Colorbox Load
   if (isset ($_GET['template']) && $_GET['template'] == 'colorbox') {
       $vars['theme_hook_suggestions'][] = 'page__colorbox';
-      module_invoke('admin_menu', 'suppress');
+      module_invoke('admin_menu_suppress(TRUE)');
   }
+  // redirect to the buy page set for mobile devices, as the map does not work well for them.
+  if (module_exists('mobile_detect')) {
+    $detect = mobile_detect_get_object();
+    $is_mobile = $detect->isMobile();
+    $is_tablet = $detect->isTablet();
+    if (drupal_is_front_page()) {
+      //$GLOBALS['conf']['cache'] = FALSE;
+      if ($is_mobile) {
+        $redirect = '/buy';
+        drupal_goto($redirect);
+      }
+    }
+  }
+
+}
+
+/**
+* Load modified markercluster js
+*/
+
+function hk_theme_js_alter (&$javascript) {
+  $javascript[libraries_get_path('leaflet_markercluster') . '/dist/leaflet.markercluster.js']['data'] = drupal_get_path('theme',$GLOBALS['theme']) . '/js/leaflet.markercluster.js';
 }
 
 /***********************

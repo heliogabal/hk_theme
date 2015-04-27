@@ -8,7 +8,7 @@
       <div class="wrapper navigation">
         <div class="container">
           <?php if ($logo): ?>
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+            <a href="<?php print $front_page; ?>" title="<?php print t('Herbert + Kohlmeyer Real Estate: Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Herbert + Kohlmeyer Real Estate Logo'); ?>" /></a>
           <?php endif; ?>
 
           <?php if ($site_name || $site_slogan): ?>
@@ -56,6 +56,7 @@
         // $block = module_invoke('views', 'block_view', '-exp-karten-kaufen');
         // print render($block['content']);
         ?>
+        <?php print render($page['search']); ?>
         <?php print render($page['content']); ?>
         <?php print $feed_icons; ?>
       </div><!-- /#content -->
@@ -74,12 +75,10 @@
       <?php endif; ?>
     </div><!-- /#main -->
   </div>
-    <?php // More Like This Block
-   // $block = module_invoke('views', 'block_view', 'karten-mlt');
-   // print render($block);
-   // With Title
-   $block = block_load('views', 'karten-mlt');
-   print drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))))
+  <?php // More Like This Block
+   // $block = block_load('views', 'karten-mlt');
+   // $block_render = _block_get_renderable_array(_block_render_blocks(array($block)));
+   // print drupal_render($block_render);
    ?>
 </div><!-- /#page -->
 

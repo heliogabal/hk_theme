@@ -97,6 +97,7 @@ regions[header]         = Header
 regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted
 regions[help]           = Help
+regions[search]           = Search
 regions[content]        = Content
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
@@ -118,10 +119,10 @@ regions[page_bottom]    = Page bottom
 ; http://drupal.org/node/171205#features
 
 features[] = logo
-features[] = name
-features[] = slogan
-features[] = node_user_picture
-features[] = comment_user_picture
+;features[] = name
+;features[] = slogan
+;features[] = node_user_picture
+;features[] = comment_user_picture
 features[] = favicon
 features[] = main_menu
 features[] = secondary_menu
@@ -154,6 +155,14 @@ settings[sticky_footer]            = 1
 ; the line below and see the documentation at: http://drupal.org/node/495654
 
 plugins[panels][layouts] = panels-layouts
+
+breakpoints[tv] = only screen and (min-width: 3456px)
+breakpoints[wide] = (min-width: 1200px)
+breakpoints[desk] = (min-width: 851px)
+breakpoints[narrow] = (min-width: 560px)
+breakpoints[mobile] = (min-width: 0px)
+multipliers[mobile][] = 1.5x
+multipliers[mobile][] = 2x
 
 ; Information added by Drupal.org packaging script on 2014-08-05
 version = "7.x-1.2"

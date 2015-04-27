@@ -37,7 +37,12 @@ OUR CUSTOM MIXINS
   color: #cbc1ba;
 }
 
-/* IMporting some boostrap elements */
+.field-widget-phone-textfield th, .field-widget-phone-textfield tr.even, .field-widget-phone-textfield tr.odd {
+  background: #fff;
+  border: 0;
+}
+
+/* Importing some boostrap elements */
 [class^="icon-"], [class*=" icon-"] {
   display: inline-block;
   width: 14px;
@@ -68,7 +73,7 @@ OUR CUSTOM MIXINS
   border-radius: 5px;
   margin-right: 10px;
 }
-@media (max-width: 400px) {
+@media (max-width: 320px) {
   .btn {
     clear: both;
     float: left;
@@ -77,6 +82,7 @@ OUR CUSTOM MIXINS
 
 a.full {
   width: 100%;
+  max-width: 300px;
   padding: 0;
   margin: 1em 0;
   color: #fff !important;
@@ -139,7 +145,11 @@ a.full:hover {
   min-height: 30px;
   line-height: 30px;
   border: 2px solid #cbc1ba;
-  border-radius: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
   font-size: 90%;
   color: #666666;
 }
@@ -180,7 +190,7 @@ a.full:hover {
   box-shadow: none;
 }
 .form-text:focus, .form-textarea:focus {
-  border: 1px solid #61AEE2;
+  border: 2px solid #c61c2c;
   background: #f9f9f9;
 }
 

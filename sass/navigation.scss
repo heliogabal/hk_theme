@@ -10,11 +10,12 @@ a.map-link {
   right: 0;
   bottom: -5em;
   border: $border;
-  border-width: 3px 0 3px 3px;
+  border-width: 2px 0 2px 2px;
   background: rgba(255, 255, 255, 0.9);
   @include box-shadow($box-shadow);
   @include border-bottom-left-radius($border-radius);
   @include border-top-left-radius($border-radius);
+  width: 55px;
   img {
     margin: 0 .4em 0 .5em;
   }
@@ -86,13 +87,22 @@ li a.active {
 
 .region-navigation {
   #block-menu-menu-service-menu {
-    float: right;
+    position: absolute;
+    right: 0;
+    @include breakpoint($br-desk) {
+      position: static;
+      float: right;
+    }
       ul.menu {
         position: static;
         visibility: visible;
         z-index: 10;
         opacity: 1;
-        margin: 35px 0 0 6.25em;
+        background: transparent;
+        margin: 1em 0 0 0;
+        @include breakpoint($br-desk) {
+          margin: 35px 0 0 2em;
+        }
         li a {
           width: auto;
           padding: 0;

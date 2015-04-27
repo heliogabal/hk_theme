@@ -1,7 +1,3 @@
-/**
- * @file
- * Block Styling
- */
 div.krumo-root {
   z-index: 112 !important;
 }
@@ -20,6 +16,9 @@ OUR CUSTOM MIXINS
 /***********
 ~BREAKPOINTS
 ***********/
-#block-block-1 {
-  padding: 20px 0;
+@media (max-width: 1280px) {
+  .region-navigation #block-menu-menu-service-menu ul.menu,
+  #navigation .block-menu ul, #navigation .menu-block-wrapper ul {
+    margin-left: 0;
+  }
 }

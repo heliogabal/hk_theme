@@ -4,7 +4,8 @@
 .block-facetapi {
   float: left;
   z-index: 112;
-  margin-right: 2em;
+  margin-right: 1em;
+  height: 4em;
   h2 {
   /*line-height: 30px;
   padding-bottom: 8%;*/
@@ -16,10 +17,17 @@
 .select2-container .select2-choice {
   height: 2.5em;
   line-height: 2em;
+  color: $greyer;
+}
+.select2-results {
+  color: $greyer;
 }
 .select2-drop-active {
   border-width: 0 2px 2px;
-  border-color: -moz-use-text-color $primary $primary;
+  border-color: $primary;
+}
+.select2-drop.select2-drop-above.select2-drop-active {
+  border-top: 2px solid $primary;
 }
 .select2-chosen {
   height: 2.2em;
@@ -92,9 +100,32 @@
   width: auto;
 }
 
+/* Current Search Block */
+#search {
+  min-height: 8.5em !important;
+  .form-item {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+  .front .preis {
+    clear: left;
+  }
+}
+.ergebnis {
+  float: right;
+  margin-right: 1.5em;
+  .current-search-item {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
 /* Tile Design */
-.not-front.page-kaufen #main,
-.not-front.page-mieten #main{
+.not-front.page-buy #main,
+.not-front.page-rent #main {
   background: transparent;
   border: 0;
 }
@@ -115,9 +146,17 @@
 
 /* Hide Search Bar first on all pages but front and buy */
 
-.not-front #block-views-exp-karten-kaufen {
+.not-front #block-views-exp-karten-kaufen,
+.not-front #search {
     display: none;
 }
-.page-kaufen #block-views-exp-karten-kaufen {
+#search, .front .ui-dialog {
+  @include breakpoint($breakpoint-small-width) {
+    display: none !important;
+  }
+}
+.page-kaufen #block-views-exp-karten-kaufen,
+.page-buy #search,
+.page-rent #search {
     display: block;
   }

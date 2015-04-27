@@ -35,7 +35,7 @@ body {
   font-weight: 400;
 }
 body a {
-  color: #0091ea;
+  color: #c61c2c;
   text-decoration: none;
 }
 body a:hover {
@@ -43,7 +43,7 @@ body a:hover {
   text-decoration: underline;
 }
 body a:visited {
-  color: #0091ea;
+  color: #c61c2c;
 }
 
 html, body, button, input, select, textarea {
@@ -75,14 +75,19 @@ strong, b {
 
 #navigation {
   width: 100%;
-  padding: 0 0 15px 0;
+  /*padding: 0 0 15px 0;*/
 }
 
-#logo {
-  padding: 0 1em;
+@media (min-width: 1024px) {
+  #logo {
+    padding: 0 1em;
+  }
+}
+#logo img {
+  margin-right: 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 320px) {
   ul.primary li, ul.secondary li {
     float: none;
     clear: both;
@@ -118,7 +123,7 @@ h1 {
   float: right;
   margin: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .wrapper.header #header #bear-user-menu {
     float: none;
     text-align: center;
@@ -206,7 +211,7 @@ h1#site-name a:link, h1#site-name a:visited {
   width: 200px;
   margin: 60px 0 0 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   #block-search-form {
     clear: both;
     float: none;
@@ -238,7 +243,7 @@ h1#site-name a:link, h1#site-name a:visited {
   margin: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .wrapper.header #header {
     text-align: center;
     padding: 0;
@@ -275,38 +280,16 @@ aside.sidebars .sidebar h2 {
 }
 
 /***********
-~SLIDESHOW
-***********/
-.flexslider {
-  background: none repeat scroll 0 0 #FFFFFF;
-  border: 0;
-  border-radius: 0;
-  /*border: 5px solid #FFFFFF;*/
-  margin: 30px 0;
-  position: relative;
-}
-
-.flexslider li p {
-  text-align: center;
-  font-size: 110%;
-  background: #f5f5f5;
-  margin: 0;
-  padding: 10px 0;
-  font-size: 90%;
-  font-family: "HelveticaNeueW01-45Ligh", Helvetica, Arial, "Nimbus Sans L", sans-serif;
-}
-
-/***********
 ~FOOTER
 ***********/
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .wrapper.footer #footer {
     padding-left: 0 20px;
     padding-right: 0 20px;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   #footer {
     text-align: center;
   }

@@ -36,7 +36,10 @@
     z-index: -1;
   }
   #main {
-    margin-top: 40px;
+    margin-top: 2px;
+    @include breakpoint($br-tablet) {
+      margin-top: 40px;
+    }
     margin-bottom: 100px;
     padding: 2em;
     z-index: 101;
@@ -79,16 +82,19 @@
     line-height: 1.5;
   }
 }
+.front #block-views-exp-karten-map-page {
+  margin-left: 0;
+}
 
 .ui-dialog {
-  width: 600px !important;
+  width: 700px !important;
   height: auto !important;
   border: 2px solid $secondary;
   .ui-dialog-titlebar {
     line-height: 0;
     padding: 0;
     .ui-dialog-titlebar-close {
-        margin: -23px -23px 0 0;
+        margin: -35px -12px 0 0;
         padding: 0;
         position: absolute;
         right: 0;
@@ -105,6 +111,7 @@
       width: 40px;
       height: 40px;
     }
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default,
     .ui-state-hover, .ui-state-focus {
       background: none;
       border: 0;
@@ -119,6 +126,9 @@
 // }
 .views-exposed-form .views-exposed-widget .form-submit {
     margin-top: 0;
+}
+.views-exposed-form .views-exposed-widget {
+  height: 2.5em;
 }
 
 .panel-3col-33-stacked .center-wrapper {
@@ -181,7 +191,9 @@
     margin: 0;
     display: table;
     width: 550px !important;
-
+    h2 {
+      margin-right: 1em;
+    }
     .right {
       margin: 0 1em;
     }
@@ -190,7 +202,40 @@
       clear: both;
       width: 100%;
       margin: .5em 0;
+      i {
+        font-size: 1.6em;
+        line-height: 1;
+        margin: -0.15em 0.2em 0 -0.5em;
+      }
     }
+    .apart {
+      color: $black;
+      display: table;
+      float: left;
+      width: 100%;
+      clear: right;
+      &:nth-child(odd) {
+        background: $grey;
+      }
+      span {
+        display: table-cell;
+        width: 20%;
+        padding: 0.5em 1em 0.5em 0;
+        .id {
+          padding-left: 3px !important;
+        }
+    }
+  }
+  .tablehead {
+    display: table;
+    float: left;
+    width: 100%;
+    span {
+      display: table-cell;
+      width: 20%;
+      padding: 0.5em 1em 0.5em 0;
+    }
+  }
 }
 /* MarkeCluster overriding libraries/leaflet_markecluster/dist/MarkerClusterDefault.css*/
 .marker-cluster-small {
@@ -240,32 +285,34 @@
   background: none;
   border-radius: 0;
   }
-.marker-cluster div:before {
+/*.marker-cluster div:before {
     color: $primary;
     content: "";
     font-family: hk;
     font-size: 32px;
     margin-right: -21px;
-}
+}*/
 .marker-cluster div {
-  width: 0;
-  height: 0;
+ /* width: 32px;
+  height: 42px;
   margin-left: 0;
   margin-top: 0;
-  /*background: url("../images/Icon_House.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+  background: url("../images/Icon_House2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 
   text-align: center;
   border-radius: 0;
-  font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;*/
+  background: rgba(0, 0, 0, 0);
   }
 .marker-cluster span {
-    line-height: 38px;
-    padding-right: 2px;
     color: #fff;
     font-weight: bold;
+    position: absolute;
+    top: 6px;
+    left: 11px;
 }
 .marker-cluster div:hover, .marker-cluster span:hover {
-    transform: scale(1.2);
+    /*transform: scale(1.2);*/
   }
 
 /* Search Form */
@@ -273,12 +320,11 @@
 #block-views-exp-karten-kaufen,
 #block-views-exp-karten-map-page,
 .view-filters {
-    left: 50%;
-    margin-left: -25%;
+    left: 0;
     position: relative;
-    top: 0px;
+    top: 0;
     z-index: 112;
-    width: 75%;
+    margin-left: 2em;
 }
 
 .section-apartment #block-views-exp-karten-kaufen,

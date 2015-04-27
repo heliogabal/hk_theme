@@ -8,10 +8,7 @@
  */
 ?>
 <?php if ($content): ?>
-  <footer class="<?php print $classes; ?>">
-      <a href="/" title="Home">
-        <img width="256" height="48" alt="" src="/sites/all/themes/hk_theme/images/signet_weiss.png" class="media-element file-default">
-      </a>
+  <div id="search" class="<?php print $classes; ?>">
     <?php print $content; ?>
-  </footer>
+  </div>
 <?php endif; ?>

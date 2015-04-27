@@ -141,14 +141,14 @@ OUR CUSTOM MIXINS
 }
 @mixin m-links {
   a {
-    color: $blue;
+    color: $primary;
     text-decoration: none;
     &:hover {
       color: #443C45;
       text-decoration: underline;
     }
     &:visited {
-      color: $blue;
+      color: $primary;
     }
   }
 }
@@ -223,4 +223,3 @@ OUR CUSTOM MIXINS
 @import "../jeet/index";
 @import "sassy-buttons"; // Add the sassy buttons
 @import "breakpoint";  // Breakpoint gem: https://github.com/canarymason/breakpoint
-//@import "components/*"; // Import all custom components from directory

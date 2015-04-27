@@ -83,6 +83,7 @@
 }
 a.full {
   width: 100%;
+  max-width: 300px;
   padding: 0;
   margin: 1em 0;
   color: #fff !important;
@@ -140,8 +141,6 @@ a.full {
     line-height: 30px;
     border: 2px solid $secondary;
     @include border-radius($border-radius);
-    border: 2px solid #cbc1ba;
-    border-radius: 4px;
     font-size: 90%;
     color: #666666;
   }

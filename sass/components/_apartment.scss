@@ -17,14 +17,21 @@ h1#page-title {
       margin-bottom: -25px;
     }
     .group-left {
-      margin-right: -316px;
-      padding-right: 316px;
-      width: 100%;
-      float: left;
+        width: 100%;
+        float: left;
+      @include breakpoint($br-desk) {
+        margin-right: -316px;
+        padding-right: 316px;
+      }
     }
     .group-right {
-      float: right;
-      width: 300px;
+      float: left;
+      width: 100%;
+      max-with: 500px;
+      @include breakpoint($br-desk) {
+        float: right;
+        width: 300px;
+      }
     }
   }
   .view-apartment {
@@ -36,9 +43,14 @@ h1#page-title {
       display: none;
     }
     .leaflet-container {
-    height: 300px !important;
-    width: 300px;
-    position: static;
+      width: 100%;
+      min-height: 300px;
+      max-height: 500px;
+      position: static;
+      @include breakpoint($br-desk) {
+      height: 300px !important;
+      width: 300px;
+      }
     }
   }
   .objekt-id, .field-name-field-apart-no {
@@ -62,26 +74,28 @@ h1#page-title {
       text-indent: 0;
       width: auto;
       color: $dark;
-      padding: 0.5em 2.5em;
+      padding: .5em 0 .5em 2.5em;
     }
   }
   a.expose {
     color: $dark;
-    margin: 1em .5em;
     display: inline-block;
+    background: url(../images/Icon_Print.png) 1px 0 no-repeat;
+    height: 40px;
+    padding: .5em 0 .5em 2.5em;
   }
-  .fa.expose:before {
-    font-family: FontAwesome;
-    content: "\f02f";
-    color: $secondary;
-    font-size: 1.5em;
-    margin: 0 .2em;
-    display: inline-block;
-  }
+  // .fa.expose:before {
+  //   font-family: FontAwesome;
+  //   content: "\f02f";
+  //   color: $secondary;
+  //   font-size: 1.5em;
+  //   margin: 0 .2em;
+  //   display: inline-block;
+  // }
   .field-name-field-apart-living-space {
     .label-inline {
       color: $dark;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: normal;
       position: absolute;
       bottom: 5px;
@@ -89,16 +103,17 @@ h1#page-title {
     padding: .5em .3em 1.5em .3em;
     display: table-cell;
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
     text-align: center;
     border: 2px solid $secondary;
     @include border-left-radius($border-radius);
+    width: 35%;
   }
   .field-name-field-apart-rooms {
     .label-inline {
       color: $dark;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: normal;
       position: absolute;
       bottom: 5px;
@@ -108,7 +123,7 @@ h1#page-title {
     padding: .5em 1em 1.5em 1em;
     display: table-cell;
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
     text-align: center;
     border-top: 2px solid $secondary;
@@ -117,7 +132,7 @@ h1#page-title {
   .field-name-field-apart-price {
     .label-inline {
       color: $dark;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: normal;
       position: absolute;
       bottom: 5px;
@@ -125,20 +140,45 @@ h1#page-title {
     padding: .5em .3em 1.5em .3em;
     display: table-cell;
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
     text-align: center;
     border: 2px solid $secondary;
     @include border-right-radius($border-radius);
+    width: 50%;
   }
   .apartaddress {
-    right: 0;
-    text-align: right;
-    top: -50px;
+    margin: .5em 0 1em 0;
+    float: left;
     width: 100%;
+    @media screen and (min-width: 1025px) {
+      float: none;
+      position: relative;
+      right: 0;
+      margin: 0;
+      text-align: right;
+      top: -50px;
+    }
   }
   .field-name-apartment-characteristics {
     margin: .5em 0;
+    max-width: 560px;
+  }
+  .ausstattung {
+    .label-above {
+      color: $dark;
+      font-weight: normal;
+      margin-top: .5em;
+    }
+    ul {
+      margin-top: .2em;
+      padding: 0;
+      li {
+        list-style: none;
+        background: url(../images/Icon_Check.png) -10px 50% no-repeat;
+        padding: .25em 0 .25em 30px;
+      }
+    }
   }
   .apartmerkmale {
     margin: .5em 0;
@@ -164,8 +204,13 @@ h1#page-title {
   }
 }
 .ui-widget {
-  font: 1em 'HelveticaNeueW01-45Ligh';
-  line-height: 1.5;
+  font: 1em/1.5 "Neue Helvetica W01";
+}
+.ui-widget-content {
+  color: $black;
+}
+.ui-helper-reset {
+  font: 1em/1.5 "Neue Helvetica W01";
 }
 .field-group-accordion {
   h3 {
@@ -217,9 +262,20 @@ h1#page-title {
   }
 }
 #thumbslide {
-  margin-left: 165px;
-  img {
+  margin-left: 160px;
+  li {
     margin: 0 5px;
-    width: 150px;
+    opacity: .9;
+    // width: 150px;
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+    .flex-active-slide {
+      opacity: 1;
+    }
+  }
+  img {
+    margin: 0;
   }
 }
