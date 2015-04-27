@@ -4,14 +4,6 @@
     $page['content']['system_main']['default_message'] = array(); // This will remove the 'No front page content has been created yet.'
   }
 ?>
-<?php
-   // print views_embed_view('karten','map_page');
-?>
-<?php
-   if(!$is_front){
-     print views_embed_view('karten','map_page');
-   }
-?>
     <div id="page">
       <div class="wrapper navigation">
         <div class="container">
@@ -94,3 +86,8 @@
 <div class="wrapper footer">
   <?php print render($page['footer']); ?>
 </div>
+<?php
+   if(!$is_front){
+     print views_embed_view('karten','map_page');
+   }
+?>
