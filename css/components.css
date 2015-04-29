@@ -605,6 +605,27 @@ OUR CUSTOM MIXINS
   padding: .5rem;
 }
 
+aside.group-merkmale .field {
+  padding: 0.2em 0.5em;
+}
+
+aside.group-merkmale .field:nth-of-type(2n+1) {
+  background: none repeat scroll 0 0 #e3e5e3;
+}
+
+/*.street-block, .locality-block {
+    float: right;
+    width: 50%;
+}*/
+aside.group-merkmale .label-above,
+aside.group-merkmale .label-inline,
+aside.group-merkmale .field-label {
+  color: #4b4b4b;
+  font-weight: normal;
+  display: inline-block;
+  width: 50%;
+}
+
 div.krumo-root {
   z-index: 112 !important;
 }
