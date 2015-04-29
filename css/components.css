@@ -605,6 +605,10 @@ OUR CUSTOM MIXINS
   padding: .5rem;
 }
 
+aside.group-merkmale {
+  padding: 0;
+}
+
 aside.group-merkmale .field {
   padding: 0.2em 0.5em;
 }
