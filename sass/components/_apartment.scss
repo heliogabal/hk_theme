@@ -93,7 +93,8 @@ h1#page-title {
   //   display: inline-block;
   // }
   .field-name-field-apart-living-space {
-    .label-inline {
+    .label-inline,
+    .field-label {
       color: $dark;
       font-size: 13px;
       font-weight: normal;
@@ -111,7 +112,8 @@ h1#page-title {
     width: 35%;
   }
   .field-name-field-apart-rooms {
-    .label-inline {
+    .label-inline,
+    .field-label {
       color: $dark;
       font-size: 13px;
       font-weight: normal;
@@ -130,7 +132,8 @@ h1#page-title {
     border-bottom: 2px solid $secondary;
   }
   .field-name-field-apart-price {
-    .label-inline {
+    .label-inline,
+    .field-label {
       color: $dark;
       font-size: 13px;
       font-weight: normal;

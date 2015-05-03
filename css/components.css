@@ -1346,7 +1346,8 @@ h1#page-title {
   border-bottom-left-radius: 5px;
   width: 35%;
 }
-.node-type-apartment .field-name-field-apart-living-space .label-inline {
+.node-type-apartment .field-name-field-apart-living-space .label-inline,
+.node-type-apartment .field-name-field-apart-living-space .field-label {
   color: #4b4b4b;
   font-size: 13px;
   font-weight: normal;
@@ -1363,7 +1364,8 @@ h1#page-title {
   border-top: 2px solid #cbc1ba;
   border-bottom: 2px solid #cbc1ba;
 }
-.node-type-apartment .field-name-field-apart-rooms .label-inline {
+.node-type-apartment .field-name-field-apart-rooms .label-inline,
+.node-type-apartment .field-name-field-apart-rooms .field-label {
   color: #4b4b4b;
   font-size: 13px;
   font-weight: normal;
@@ -1387,7 +1389,8 @@ h1#page-title {
   border-bottom-right-radius: 5px;
   width: 50%;
 }
-.node-type-apartment .field-name-field-apart-price .label-inline {
+.node-type-apartment .field-name-field-apart-price .label-inline,
+.node-type-apartment .field-name-field-apart-price .field-label {
   color: #4b4b4b;
   font-size: 13px;
   font-weight: normal;

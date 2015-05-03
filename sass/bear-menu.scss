@@ -12,7 +12,7 @@ $baseMenuColor: $black;        // Proper menu items color
 $baseMenuColorHover: $primary;
 $gutter: 1em;           // Base gutter
 $input: "input[type=checkbox]";   // Checkbox hack selector
-$selector: "#navigation .block-menu, #navigation .menu-block-wrapper";
+$selector: "#navigation .hauptmenu";
 
 // Menu background mixin
 @mixin menu-background($color, $menu-gradient: false) {
@@ -209,9 +209,13 @@ body {
     }
     li {
       width: 40px;
-      a:hover {
+      a {
+        color: $greyer;
+        &:hover {
+        color: $primary;
         border:0;
         background: none;
+        }
       }
     }
   }

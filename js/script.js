@@ -60,7 +60,7 @@
             closeOnEscape: "true",
             //hide: { effect: "explode", duration: "1000" },
             hide: "false",
-            position: { my: "center bottom", at: "center-180 bottom-80", collision: "fit flip", of: ".view-display-id-map_page" }
+            position: { my: "center bottom", at: "center-180 bottom-80", collision: "fit flip", of: "#page" }
           });
     //    });
 
