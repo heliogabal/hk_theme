@@ -14,6 +14,14 @@
 .front .view-display-id-map_page {
   opacity: 1;
 }
+/* Karte Objekt */
+.objectmap {
+  .leaflet-container {
+    position: relative;
+    height: 400px !important;
+    clear: both;
+  }
+}
 /* Karte Vollbild */
 .leaflet-container {
   position: absolute;

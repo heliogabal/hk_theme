@@ -553,6 +553,17 @@ OUR CUSTOM MIXINS
   clear: left;
 }
 
+.field-item {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+}
+
+.field-item.odd {
+  margin-right: 0;
+  margin-left: 5%;
+}
+
 .group-card-project {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
@@ -870,6 +881,13 @@ OUR CUSTOM MIXINS
 
 .front .view-display-id-map_page {
   opacity: 1;
+}
+
+/* Karte Objekt */
+.objectmap .leaflet-container {
+  position: relative;
+  height: 400px !important;
+  clear: both;
 }
 
 /* Karte Vollbild */

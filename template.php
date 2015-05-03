@@ -28,7 +28,7 @@ function hk_theme_links($variables) {
  * Implements template_preprocess_page().
  */
 function hk_theme_preprocess_page(&$vars) {
-  $vars['user_menu'] =  theme('links', array('links' => menu_navigation_links('user-menu'), 'attributes' => array('class '=> array('links', 'site-menu'))));
+  // $vars['user_menu'] =  theme('links', array('links' => menu_navigation_links('user-menu'), 'attributes' => array('class '=> array('links', 'site-menu'))));
 
   // Extra Template für Colorbox Load
   if (isset ($_GET['template']) && $_GET['template'] == 'colorbox') {
@@ -59,42 +59,6 @@ function hk_theme_js_alter (&$javascript) {
   $javascript[libraries_get_path('leaflet_markercluster') . '/dist/leaflet.markercluster.js']['data'] = drupal_get_path('theme',$GLOBALS['theme']) . '/js/leaflet.markercluster.js';
 }
 
-/***********************
-Let's load some CSS on specific targets - uncomment to use
-************************/
-
-// function hk_theme_preprocess_node(&$vars) {
-//   // Add JS & CSS by node type
-//   if( $vars['type'] == 'page') {
-//     //drupal_add_js(path_to_theme(). '/js/supercool_scripts.js');
-//     //drupal_add_css(path_to_theme(). '/css/supercool_sheet.css');
-//   }
-
-//   // Add JS & CSS to the front page
-//   if ($vars['is_front']) {
-//     drupal_add_js(path_to_theme(). '/js/supercool_scripts.js');
-//     //drupal_add_css(path_to_theme(). '/css/supercool_sheet.css');
-//   }
-
-//   // Add JS & CSS by node ID
-//   if (drupal_get_path_alias("node/{$vars['#node']->nid}") == 'your-node-id') {
-//     //drupal_add_js(path_to_theme(). '/js/supercool_scripts.js');
-//     //drupal_add_css(path_to_theme(). '/css/supercool_sheet.css');
-//   }
-// }
-// function hk_theme_preprocess_page(&$vars) {
-//   // Add JS & CSS by node type
-//   if (isset($vars['node']) && $vars['node']->type == 'page') {
-//     //drupal_add_js(path_to_theme(). '/js/supercool_scripts.js');
-//     //drupal_add_css(path_to_theme(). '/css/supercool_sheet.css');
-//   }
-//   // Add JS & CSS by node ID
-//   if (isset($vars['node']) && $vars['node']->nid == '1') {
-//     //drupal_add_js(path_to_theme(). '/js/supercool_scripts.js');
-//     //drupal_add_css(path_to_theme(). '/css/supercool_sheet.css');
-//   }
-// }
-
 // Hide active language in language switcher block
 function hk_theme_links__locale_block($variables) {
   global $language;
@@ -103,44 +67,29 @@ function hk_theme_links__locale_block($variables) {
 }
 
 // Set exposed filter labels as translatable -any- option because better exposed filter is not i18n
-function hk_theme_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == 'views_exposed_form' && $form_state['view']->name == 'karten') {
-    $form['bezirk']['#options']['All'] = t('borough');
-    $form['preis']['#options']['All'] = t('price');
-    $form['preis_group']['#options']['All'] = t('price');
-    $form['zimmer']['#options']['All'] = t('rooms');
-    $form['kategorie']['#options']['All'] = t('buy');
-    $form['flaeche']['#options']['All'] = t('surface area');
-    // and so on.
-  }
-}
-
-/*function hk_theme_leaflet_map_info_alter(&$maps) {
-  $maps['karte']['minZoom'] = 8;
-
-}*/
+// function hk_theme_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
+//   if ($form_id == 'views_exposed_form' && $form_state['view']->name == 'karten') {
+//     $form['bezirk']['#options']['All'] = t('borough');
+//     $form['preis']['#options']['All'] = t('price');
+//     $form['preis_group']['#options']['All'] = t('price');
+//     $form['zimmer']['#options']['All'] = t('rooms');
+//     $form['kategorie']['#options']['All'] = t('buy');
+//     $form['flaeche']['#options']['All'] = t('surface area');
+//     // and so on.
+//   }
+// }
 
 /**
  * Implements hook_ctools_plugin_post_alter().
  */
-function hk_theme_ctools_plugin_post_alter(&$plugin, &$info) {
-  // Workaround to render facet blocks last, this actually sets all block
-  // to render last.
-  if ('content_types' == $plugin['plugin type'] && 'block' == $plugin['name']) {
-    $plugin['render last'] = TRUE;
-  }
-}
-
-/**
- * Implements template_preprocess_views_view().
- */
-// function hk_theme_preprocess_views_view(&$vars) {
-//   $view = $vars['view'];
-//   $content_only = array('apartment');
-//     if (in_array($view->name, $content_only)) {
-//       $vars['theme_hook_suggestions'] = array('views_view__content_only');
-//     }
+// function hk_theme_ctools_plugin_post_alter(&$plugin, &$info) {
+//   // Workaround to render facet blocks last, this actually sets all block
+//   // to render last.
+//   if ('content_types' == $plugin['plugin type'] && 'block' == $plugin['name']) {
+//     $plugin['render last'] = TRUE;
+//   }
 // }
+
 /**
  * Implements template_preprocess_views_view_unformatted().
  */
@@ -151,3 +100,16 @@ function hk_theme_preprocess_views_view_unformatted(&$vars) {
       $vars['theme_hook_suggestions'] = array('views_view_unformatted__content_only');
     }
 }
+/**
+* Implements hook_preprocess_HOOK
+*
+* Replace Object NID field with node teaser.
+*/
+// function hk_theme_preprocess_views_view_fields(&$vars) {
+//   //dpm($vars);
+//   if ($vars['view']->name == 'karten') {
+//     $node = node_load($vars['row']->entity);
+//     $node_view = node_view($node, 'map-popup');
+//     $vars['fields']['nid_1']->content = theme('node', $node_view);
+//   }
+// }
