@@ -553,13 +553,12 @@ OUR CUSTOM MIXINS
   clear: left;
 }
 
-.field-item {
+.field-name-field-obj-apartments .field-item {
   float: left;
   width: 45%;
   margin-right: 5%;
 }
-
-.field-item.odd {
+.field-name-field-obj-apartments .field-item.odd {
   margin-right: 0;
   margin-left: 5%;
 }
