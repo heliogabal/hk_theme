@@ -98,36 +98,36 @@
 //   }
 // })(jQuery);
 
-Wohnungsliste Suche toggle
-(function ($) {
-  Drupal.behaviors.wohnungstoggle = {
-    attach: function(context, settings) {
-      $(document, context).bind('leaflet.feature', function(e, lFeature, feature){
-        console.log(lFeature);
-        lFeature.on('click', function(e) {
-          alert('feature clicked!');
-        $('.apart').slice(2).css("display","none");
-        var toggleMinus = 'sites/all/themes/hk_theme/images/bullet_toggle_minus.png';
-        var togglePlus = 'sites/all/themes/hk_theme/images/bullet_toggle_plus.png';
-        var show = Drupal.t("Show All");
-        var hide = Drupal.t("Hide");
+//Wohnungsliste Suche toggle
+// (function ($) {
+//   Drupal.behaviors.wohnungstoggle = {
+//     attach: function(context, settings) {
+//       $(document, context).bind('leaflet.feature', function(e, lFeature, feature){
+//         console.log(lFeature);
+//         lFeature.on('click', function(e) {
+//           alert('feature clicked!');
+//         $('.apart').slice(2).css("display","none");
+//         var toggleMinus = 'sites/all/themes/hk_theme/images/bullet_toggle_minus.png';
+//         var togglePlus = 'sites/all/themes/hk_theme/images/bullet_toggle_plus.png';
+//         var show = Drupal.t("Show All");
+//         var hide = Drupal.t("Hide");
 
-        $('.view-Suche table').not('.cols-1').children('thead').after('<tfoot class="toggle"><tr><td colspan="6">&nbsp;</td><td class="clickable"><img src="' + togglePlus + ' "alt=" ' + show + ' " /><strong class="show">' + show + '</strong></td></tr></tfoot>');
+//         $('.view-Suche table').not('.cols-1').children('thead').after('<tfoot class="toggle"><tr><td colspan="6">&nbsp;</td><td class="clickable"><img src="' + togglePlus + ' "alt=" ' + show + ' " /><strong class="show">' + show + '</strong></td></tr></tfoot>');
 
-        //$('.wohnungsliste table tfoot td:last-child').addClass('clickable');
-        $('.view-Suche .clickable').click(function() {
-            var toggleSrc = $(this).find('img').attr('src');
-            if ( toggleSrc == toggleMinus ) {
-              $(this).find('img').attr('src', togglePlus).attr('alt'," ' + show + ' ").after('<strong class="show">' + show + '</strong>').parents('table').find('tbody tr').slice(1).css("display","none").parents('table').find('strong.hide').remove();
-            } else{
-              $(this).find('img').attr('src', toggleMinus).attr('alt'," ' + hide + ' ").after('<strong class="hide">' + hide + '</strong>').parents('table').find('tbody tr').slice(1).css("display","table-row").parents('table').find('strong.show').remove();
-            };
-        });
-        })
-      })
-    }
-  }
-})(jQuery);
+//         //$('.wohnungsliste table tfoot td:last-child').addClass('clickable');
+//         $('.view-Suche .clickable').click(function() {
+//             var toggleSrc = $(this).find('img').attr('src');
+//             if ( toggleSrc == toggleMinus ) {
+//               $(this).find('img').attr('src', togglePlus).attr('alt'," ' + show + ' ").after('<strong class="show">' + show + '</strong>').parents('table').find('tbody tr').slice(1).css("display","none").parents('table').find('strong.hide').remove();
+//             } else{
+//               $(this).find('img').attr('src', toggleMinus).attr('alt'," ' + hide + ' ").after('<strong class="hide">' + hide + '</strong>').parents('table').find('tbody tr').slice(1).css("display","table-row").parents('table').find('strong.show').remove();
+//             };
+//         });
+//         })
+//       })
+//     }
+//   }
+// })(jQuery);
 // Wohnungsliste Suche toggle Ende
 
 })(jQuery, Drupal, this, this.document);
