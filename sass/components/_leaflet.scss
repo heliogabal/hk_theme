@@ -148,17 +148,17 @@
     padding: 0 1em;
 }
 .leaflet-container a.leaflet-popup-close-button {
-    background: none repeat scroll 0 0 transparent;
-    color: $black;
-    font: bold 16px/14px Tahoma,Verdana,sans-serif;
-    height: 14px;
-    padding: 4px 4px 0 0;
+    background: $secondary;
+    color: #fff;
+    font: bold 25px/1em Tahoma,Verdana,sans-serif;
+    height: 28px;
+    padding: 0 0 29px;
     position: absolute;
     right: 0;
     text-align: center;
     text-decoration: none;
     top: 0;
-    width: 18px;
+    width: 28px;
     z-index: 1;
 }
 .leaflet-popup-content-wrapper,
@@ -169,6 +169,9 @@
     position: relative;
     text-align: left;
     background: #fff;
+    /* Bis bessere Lösung mit jQuery gefunden ist */
+    max-height: 350px;
+    overflow-y: scroll;
 }
 .group-card {
   border: 2px solid $secondary;

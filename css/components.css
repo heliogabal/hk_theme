@@ -1023,17 +1023,17 @@ OUR CUSTOM MIXINS
 }
 
 .leaflet-container a.leaflet-popup-close-button {
-  background: none repeat scroll 0 0 transparent;
-  color: #1a1a1a;
-  font: bold 16px/14px Tahoma,Verdana,sans-serif;
-  height: 14px;
-  padding: 4px 4px 0 0;
+  background: #cbc1ba;
+  color: #fff;
+  font: bold 25px/1em Tahoma,Verdana,sans-serif;
+  height: 28px;
+  padding: 0 0 29px;
   position: absolute;
   right: 0;
   text-align: center;
   text-decoration: none;
   top: 0;
-  width: 18px;
+  width: 28px;
   z-index: 1;
 }
 
@@ -1049,6 +1049,9 @@ OUR CUSTOM MIXINS
   position: relative;
   text-align: left;
   background: #fff;
+  /* Bis bessere Lösung mit jQuery gefunden ist */
+  max-height: 350px;
+  overflow-y: scroll;
 }
 
 .group-card {
