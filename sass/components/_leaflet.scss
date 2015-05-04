@@ -318,6 +318,7 @@
     position: absolute;
     top: 6px;
     left: 11px;
+    display: none; /* Zeigt eh nur die Objekte an, nicht die Wohnungen */
 }
 .marker-cluster div:hover, .marker-cluster span:hover {
     /*transform: scale(1.2);*/
