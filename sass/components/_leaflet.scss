@@ -154,12 +154,16 @@
     height: 28px;
     padding: 0 0 29px;
     position: absolute;
-    right: 0;
+    right: -12px;
     text-align: center;
     text-decoration: none;
-    top: 0;
+    top: -12px;
     width: 28px;
     z-index: 1;
+    @include border-radius(25px);
+    &:hover {
+      color: $primary;
+    }
 }
 .leaflet-popup-content-wrapper,
 .group-card {
@@ -171,7 +175,8 @@
     background: #fff;
     /* Bis bessere Lösung mit jQuery gefunden ist */
     max-height: 350px;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .group-card {
   border: 2px solid $secondary;

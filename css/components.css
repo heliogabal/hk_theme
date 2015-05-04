@@ -1029,12 +1029,20 @@ OUR CUSTOM MIXINS
   height: 28px;
   padding: 0 0 29px;
   position: absolute;
-  right: 0;
+  right: -12px;
   text-align: center;
   text-decoration: none;
-  top: 0;
+  top: -12px;
   width: 28px;
   z-index: 1;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+}
+.leaflet-container a.leaflet-popup-close-button:hover {
+  color: #c61c2c;
 }
 
 .leaflet-popup-content-wrapper,
@@ -1051,7 +1059,8 @@ OUR CUSTOM MIXINS
   background: #fff;
   /* Bis bessere Lösung mit jQuery gefunden ist */
   max-height: 350px;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .group-card {
