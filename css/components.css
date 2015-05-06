@@ -792,7 +792,7 @@ OUR CUSTOM MIXINS
 
 .ergebnis {
   float: right;
-  margin-right: 1.5em;
+  margin-right: 0;
 }
 .ergebnis .current-search-item ul {
   list-style: none;
