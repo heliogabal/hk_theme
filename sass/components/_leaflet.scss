@@ -111,6 +111,9 @@
         height: 40px;
     }
   }
+  .ui-dialog-content {
+    overflow: hidden;
+  }
   .ui-widget-header {
     background: #fff !important;
     border: 0 !important;
@@ -180,6 +183,7 @@
 }
 .group-card {
   border: 2px solid $secondary;
+  overflow-y: hidden;
 }
 .group-card:after {
     content: ".";
@@ -221,7 +225,7 @@
       i {
         font-size: 1.6em;
         line-height: 1;
-        margin: -0.15em 0.2em 0 -0.5em;
+        margin: -0.15em 0.5em 0 -0.5em;
       }
     }
     .apart {

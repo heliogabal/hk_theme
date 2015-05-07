@@ -143,15 +143,6 @@ li a.active {
   /* LTR */
 }
 
-/*
- * Menu blocks
- */
-/*
- * "Menu block" blocks
- *
- * Drupal core has limited ways in which it can display its menus. To get around
- * these limitations, see http://drupal.org/project/menu_block
- */
 /* DRUPAL TABS */
 ul.primary {
   padding: 0;

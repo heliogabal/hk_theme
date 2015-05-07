@@ -201,6 +201,7 @@ body {
   color: #c61c2c;
   border: 0;
   background: none;
+  text-decoration: none;
 }
 #navigation #block-menu-menu-service-menu .title-hide {
   clip: rect(1px, 1px, 1px, 1px);
