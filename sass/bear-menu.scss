@@ -68,10 +68,11 @@ body {
   ul {
     margin: 0;
     @media screen and (min-width: 678px) {
-      margin: 33px 0 .5em 0;
+      margin: 38px 0 .5em 0;
+      line-height: 1;
     }
     @include breakpoint($br-desk) {
-      margin: 33px 0 0 2em;
+      margin: 38px 0 0 2em;
     }
     padding: 0;
     list-style: none;
@@ -120,7 +121,7 @@ body {
     /*@include box-shadow(1px 0 0 lighten($baseMenuBackground, 20%));*/
     > a {
       float: left;
-      padding: $gutter;
+      padding: 0.8em 1em 1.2em;
       text-transform: uppercase;
       text-align: center;
       width: 100%;

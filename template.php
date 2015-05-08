@@ -119,6 +119,6 @@ function hk_theme_preprocess_views_view_unformatted(&$vars) {
  * Remove the 'cache' setting from LOCALE_LANGUAGE_NEGOTIATION_BROWSER since
  * the code that utilizes this setting will in fact prevent browser negotiation.
  */
-function hk_theme_language_negotiation_info_alter(&$negotiation_info) {
-    unset($negotiation_info[LOCALE_LANGUAGE_NEGOTIATION_BROWSER]['cache']);
-}
+// function hk_theme_language_negotiation_info_alter(&$negotiation_info) {
+//     unset($negotiation_info[LOCALE_LANGUAGE_NEGOTIATION_BROWSER]['cache']);
+// }

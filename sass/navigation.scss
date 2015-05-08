@@ -101,7 +101,7 @@ li a.active {
         background: transparent;
         margin: 1em 0 0 0;
         @include breakpoint($br-desk) {
-          margin: 35px 0 0 2em;
+          margin: 38px 0 0 2em;
         }
         li a {
           width: auto;
