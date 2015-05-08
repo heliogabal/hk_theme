@@ -101,7 +101,7 @@ li a.active {
         background: transparent;
         margin: 1em 0 0 0;
         @include breakpoint($br-desk) {
-          margin: 35px 0 0 2em;
+          margin: 38px 0 0 2em;
         }
         li a {
           width: auto;
@@ -118,28 +118,8 @@ li a.active {
  * Main menu and Secondary menu links
  */
 
-#main-menu {
-}
-
 #secondary-menu {
   float: right; /* LTR */
-}
-
-/*
- * Menu blocks
- */
-
-.block-menu {
-}
-
-/*
- * "Menu block" blocks
- *
- * Drupal core has limited ways in which it can display its menus. To get around
- * these limitations, see http://drupal.org/project/menu_block
- */
-
-.block-menu-block {
 }
 
 /* DRUPAL TABS */

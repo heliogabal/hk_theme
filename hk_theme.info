@@ -54,6 +54,7 @@ stylesheets[all][] = css/select2.css
 stylesheets[all][] = css/responsive-nav.css
 stylesheets[all][] = css/bear.css
 stylesheets[all][] = css/components.css
+stylesheets[all][] = hk_colorbox/colorbox_hk_colorbox.css
 
 
 ; Built-in conditional stylesheet support has been removed from Zen 7.x-5.x.
@@ -77,6 +78,7 @@ scripts[] = js/jquery.selectorquery.min.js
 ;scripts[] = js/morphy-buttons-vendor.min.js
 ;scripts[] = js/morphy-buttons.min.js
 scripts[] = js/script.js
+scripts[] = hk_colorbox/colorbox_hk_colorbox.js
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
 ; maintenance-page.tpl.php files. The name in brackets is the machine name of

@@ -792,7 +792,7 @@ OUR CUSTOM MIXINS
 
 .ergebnis {
   float: right;
-  margin-right: 1.5em;
+  margin-right: 0;
 }
 .ergebnis .current-search-item ul {
   list-style: none;
@@ -988,6 +988,9 @@ OUR CUSTOM MIXINS
   width: 40px;
   height: 40px;
 }
+.ui-dialog .ui-dialog-content {
+  overflow: hidden;
+}
 .ui-dialog .ui-widget-header {
   background: #fff !important;
   border: 0 !important;
@@ -1065,6 +1068,7 @@ OUR CUSTOM MIXINS
 
 .group-card {
   border: 2px solid #cbc1ba;
+  overflow-y: hidden;
 }
 
 .group-card:after {
@@ -1111,7 +1115,7 @@ img {
 .leaflet-popup-content .wo i {
   font-size: 1.6em;
   line-height: 1;
-  margin: -0.15em 0.2em 0 -0.5em;
+  margin: -0.15em 0.5em 0 -0.5em;
 }
 .leaflet-popup-content .apart {
   color: #1a1a1a;
@@ -1789,19 +1793,30 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
 .view-merkliste .views-row-odd {
   float: right;
 }
+.view-display-id-kaufen .field-name-neu-label,
+.view-display-id-kaufen .field-name-field-kategorie,
+.page-mieten .field-name-neu-label,
+.page-mieten .field-name-field-kategorie,
+.view-merkliste .field-name-neu-label,
+.view-merkliste .field-name-field-kategorie {
+  display: inline;
+}
 .view-display-id-kaufen h2,
 .page-mieten h2,
 .view-merkliste h2 {
   margin-top: 1em;
 }
+.view-display-id-kaufen .field-name-field-apart-living-space,
 .view-display-id-kaufen .field-name-field-apart-price,
+.page-mieten .field-name-field-apart-living-space,
 .page-mieten .field-name-field-apart-price,
+.view-merkliste .field-name-field-apart-living-space,
 .view-merkliste .field-name-field-apart-price {
   display: inline;
 }
-.view-display-id-kaufen .field-name-field-apart-price::before,
-.page-mieten .field-name-field-apart-price::before,
-.view-merkliste .field-name-field-apart-price::before {
+.view-display-id-kaufen .field-name-field-apart-living-space::after,
+.page-mieten .field-name-field-apart-living-space::after,
+.view-merkliste .field-name-field-apart-living-space::after {
   content: " / ";
 }
 .view-display-id-kaufen .address,
@@ -1816,17 +1831,27 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
   margin-left: -15px;
   margin-top: -5px;
 }
-.view-display-id-kaufen .address .apartaddress,
-.page-mieten .address .apartaddress,
-.view-merkliste .address .apartaddress {
+.view-display-id-kaufen .apartaddress,
+.page-mieten .apartaddress,
+.view-merkliste .apartaddress {
   display: inline-block;
   margin-left: .75em;
+  margin-top: .75em;
+}
+.view-display-id-kaufen .apartaddress i,
+.page-mieten .apartaddress i,
+.view-merkliste .apartaddress i {
+  margin: -0.15em 0.75em 0 -1em;
+  line-height: 1;
+  font-size: 1.75em;
 }
 
 #colorbox {
+  outline: 0;
   background: #fff;
   z-index: 10000;
   position: relative;
+  overflow: visible;
   border: 4px solid #cbc1ba;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -1836,27 +1861,6 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
-}
-
-#cboxLoadedContent {
-  padding: 2em;
-}
-
-#cboxWrapper, #cboxContent, #cboxLoadedContent {
-  overflow: auto !important;
-  overflow-x: hidden !important;
-}
-
-#cboxClose.cbox-close-plain {
-  position: absolute;
-  text-indent: -9999px;
-  top: -1em;
-  right: -1em;
-  width: 40px;
-  height: 40px;
-  background: url(../images/Icon_x_Kreis.png) no-repeat;
-  z-index: 10001;
-  opacity: 1;
 }
 
 /* Anfrage in Colorbox */

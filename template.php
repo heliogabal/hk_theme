@@ -16,8 +16,8 @@ function hk_theme_preprocess_html(&$variables, $hook) {
  * Enables sub-menu item display for main menu.
  */
 function hk_theme_links($variables) {
-  if (array_key_exists('id', $variables['attributes']) && $variables['attributes']['id'] == 'nav') {
-    $pid = variable_get('menu_main_links_source', 'nav');
+  if (array_key_exists('id', $variables['attributes']) && $variables['attributes']['id'] == 'block-system-main-menu') {
+    $pid = variable_get('menu_main_links_source', 'block-system-main-menu');
     $tree = menu_tree($pid);
     return drupal_render($tree);
   }
@@ -112,4 +112,13 @@ function hk_theme_preprocess_views_view_unformatted(&$vars) {
 //     $node_view = node_view($node, 'map-popup');
 //     $vars['fields']['nid_1']->content = theme('node', $node_view);
 //   }
+// }
+/**
+ * Implements hook_language_negotiation_info_alter().
+ *
+ * Remove the 'cache' setting from LOCALE_LANGUAGE_NEGOTIATION_BROWSER since
+ * the code that utilizes this setting will in fact prevent browser negotiation.
+ */
+// function hk_theme_language_negotiation_info_alter(&$negotiation_info) {
+//     unset($negotiation_info[LOCALE_LANGUAGE_NEGOTIATION_BROWSER]['cache']);
 // }

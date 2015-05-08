@@ -124,7 +124,7 @@ li a.active {
 }
 @media (min-width: 1024px) {
   .region-navigation #block-menu-menu-service-menu ul.menu {
-    margin: 35px 0 0 2em;
+    margin: 38px 0 0 2em;
   }
 }
 .region-navigation #block-menu-menu-service-menu ul.menu li a {
@@ -143,15 +143,6 @@ li a.active {
   /* LTR */
 }
 
-/*
- * Menu blocks
- */
-/*
- * "Menu block" blocks
- *
- * Drupal core has limited ways in which it can display its menus. To get around
- * these limitations, see http://drupal.org/project/menu_block
- */
 /* DRUPAL TABS */
 ul.primary {
   padding: 0;

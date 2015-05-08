@@ -52,12 +52,13 @@ body {
 }
 @media screen and (min-width: 678px) {
   #navigation .hauptmenu ul {
-    margin: 33px 0 .5em 0;
+    margin: 38px 0 .5em 0;
+    line-height: 1;
   }
 }
 @media (min-width: 1024px) {
   #navigation .hauptmenu ul {
-    margin: 33px 0 0 2em;
+    margin: 38px 0 0 2em;
   }
 }
 #navigation .hauptmenu li {
@@ -100,7 +101,7 @@ body {
 }
 #navigation .hauptmenu > ul > li > a {
   float: left;
-  padding: 1em;
+  padding: 0.8em 1em 1.2em;
   text-transform: uppercase;
   text-align: center;
   width: 100%;
@@ -201,6 +202,7 @@ body {
   color: #c61c2c;
   border: 0;
   background: none;
+  text-decoration: none;
 }
 #navigation #block-menu-menu-service-menu .title-hide {
   clip: rect(1px, 1px, 1px, 1px);
