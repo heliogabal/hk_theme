@@ -28,6 +28,13 @@
 // }
 
 /* Anfrage in Colorbox */
+#block-crm-core-profile-ccp-anfrage {
+  display: none;
+}
+#cboxLoadedContent #block-crm-core-profile-ccp-anfrage {
+  display: block;
+}
+
 #colorbox {
   .tabledrag-toggle-weight-wrapper {
     display: none;
