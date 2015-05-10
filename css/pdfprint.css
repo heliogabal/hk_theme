@@ -1,0 +1,214 @@
+/**
+ * @file
+ * Print styling
+ *
+ * We provide some sane print styling for Drupal using Zen's layout method.
+ */
+div.krumo-root {
+  z-index: 112 !important;
+}
+
+/****************
+OUR CUSTOM MIXINS
+*****************/
+/***********
+~VARIABLES
+***********/
+/* Warm grey von Natascha, war #d1d3d2 */
+/* Dunkelgrau von Natascha */
+/* Rot von Natascha */
+/* Light warm grey von Natascha */
+/* Schriftfarbe von Natascha */
+/***********
+~BREAKPOINTS
+***********/
+/* Print Module CSS */
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: sans-serif;
+  font-size: 100%;
+  width: 100%;
+  line-height: 1.6;
+}
+
+th {
+  text-align: left;
+  /* LTR */
+  color: #006;
+  border-bottom: 1px solid #cbc1ba;
+}
+
+tr.odd {
+  background-color: #ddd;
+}
+
+tr.even {
+  background-color: #fff;
+}
+
+td {
+  padding: 5px;
+}
+
+#menu {
+  visibility: hidden;
+}
+
+#main {
+  margin: 1em;
+}
+
+a:link {
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  color: #00f;
+}
+
+a:link img, a:visited img {
+  border: 0;
+}
+
+.print-footnote {
+  font-size: xx-small;
+}
+
+img.print-logo {
+  border: 0;
+}
+
+.print-breadcrumb {
+  font-size: x-small;
+}
+
+.print-submitted {
+  font-size: small;
+}
+
+.print-created {
+  font-size: small;
+}
+
+.print-taxonomy {
+  text-align: right;
+}
+
+.print-taxonomy li {
+  display: inline;
+}
+
+hr, .print-hr {
+  border: 0;
+  height: 0px;
+  width: 100%;
+  color: #fff;
+  background-color: #fff;
+}
+
+.print-message {
+  border: medium dotted blue;
+  padding: 1em;
+}
+
+.print-source_url {
+  font-size: small;
+}
+
+.print-links {
+  font-size: small;
+}
+
+.print-footer {
+  text-align: center;
+}
+
+/* Custom Print PDF Styles */
+@page {
+  size: A4 portrait;
+  margin: 0;
+  @top-left {}
+  @bottom-left {}
+}
+
+h2.page-title, h1.page-title {
+  border-bottom: 2px solid #c61c2c;
+  padding-bottom: 5px;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+#logo {
+  width: 165px;
+  height: 90px;
+  margin-left: -20px;
+}
+
+.views-field {
+  float: none;
+  width: 100%;
+  clear: both;
+  page-break-inside: avoid;
+  position: relative;
+}
+
+.views-field-field-address {
+  float: none;
+  margin: 0;
+  position: absolute;
+  display: inline;
+  right: 0;
+  text-align: right;
+  margin-top: -40px;
+  color: #91988e;
+}
+
+.street-block,
+.locality-block,
+.thoroughfare {
+  display: inline;
+}
+
+.locality-block:before {
+  content: ", ";
+  display: inline;
+}
+
+.views-field-field-apart-floor-plan {
+  width: 70%;
+  float: left;
+}
+
+.views-field-field-apart-floor-plan .field-content,
+.views-field-field-object-images .field-content {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  page-break-inside: avoid;
+}
+.views-field-field-apart-floor-plan .field-content img,
+.views-field-field-object-images .field-content img {
+  margin-bottom: 1cm;
+  display: block;
+  page-break-inside: avoid;
+  width: 100%;
+  height: auto;
+}
+
+#leaflet-map {
+  width: 100%;
+  clear: both;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  page-break-inside: avoid;
+}
+
+img {
+  border: 0;
+}

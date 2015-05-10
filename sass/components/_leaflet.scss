@@ -15,7 +15,8 @@
   opacity: 1;
 }
 /* Karte Objekt */
-.objectmap {
+.objectmap,
+.page-node-expose {
   .leaflet-container {
     position: relative;
     height: 400px !important;

@@ -122,3 +122,14 @@ function hk_theme_preprocess_views_view_unformatted(&$vars) {
 // function hk_theme_language_negotiation_info_alter(&$negotiation_info) {
 //     unset($negotiation_info[LOCALE_LANGUAGE_NEGOTIATION_BROWSER]['cache']);
 // }
+
+function hk_theme_preprocess_views_view(&$vars) {
+  // Get the current view info
+  $view = $vars['view'];
+
+  // Add JS/CSS based on current view display
+  if ($view->current_display == 'print') {
+    drupal_add_js( /* parameters */ );
+    drupal_add_css(path_to_theme() . '/css/pdfprint.css');
+  }
+}

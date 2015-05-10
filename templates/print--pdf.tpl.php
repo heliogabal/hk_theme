@@ -89,9 +89,7 @@
     <?php endif; ?>
     <p />
     <hr class="print-hr" />
-    <?php if (!isset($node->type)): ?>
-      <!--<h2 class="page-title"><?php // print $print_title; ?></h2>-->
-    <?php endif; ?>
+
     <div class="print-content"><?php print $content; ?></div>
     <div class="print-footer"><?php print theme('print_footer'); ?></div>
     <hr class="print-hr" />

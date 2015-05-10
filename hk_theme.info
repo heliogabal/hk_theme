@@ -55,6 +55,7 @@ stylesheets[all][] = css/responsive-nav.css
 stylesheets[all][] = css/bear.css
 stylesheets[all][] = css/components.css
 stylesheets[all][] = hk_colorbox/colorbox_hk_colorbox.css
+;stylesheets[all][] = css/pdfprint.css
 
 
 ; Built-in conditional stylesheet support has been removed from Zen 7.x-5.x.

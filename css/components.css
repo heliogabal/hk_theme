@@ -883,7 +883,8 @@ OUR CUSTOM MIXINS
 }
 
 /* Karte Objekt */
-.objectmap .leaflet-container {
+.objectmap .leaflet-container,
+.page-node-expose .leaflet-container {
   position: relative;
   height: 400px !important;
   clear: both;
