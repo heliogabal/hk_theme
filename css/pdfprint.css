@@ -132,7 +132,10 @@ hr, .print-hr {
 @page {
   size: A4 portrait;
   margin: 0;
-  @top-left {}
+  @top-right {
+    content: "030.7808 7080";
+}
+
   @bottom-left {}
 }
 
@@ -140,7 +143,7 @@ h2.page-title, h1.page-title {
   border-bottom: 2px solid #c61c2c;
   padding-bottom: 5px;
   font-weight: normal;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 #logo {
@@ -152,7 +155,6 @@ h2.page-title, h1.page-title {
 .views-field {
   float: none;
   width: 100%;
-  clear: both;
   page-break-inside: avoid;
   position: relative;
 }
@@ -164,7 +166,7 @@ h2.page-title, h1.page-title {
   display: inline;
   right: 0;
   text-align: right;
-  margin-top: -40px;
+  margin-top: -52px;
   color: #91988e;
 }
 
@@ -180,7 +182,7 @@ h2.page-title, h1.page-title {
 }
 
 .views-field-field-apart-floor-plan {
-  width: 70%;
+  width: 65%;
   float: left;
 }
 
@@ -200,10 +202,86 @@ h2.page-title, h1.page-title {
   height: auto;
 }
 
+.views-field-field-apart-no {
+  color: #cbc1ba;
+  font-size: 1.3em;
+}
+
+.views-field-field-apart-living-space {
+  padding: .5em .3em 1.5em .3em;
+  display: table-cell;
+  position: relative;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #cbc1ba;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 35%;
+}
+.views-field-field-apart-living-space .views-label {
+  color: #cbc1ba;
+  font-size: 11pt;
+  font-weight: normal;
+  bottom: 5px;
+}
+
+.views-field-field-apart-rooms {
+  padding: .5em 1em 1.5em 1em;
+  display: table-cell;
+  position: relative;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  border-top: 2px solid #cbc1ba;
+  border-bottom: 2px solid #cbc1ba;
+  width: 15%;
+}
+.views-field-field-apart-rooms .views-label {
+  color: #cbc1ba;
+  font-size: 11pt;
+  font-weight: normal;
+  bottom: 5px;
+  margin-left: -22%;
+}
+
+.views-field-field-apart-price {
+  padding: .5em .3em 1.5em .3em;
+  display: table-cell;
+  position: relative;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #cbc1ba;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 50%;
+}
+.views-field-field-apart-price .views-label {
+  color: #cbc1ba;
+  font-size: 11pt;
+  font-weight: normal;
+  bottom: 5px;
+}
+
+.views-field-field-apart-description {
+  float: none;
+  clear: both;
+}
+
 #leaflet-map {
   width: 100%;
   clear: both;
-  position: absolute;
+  float: none;
+  position: static;
   bottom: 0;
   left: 0;
   page-break-inside: avoid;
@@ -211,4 +289,8 @@ h2.page-title, h1.page-title {
 
 img {
   border: 0;
+}
+
+.phone {
+  string-set: phone content();
 }
