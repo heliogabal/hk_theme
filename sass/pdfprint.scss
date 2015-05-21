@@ -105,7 +105,8 @@ hr, .print-hr {
     display: inline;
   }
   .views-field-field-apart-floor-plan {
-    width: 65%;
+    width: 63%;
+    margin-right: 2%;
     float: left;
   }
   .views-field-field-apart-floor-plan,
@@ -180,6 +181,33 @@ hr, .print-hr {
     border: 2px solid $secondary;
     @include border-right-radius($border-radius);
     width: 50%;
+  }
+  .apartmerkmale {
+    border: $border;
+    overflow: hidden;
+    float: right;
+    width: 34.5%;
+    @include border-radius($border-radius);
+    margin: 0.5em 0;
+    padding: 0.5em 0;
+    > div {
+      padding: 0.2em 0.5em;
+      float: left;
+      &:nth-of-type(2n+1) {
+        background: $rowgrey;
+      }
+    }
+    .views-label {
+      color: $dark;
+      float: left;
+      width: 50%;
+    }
+    .field-content {
+      color: $black;
+      float: left;
+      width: 50%;
+      font-weight: bold;
+    }
   }
   .views-field-field-apart-description {
     float: none;

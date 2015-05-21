@@ -182,7 +182,8 @@ h2.page-title, h1.page-title {
 }
 
 .views-field-field-apart-floor-plan {
-  width: 65%;
+  width: 63%;
+  margin-right: 2%;
   float: left;
 }
 
@@ -270,6 +271,38 @@ h2.page-title, h1.page-title {
   font-size: 11pt;
   font-weight: normal;
   bottom: 5px;
+}
+
+.apartmerkmale {
+  border: 2px solid #cbc1ba;
+  overflow: hidden;
+  float: right;
+  width: 34.5%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+}
+.apartmerkmale > div {
+  padding: 0.2em 0.5em;
+  float: left;
+}
+.apartmerkmale > div:nth-of-type(2n+1) {
+  background: #e3e5e3;
+}
+.apartmerkmale .views-label {
+  color: #4b4b4b;
+  float: left;
+  width: 50%;
+}
+.apartmerkmale .field-content {
+  color: #1a1a1a;
+  float: left;
+  width: 50%;
+  font-weight: bold;
 }
 
 .views-field-field-apart-description {

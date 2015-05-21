@@ -190,19 +190,21 @@ h1#page-title {
     padding: .5em 0;
     .views-field {
       padding: .2em .5em;
+      float: left;
       .views-label {
         color: $dark;
-        display: inline-block;
+        float: left;
         width: 50%;
       }
       .field-content {
-        display: inline;
-        color: #000;
+        float: left;
+        width: 50%;
+        color: $black;
         font-weight: bold;
       }
     }
     .views-field:nth-of-type(odd) {
-      background: #e3e5e3;
+      background: $rowgrey;
     }
   }
 }

@@ -1478,15 +1478,17 @@ h1#page-title {
 }
 .node-type-apartment .apartmerkmale .views-field {
   padding: .2em .5em;
+  float: left;
 }
 .node-type-apartment .apartmerkmale .views-field .views-label {
   color: #4b4b4b;
-  display: inline-block;
+  float: left;
   width: 50%;
 }
 .node-type-apartment .apartmerkmale .views-field .field-content {
-  display: inline;
-  color: #000;
+  float: left;
+  width: 50%;
+  color: #1a1a1a;
   font-weight: bold;
 }
 .node-type-apartment .apartmerkmale .views-field:nth-of-type(odd) {

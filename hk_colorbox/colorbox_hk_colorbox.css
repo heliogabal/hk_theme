@@ -7,7 +7,6 @@
   top: 0;
   left: 0;
   z-index: 9999;
-  overflow: hidden;
 }
 #cboxOverlay {
   position: fixed;
@@ -18,7 +17,8 @@
   clear: left;
 }
 #cboxContent {
-  position: relative;
+  position: initial;
+  overflow: auto;
 }
 #cboxLoadedContent {
   overflow: auto;
@@ -126,19 +126,19 @@
       #cboxClose.cbox-close-plain {
         opacity: 1 !important;
         position: absolute;
-        font-size: 25px;
-        line-height: 1em;
+        font-size: 40px;
+        line-height: .65;
         text-align: center;
         color: #fff;
         background: #cbc1ba;
-        top: 4px;
-        right: 4px;
-        width: 28px;
-        height: 28px;
+        top: -14px;
+        right: -14px;
+        width: 34px;
+        height: 34px;
         -webkit-border-radius: 25px;
         -moz-border-radius: 25px;
         border-radius: 25px;
-        padding: 0;
+        padding: 0 0 10px;
       }
       #cboxClose.cbox-close-plain:hover {
         color: #c61c2c;
