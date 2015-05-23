@@ -1469,6 +1469,8 @@ h1#page-title {
 .node-type-apartment .apartmerkmale {
   margin: .5em 0;
   border: 2px solid #cbc1ba;
+  float: left;
+  width: 100%;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1479,6 +1481,7 @@ h1#page-title {
 .node-type-apartment .apartmerkmale .views-field {
   padding: .2em .5em;
   float: left;
+  width: 100%;
 }
 .node-type-apartment .apartmerkmale .views-field .views-label {
   color: #4b4b4b;

@@ -186,11 +186,14 @@ h1#page-title {
   .apartmerkmale {
     margin: .5em 0;
     border: $border;
+    float: left;
+    width: 100%;
     @include border-radius($border-radius);
     padding: .5em 0;
     .views-field {
       padding: .2em .5em;
       float: left;
+      width: 100%;
       .views-label {
         color: $dark;
         float: left;
