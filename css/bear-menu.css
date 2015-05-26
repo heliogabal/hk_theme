@@ -37,7 +37,7 @@ body {
 }
 
 #navigation .hauptmenu {
-  font: 600 1em "HelveticaNeueW01-45Ligh", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font: 500 1em "Neue Helvetica W01", Helvetica, Arial, "Nimbus Sans L", sans-serif;
 }
 #navigation .hauptmenu * {
   -webkit-box-sizing: border-box;

@@ -75,7 +75,12 @@
     <?php print $head; ?>
     <base href='<?php print $url ?>' />
     <title><?php print $print_title; ?></title>
+    <!-- Disable 3D rendering, otherwise map overflows  -->
+      <script>
+          window.L_DISABLE_3D = true;
+      </script>
     <?php print $scripts; ?>
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/69c28897-3128-41dd-a024-e20f5106e17e.js"></script>
     <?php if (isset($sendtoprinter)) print $sendtoprinter; ?>
     <?php print $robots_meta; ?>
     <?php if (theme_get_setting('toggle_favicon')): ?>
@@ -90,7 +95,18 @@
     <p />
     <hr class="print-hr" />
 
-    <div class="print-content"><?php print $content; ?></div>
+    <div class="print-content">
+      <?php print $content; ?>
+      <?php
+        $view_mode = 'full'; // Or 'full' for example
+        $node = node_load(3340);
+        $view = node_view($node, $view_mode);
+      ?>
+        <h3 class="pagebreak">
+          <?php print $node->title;?>
+        </h3>
+      <?php print render($view);?>
+    </div>
     <div class="print-footer"><?php print theme('print_footer'); ?></div>
     <hr class="print-hr" />
     <?php if ($sourceurl_enabled): ?>

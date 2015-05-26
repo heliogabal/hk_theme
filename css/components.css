@@ -147,7 +147,7 @@ OUR CUSTOM MIXINS
   margin: 0;
   padding: 10px 0;
   font-size: 90%;
-  font-family: "HelveticaNeueW01-45Ligh", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "Neue Helvetica W01", Helvetica, Arial, "Nimbus Sans L", sans-serif;
 }
 
 /*
@@ -961,7 +961,7 @@ OUR CUSTOM MIXINS
   overflow: hidden;
 }
 #views-exposed-form-karte-block .ui-widget input, #views-exposed-form-karte-block .ui-widget select, #views-exposed-form-karte-block .ui-widget textarea, #views-exposed-form-karte-block .ui-widget button {
-  font-family: "HelveticaNeueW01-45Ligh", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "Neue Helvetica W01", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-size: 1em;
   height: 2.5em;
   line-height: 1.5;
@@ -1275,7 +1275,6 @@ OUR CUSTOM MIXINS
 ~BREAKPOINTS
 ***********/
 h1#page-title {
-  font-weight: normal;
   border-bottom: 2px solid #c61c2c;
 }
 
@@ -1290,6 +1289,21 @@ h1#page-title {
   width: 300px;
   margin: 0.5rem 0;
   padding: 0.5rem;
+}
+
+.ausstattung .label-above {
+  color: #4b4b4b;
+  font-weight: normal;
+  margin-top: .5em;
+}
+.ausstattung ul {
+  margin-top: .2em;
+  padding: 0;
+}
+.ausstattung ul li {
+  list-style: none;
+  background: url(../images/Icon_Check.png) -10px 50% no-repeat;
+  padding: .25em 0 .25em 30px;
 }
 
 .node-type-apartment .ds-2col-stacked-fluid .group-header {
@@ -1340,7 +1354,7 @@ h1#page-title {
 .node-type-apartment .objekt-id, .node-type-apartment .field-name-field-apart-no {
   display: inline-block;
   color: #4b4b4b;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 1em;
 }
 .node-type-apartment .field-name-field-apart-commission {
@@ -1371,7 +1385,7 @@ h1#page-title {
   display: table-cell;
   position: relative;
   font-size: 1.4em;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   border: 2px solid #cbc1ba;
   -moz-border-radius-topleft: 5px;
@@ -1395,7 +1409,7 @@ h1#page-title {
   display: table-cell;
   position: relative;
   font-size: 1.4em;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   border-top: 2px solid #cbc1ba;
   border-bottom: 2px solid #cbc1ba;
@@ -1414,7 +1428,7 @@ h1#page-title {
   display: table-cell;
   position: relative;
   font-size: 1.4em;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   border: 2px solid #cbc1ba;
   -moz-border-radius-topright: 5px;
@@ -1452,20 +1466,6 @@ h1#page-title {
   margin: .5em 0;
   max-width: 560px;
 }
-.node-type-apartment .ausstattung .label-above {
-  color: #4b4b4b;
-  font-weight: normal;
-  margin-top: .5em;
-}
-.node-type-apartment .ausstattung ul {
-  margin-top: .2em;
-  padding: 0;
-}
-.node-type-apartment .ausstattung ul li {
-  list-style: none;
-  background: url(../images/Icon_Check.png) -10px 50% no-repeat;
-  padding: .25em 0 .25em 30px;
-}
 .node-type-apartment .apartmerkmale {
   margin: .5em 0;
   border: 2px solid #cbc1ba;
@@ -1492,7 +1492,7 @@ h1#page-title {
   float: left;
   width: 50%;
   color: #1a1a1a;
-  font-weight: bold;
+  font-weight: 500;
 }
 .node-type-apartment .apartmerkmale .views-field:nth-of-type(odd) {
   background: #e3e5e3;
@@ -1551,8 +1551,8 @@ h1#page-title {
 
 .field-name-field-apart-floor-plan {
   float: left;
-  width: 150px;
-  margin: 5px 5px 0 5px;
+  width: 163px;
+  margin: 0;
 }
 .field-name-field-apart-floor-plan > a {
   display: none;
@@ -1577,6 +1577,7 @@ h1#page-title {
 }
 #thumbslide img {
   margin: 0;
+  max-width: 150px;
 }
 
 div.krumo-root {
@@ -1634,7 +1635,7 @@ OUR CUSTOM MIXINS
 }
 .footer footer .menu-footer ul li a {
   color: #fff;
-  font-weight: bold;
+  font-weight: 600;
   padding: 0.5em 1em 1.5em;
   display: block;
   border-top: 4px solid transparent;

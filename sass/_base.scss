@@ -67,7 +67,7 @@ $times-new-roman: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
 $times:           Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
 $georgia:         Georgia, "Times New Roman", "DejaVu Serif", serif;
 
-$helvetica-neue:       "HelveticaNeueW01-45Ligh",Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$helvetica-neue:       "Neue Helvetica W01",Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
 $helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
@@ -197,7 +197,7 @@ OUR CUSTOM MIXINS
   font-size: 75px;
   line-height: 1;
   font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   word-wrap: break-word; // A very nice CSS3 property

@@ -1,6 +1,5 @@
 @import "base";
 h1#page-title {
-    font-weight: normal;
     border-bottom: 2px solid $primary;
   }
   .group-merkmale {
@@ -10,6 +9,22 @@ h1#page-title {
     width: 300px;
     margin: 0.5rem 0;
     padding: 0.5rem;
+  }
+  .ausstattung {
+    .label-above {
+      color: $dark;
+      font-weight: normal;
+      margin-top: .5em;
+    }
+    ul {
+      margin-top: .2em;
+      padding: 0;
+      li {
+        list-style: none;
+        background: url(../images/Icon_Check.png) -10px 50% no-repeat;
+        padding: .25em 0 .25em 30px;
+      }
+    }
   }
 .node-type-apartment {
   .ds-2col-stacked-fluid {
@@ -56,7 +71,7 @@ h1#page-title {
   .objekt-id, .field-name-field-apart-no {
     display: inline-block;
     color: $dark;
-    font-weight: bold;
+    font-weight: 500;
     margin-top: 1em;
   }
   .field-name-field-apart-commission {
@@ -105,7 +120,7 @@ h1#page-title {
     display: table-cell;
     position: relative;
     font-size: 1.4em;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
     border: 2px solid $secondary;
     @include border-left-radius($border-radius);
@@ -126,7 +141,7 @@ h1#page-title {
     display: table-cell;
     position: relative;
     font-size: 1.4em;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
     border-top: 2px solid $secondary;
     border-bottom: 2px solid $secondary;
@@ -144,7 +159,7 @@ h1#page-title {
     display: table-cell;
     position: relative;
     font-size: 1.4em;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
     border: 2px solid $secondary;
     @include border-right-radius($border-radius);
@@ -167,22 +182,6 @@ h1#page-title {
     margin: .5em 0;
     max-width: 560px;
   }
-  .ausstattung {
-    .label-above {
-      color: $dark;
-      font-weight: normal;
-      margin-top: .5em;
-    }
-    ul {
-      margin-top: .2em;
-      padding: 0;
-      li {
-        list-style: none;
-        background: url(../images/Icon_Check.png) -10px 50% no-repeat;
-        padding: .25em 0 .25em 30px;
-      }
-    }
-  }
   .apartmerkmale {
     margin: .5em 0;
     border: $border;
@@ -203,7 +202,7 @@ h1#page-title {
         float: left;
         width: 50%;
         color: $black;
-        font-weight: bold;
+        font-weight: 500;
       }
     }
     .views-field:nth-of-type(odd) {
@@ -260,8 +259,8 @@ h1#page-title {
 }
 .field-name-field-apart-floor-plan {
   float: left;
-  width: 150px;
-  margin: 5px 5px 0 5px;
+  width: 163px;
+  margin: 0;
   > a {
     display:none;
   }
@@ -285,5 +284,6 @@ h1#page-title {
   }
   img {
     margin: 0;
+    max-width: 150px;
   }
 }

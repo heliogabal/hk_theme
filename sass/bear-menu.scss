@@ -61,7 +61,7 @@ body {
 
 // New box model, small reset, global stuff
 #{$selector} {
-  font: 600 1em $helvetica-neue;
+  font: 500 1em $helvetica-neue;
   * {
     @include box-sizing(border-box);
   }
