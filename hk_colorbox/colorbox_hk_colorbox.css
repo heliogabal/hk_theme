@@ -7,6 +7,7 @@
   top: 0;
   left: 0;
   z-index: 9999;
+  /*overflow: auto !important;*/
 }
 #cboxOverlay {
   position: fixed;
@@ -21,7 +22,7 @@
   overflow: auto;
 }
 #cboxLoadedContent {
-  overflow: auto;
+  overflow: auto !important;
   -webkit-overflow-scrolling: touch;
 }
 #cboxTitle {
