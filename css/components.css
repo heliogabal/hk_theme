@@ -77,7 +77,10 @@ OUR CUSTOM MIXINS
 }
 .mlt #mlt .slides > li {
   padding: 1.5em 1em;
-  width: auto !important;
+}
+.mlt #mlt .slides > li img {
+  width: 255px;
+  float: left;
 }
 .mlt #mlt .flexslider .flex-direction-nav a, .mlt #mlt .flexslider .flex-direction-nav a {
   display: block;
@@ -778,6 +781,23 @@ OUR CUSTOM MIXINS
   width: auto;
 }
 
+/* Search Box Select Widths */
+.select2-container {
+  min-width: 115px;
+}
+
+#search .bezirk .select2-container,
+#search .preis .select2-container {
+  width: 245px !important;
+}
+#search .kategorie .select2-container {
+  width: 246px !important;
+}
+#search .zimmer .select2-container,
+#search .flaeche .select2-container {
+  width: 115px !important;
+}
+
 /* Current Search Block */
 #search {
   min-height: 8.5em !important;
@@ -792,7 +812,10 @@ OUR CUSTOM MIXINS
 
 .ergebnis {
   float: right;
-  margin-right: 0;
+  margin: 2.2em 0 0 0;
+}
+.ergebnis .current-search-item {
+  margin-bottom: .5em;
 }
 .ergebnis .current-search-item ul {
   list-style: none;

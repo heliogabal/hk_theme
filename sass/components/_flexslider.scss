@@ -26,7 +26,10 @@
     margin: 0 auto 70px auto;
     .slides > li {
       padding: 1.5em 1em;
-      width: auto !important;
+      img {
+        width: 255px;
+        float: left;
+      }
     }
     .flexslider .flex-direction-nav a, .flexslider .flex-direction-nav a {
       display: block;

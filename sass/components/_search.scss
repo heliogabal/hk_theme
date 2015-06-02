@@ -100,6 +100,23 @@
   width: auto;
 }
 
+/* Search Box Select Widths */
+.select2-container {
+  min-width: 115px;
+}
+#search {
+  .bezirk .select2-container,
+  .preis .select2-container {
+    width: 245px !important;
+  }
+  .kategorie .select2-container {
+    width: 246px !important;
+  }
+  .zimmer .select2-container,
+  .flaeche .select2-container {
+    width: 115px !important;
+  }
+}
 /* Current Search Block */
 #search {
   min-height: 8.5em !important;
@@ -113,8 +130,9 @@
 }
 .ergebnis {
   float: right;
-  margin-right: 0;
+  margin: 2.2em 0 0 0;
   .current-search-item {
+    margin-bottom: .5em;
     ul {
       list-style: none;
       margin: 0;
