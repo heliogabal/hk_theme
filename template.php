@@ -133,27 +133,3 @@ function hk_theme_preprocess_views_view(&$vars) {
     drupal_add_css(path_to_theme() . '/css/pdfprint.css');
   }
 }
-/**
- * Implements hook_menu_local_tasks_alter().
- */
-function hk_theme_menu_local_tasks_alter(&$data, $router_item, $root_path) {
-  // Add action link to 'node/add' on 'admin/content' page.
-  if ($root_path == 'admin/content/dash/objekte') {
-    $item = menu_get_item('node/add/objekt');
-    if ($item['access']) {
-      $data['actions']['output'][] = array(
-        '#theme' => 'menu_local_action',
-        '#link' => $item,
-      );
-    }
-  }
-  if ($root_path == 'admin/content/dash/wohnungen') {
-    $item = menu_get_item('node/add/apartment');
-    if ($item['access']) {
-      $data['actions']['output'][] = array(
-        '#theme' => 'menu_local_action',
-        '#link' => $item,
-      );
-    }
-  }
-}
