@@ -133,3 +133,17 @@ function hk_theme_preprocess_views_view(&$vars) {
     drupal_add_css(path_to_theme() . '/css/pdfprint.css');
   }
 }
+
+/**
+ * Implements hook_wysiwyg_editor_settings_alter()
+ *
+ * @see http://docs.cksource.com/CKEditor_3.x/Howto/Enabling_SCAYT
+ */
+function hk_theme_wysiwyg_editor_settings_alter(&$settings, $context) {
+  // The $context variable contains information about the wysiwyg profile we're using
+  // In this case we just need to check that the editor being used is ckeditor
+  if ($context['profile']->editor == 'ckeditor') {
+    // Make Scayt enabled by default.
+    $settings['scayt_autoStartup'] = 'true';
+  }
+}
