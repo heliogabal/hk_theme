@@ -800,7 +800,7 @@ OUR CUSTOM MIXINS
 
 /* Current Search Block */
 #search {
-  min-height: 8.5em !important;
+  /*min-height: 8.5em !important;*/
 }
 #search .form-item {
   margin-top: 0;
@@ -995,7 +995,7 @@ OUR CUSTOM MIXINS
 }
 
 .ui-dialog {
-  width: 700px !important;
+  width: 640px !important;
   height: auto !important;
   border: 2px solid #cbc1ba;
 }
@@ -1084,6 +1084,9 @@ OUR CUSTOM MIXINS
   position: relative;
   text-align: left;
   background: #fff;
+}
+
+.leaflet-popup-content-wrapper {
   /* Bis bessere Lösung mit jQuery gefunden ist */
   max-height: 350px;
   overflow-y: auto;
@@ -1129,6 +1132,9 @@ img {
 }
 .leaflet-popup-content .right {
   margin: 0 1em;
+}
+.leaflet-popup-content p:first-of-type {
+  margin-top: 0 !important;
 }
 .leaflet-popup-content .wo {
   float: left;
@@ -1689,7 +1695,7 @@ OUR CUSTOM MIXINS
 .language-switcher {
   position: absolute;
   right: 0;
-  bottom: -10em;
+  bottom: -13em;
 }
 .language-switcher li {
   list-style: none;
@@ -1706,6 +1712,7 @@ OUR CUSTOM MIXINS
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
   width: 55px;
+  margin-bottom: .5em;
 }
 .language-switcher li a {
   display: block;

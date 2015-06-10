@@ -3,7 +3,7 @@
 .language-switcher {
   position: absolute;
   right: 0;
-  bottom: -10em;
+  bottom: -13em;
   li {
     list-style: none;
     background: rgba(255,255,255,.9);
@@ -13,6 +13,7 @@
     border-right: 0;
     @include box-shadow($box-shadow);
     width: 55px;
+    margin-bottom: .5em;
     a {
       display: block;
       padding: .5em 1em;

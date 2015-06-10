@@ -55,6 +55,13 @@ h1, h2, h3, h4, h5 {
   font-weight: 300;
 }
 
+.node-type-page h3 {
+  clear: both;
+}
+.node-type-page img {
+  margin-bottom: 1em;
+}
+
 strong, b, bold {
   font-weight: 500;
 }

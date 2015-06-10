@@ -145,5 +145,6 @@ function hk_theme_wysiwyg_editor_settings_alter(&$settings, $context) {
   if ($context['profile']->editor == 'ckeditor') {
     // Make Scayt enabled by default.
     $settings['scayt_autoStartup'] = 'true';
+    $settings['scayt_sLang'] = 'de_DE';
   }
 }

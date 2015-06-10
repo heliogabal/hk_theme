@@ -29,6 +29,14 @@ h1, h2, h3, h4, h5 {
   /*@include bearfont-titles;*/
   font-weight: 300;
 }
+.node-type-page {
+  h3 {
+    clear: both;
+  }
+  img {
+    margin-bottom: 1em;
+  }
+}
 strong, b, bold {
   font-weight: 500;
 }

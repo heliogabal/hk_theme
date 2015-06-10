@@ -96,7 +96,7 @@
 }
 
 .ui-dialog {
-  width: 700px !important;
+  width: 640px !important;
   height: auto !important;
   border: 2px solid $secondary;
   .ui-dialog-titlebar {
@@ -177,6 +177,8 @@
     position: relative;
     text-align: left;
     background: #fff;
+}
+.leaflet-popup-content-wrapper {
     /* Bis bessere Lösung mit jQuery gefunden ist */
     max-height: 350px;
     overflow-y: auto;
@@ -185,6 +187,7 @@
 .group-card {
   border: 2px solid $secondary;
   overflow-y: hidden;
+
 }
 .group-card:after {
     content: ".";
@@ -217,6 +220,9 @@
     }
     .right {
       margin: 0 1em;
+    }
+    p:first-of-type {
+      margin-top: 0 !important;
     }
     .wo {
       float: left;
