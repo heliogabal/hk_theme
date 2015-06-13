@@ -129,7 +129,7 @@ function hk_theme_preprocess_views_view(&$vars) {
 
   // Add JS/CSS based on current view display
   if ($view->current_display == 'print') {
-    drupal_add_js( /* parameters */ );
+    //drupal_add_js( /* parameters */ );
     drupal_add_css(path_to_theme() . '/css/pdfprint.css');
   }
 }

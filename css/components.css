@@ -134,6 +134,10 @@ OUR CUSTOM MIXINS
 /***********
 ~SLIDESHOW BEAR
 ***********/
+#flexslider-1 {
+  margin-top: -10px;
+}
+
 .flexslider {
   background: none repeat scroll 0 0 #FFFFFF;
   border: 0;
@@ -547,9 +551,11 @@ OUR CUSTOM MIXINS
 }
 
 .node-type-objekt .flexslider {
-  width: 60%;
-  margin-right: 5%;
+  width: 74%;
   float: left;
+}
+.node-type-objekt #thumbslide {
+  margin-left: 0;
 }
 
 .group-text {
@@ -1480,6 +1486,9 @@ h1#page-title {
   margin: .5em 0 1em 0;
   float: left;
   width: 100%;
+}
+.node-type-apartment .apartaddress i {
+  display: none;
 }
 @media screen and (min-width: 1025px) {
   .node-type-apartment .apartaddress {

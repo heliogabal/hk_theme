@@ -298,3 +298,13 @@ img {border: 0;}
 .pagebreak {
   page-break-before: always;
 }
+
+.marker-cluster,
+.marker-cluster div,
+.marker-cluster-small,
+.marker-cluster-small div {
+  background: none !important;
+}
+.marker-cluster span {
+  display: none;
+}
