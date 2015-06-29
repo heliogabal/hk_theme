@@ -43,7 +43,7 @@ function hk_theme_preprocess_page(&$vars) {
     if (drupal_is_front_page()) {
       //$GLOBALS['conf']['cache'] = FALSE;
       if ($is_mobile) {
-        $redirect = '/buy';
+        $redirect = '/de/kaufen';
         drupal_goto($redirect);
       }
     }
@@ -55,9 +55,9 @@ function hk_theme_preprocess_page(&$vars) {
 * Load modified markercluster js
 */
 
-function hk_theme_js_alter (&$javascript) {
-  $javascript[libraries_get_path('leaflet_markercluster') . '/dist/leaflet.markercluster.js']['data'] = drupal_get_path('theme',$GLOBALS['theme']) . '/js/leaflet.markercluster.js';
-}
+//function hk_theme_js_alter (&$javascript) {
+  //$javascript[libraries_get_path('leaflet_markercluster') . '/dist/leaflet.markercluster.js']['data'] = drupal_get_path('theme',$GLOBALS['theme']) . '/js/leaflet.markercluster.js';
+//}
 
 // Hide active language in language switcher block
 function hk_theme_links__locale_block($variables) {

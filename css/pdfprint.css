@@ -156,6 +156,12 @@ hr, .print-hr {
   margin: 200px 0 !important;
 }
 
+#content,
+.view-expose,
+#views-form-expose-print {
+  overflow: visible;
+}
+
 .views-field-title {
   border-bottom: 2px solid #c61c2c;
   margin-bottom: 1.5em;
@@ -177,6 +183,14 @@ h3 {
   width: 165px;
   height: 90px;
   margin-left: -20px;
+}
+
+.views-field-field-objektid-nunumeric-1 {
+  position: absolute !important;
+  right: 0;
+  top: -1em;
+  width: auto !important;
+  z-index: 100000;
 }
 
 .views-field {
@@ -379,6 +393,7 @@ h3 {
 .mapcontainer {
   width: 100%;
   height: 400px;
+  page-break-before: always;
 }
 
 .leaflet-control-container .leaflet-top {

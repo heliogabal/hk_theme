@@ -13,27 +13,48 @@
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 (function ($, Drupal, window, document, undefined) {
 
-// (function ($) {
-//   Drupal.behaviors.BearScripts = {
-//     attach: function (context, settings) {
+(function ($) {
+   Drupal.behaviors.BearScripts = {
+     attach: function (context, settings) {
 
-      //$('#content select.form-select').select2();
+      //$('#search select.form-select').select2();
+      $('.bezirk select').select2({
+          placeholder: Drupal.t('Borough'),
+          placeholderOption: "first",
+          allowClear: true
+      });
+      $('.kategorie select').select2({
+          placeholder: Drupal.t('Category'),
+          placeholderOption: "first",
+          allowClear: true
+      });
+      $('.preis select').select2({
+          placeholder: Drupal.t('Price'),
+          placeholderOption: "first",
+          allowClear: true
+      });
+      $('.zimmer select').select2({
+          placeholder: Drupal.t('Rooms'),
+          placeholderOption: "first",
+          allowClear: true
+      });
+      $('.flaeche select').select2({
+          placeholder: Drupal.t('Space (ca.)'),
+          placeholderOption: "first",
+          allowClear: true
+      });
       //$(":file").filestyle({buttonText: "Find file"});
       // if ($('#navigation .block-menu').length) {
       //   $('#navigation .block-menu').prepend('<input type="checkbox" id="button"><label for="button" onclick>Menu</label>');
       // }
       // if ($('#navigation .menu-block-wrapper').length) {
       //   $('#navigation .menu-block-wrapper').prepend('<input type="checkbox" id="button"><label for="button" onclick>Menu</label>');
-      // }
-
-
-
-
       //$('.equalheight').eqHeight();
+       }
 
-//     }
+     }
 //   }
-// }(jQuery));
+ }(jQuery));
 
 (function ($) {
   Drupal.behaviors.ResponsiveScripts = {
@@ -55,7 +76,8 @@
    //   $('.front', context).on("load",function(){
         $( ".front #block-views-exp-karten-map-page, .front #search").dialog({
             height: "auto",
-            width: "700",
+            minHeight: "120",
+            width: "auto",
             resizable: "false",
             closeOnEscape: "true",
             hide: { effect: "explode", duration: "1000" },
