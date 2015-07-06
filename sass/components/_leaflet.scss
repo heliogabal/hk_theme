@@ -360,7 +360,7 @@
     position: absolute;
     top: 16px;
 }
-.marker-cluster-small span:first-of-type {
+.marker-cluster-small span:nth-child(2) {
   display: none;  /* Zeigt eh nur die Objekte an, nicht die Wohnungen */
 }
 .marker-cluster div:hover, .marker-cluster span:hover {

@@ -5,6 +5,7 @@ h1#page-title {
   .group-merkmale {
     border: 2px solid $secondary;
     @include border-radius($border-radius);
+    @include hyphenation;
     float: right;
     width: 300px;
     margin: 0.5rem 0;
@@ -191,6 +192,7 @@ h1#page-title {
     float: left;
     width: 100%;
     @include border-radius($border-radius);
+    @include hyphenation;
     padding: .5em 0;
     .views-field {
       padding: .2em .5em;
