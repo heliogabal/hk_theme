@@ -23,6 +23,10 @@
     clear: left;
   }
   .field-name-field-obj-apartments {
+    margin-top: 1.5em;
+    .field-items {
+      margin-top: .5em;
+    }
     .field-item {
       float: left;
       width: 45%;
@@ -31,6 +35,13 @@
     .field-item.odd {
       margin-right: 0;
       margin-left: 5%;
+    }
+    .field-name-field-apart-living-space,
+    .field-name-field-apart-price {
+      display: inline;
+    }
+    .field-name-field-apart-living-space:after {
+      content: " / ";
     }
   }
 .group-card-project {

@@ -562,6 +562,12 @@ OUR CUSTOM MIXINS
   clear: left;
 }
 
+.field-name-field-obj-apartments {
+  margin-top: 1.5em;
+}
+.field-name-field-obj-apartments .field-items {
+  margin-top: .5em;
+}
 .field-name-field-obj-apartments .field-item {
   float: left;
   width: 45%;
@@ -570,6 +576,13 @@ OUR CUSTOM MIXINS
 .field-name-field-obj-apartments .field-item.odd {
   margin-right: 0;
   margin-left: 5%;
+}
+.field-name-field-obj-apartments .field-name-field-apart-living-space,
+.field-name-field-obj-apartments .field-name-field-apart-price {
+  display: inline;
+}
+.field-name-field-obj-apartments .field-name-field-apart-living-space:after {
+  content: " / ";
 }
 
 .group-card-project {
@@ -931,7 +944,16 @@ OUR CUSTOM MIXINS
   bottom: 0;
   height: auto !important;
 }
+.leaflet-container a {
+  color: #c61c2c;
+}
+.leaflet-container a:visited {
+  color: #4b4b4b;
+}
 
+/*.leaflet-label, .leaflet-label p {
+  max-width: 250px;
+}*/
 #content {
   z-index: 101;
   position: relative;
@@ -1100,13 +1122,12 @@ OUR CUSTOM MIXINS
   background: #fff;
 }
 
-.leaflet-popup-content-wrapper {
-  /* Bis bessere Lösung mit jQuery gefunden ist */
-  max-height: 350px;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
+/*Bis bessere Lösung mit jQuery gefunden ist  .leaflet-popup-content-wrapper {
 
+    max-height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}*/
 .group-card {
   border: 2px solid #cbc1ba;
   overflow-y: hidden;
@@ -1161,6 +1182,20 @@ img {
   font-size: 1.6em;
   line-height: 1;
   margin: -0.15em 0.5em 0 -0.5em;
+}
+.leaflet-popup-content button.toggle {
+  padding-right: .5em;
+}
+.leaflet-popup-content button.toggle::after {
+  color: #fff;
+  content: "";
+  float: right;
+  font-family: "hk";
+  line-height: 1.2;
+  width: 20px;
+}
+.leaflet-popup-content button.hide::after {
+  transform: rotate(45deg);
 }
 .leaflet-popup-content .apart {
   color: #1a1a1a;
@@ -1355,6 +1390,14 @@ h1#page-title {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
+  -ms-hyphenate-limit-chars: auto 5;
+  -moz-hyphenate-limit-chars: auto 5;
+  -webkit-hyphenate-limit-chars: auto 5;
+  hyphenate-limit-chars: auto 5;
+  -ms-hyphenate-limit-lines: 2;
+  -moz-hyphenate-limit-lines: 2;
+  -webkit-hyphenate-limit-lines: 2;
+  hyphenate-limit-lines: 2;
   float: right;
   width: 300px;
   margin: 0.5rem 0;
@@ -1385,8 +1428,8 @@ h1#page-title {
 }
 @media (min-width: 1024px) {
   .node-type-apartment .ds-2col-stacked-fluid .group-left {
-    margin-right: -316px;
-    padding-right: 316px;
+    margin-right: -366px;
+    padding-right: 366px;
   }
 }
 .node-type-apartment .ds-2col-stacked-fluid .group-right {
@@ -1397,7 +1440,7 @@ h1#page-title {
 @media (min-width: 1024px) {
   .node-type-apartment .ds-2col-stacked-fluid .group-right {
     float: right;
-    width: 300px;
+    width: 350px;
   }
 }
 .node-type-apartment .view-apartment {
@@ -1411,14 +1454,14 @@ h1#page-title {
 }
 .node-type-apartment .view-apartment .leaflet-container {
   width: 100%;
-  min-height: 300px;
+  min-height: 350px;
   max-height: 500px;
   position: static;
 }
 @media (min-width: 1024px) {
   .node-type-apartment .view-apartment .leaflet-container {
-    height: 300px !important;
-    width: 300px;
+    height: 350px !important;
+    width: 350px;
   }
 }
 .node-type-apartment .objekt-id, .node-type-apartment .field-name-field-apart-no {
@@ -1435,6 +1478,12 @@ h1#page-title {
 }
 .node-type-apartment .field-name-field-apart-commission .label-inline {
   font-weight: normal;
+  /*&::before {
+    content: "excl. ";
+  }*/
+}
+.node-type-apartment .field-name-field-apart-commission::before {
+  content: "\* ";
 }
 .node-type-apartment .field-name-ds-flag-merken a.flag {
   position: static;
@@ -1517,6 +1566,9 @@ h1#page-title {
   position: absolute;
   bottom: 5px;
 }
+.node-type-apartment .field-name-field-apart-price::after {
+  content: " \*";
+}
 .node-type-apartment .apartaddress {
   margin: .5em 0 1em 0;
   float: left;
@@ -1555,6 +1607,11 @@ h1#page-title {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   padding: .5em 0;
 }
 .node-type-apartment .apartmerkmale .views-field {
@@ -1565,11 +1622,11 @@ h1#page-title {
 .node-type-apartment .apartmerkmale .views-field .views-label {
   color: #4b4b4b;
   float: left;
-  width: 50%;
+  width: 65%;
 }
 .node-type-apartment .apartmerkmale .views-field .field-content {
   float: left;
-  width: 50%;
+  width: 35%;
   color: #1a1a1a;
   font-weight: 500;
 }
@@ -1937,8 +1994,8 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
   outline: 0;
   background: #fff;
   z-index: 10000;
-  position: relative;
-  overflow: visible;
+  /*position: relative;
+  overflow: visible;*/
   border: 4px solid #cbc1ba;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -1959,6 +2016,12 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
   display: block;
 }
 
+#edit-field-angefragte-wohnung-und-0-target-id--2 {
+  background-image: none;
+  background-color: #fff;
+  border: 0;
+}
+
 #colorbox .tabledrag-toggle-weight-wrapper {
   display: none;
 }
@@ -1972,5 +2035,99 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
   display: none;
 }
 #colorbox #edit-field-contact-telefon-und-add-more {
+  display: none;
+}
+
+.pdf > ol {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  column-count: 2;
+  padding-left: 20px;
+}
+.pdf > ol li {
+  margin-bottom: 1em;
+}
+.pdf > ol ol {
+  padding-left: 17px;
+}
+
+.lightbox .lightbox__overlay {
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  z-index: 150;
+  background: rgba(0, 0, 0, 0.8);
+}
+.lightbox .lightbox__header {
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px solid #cbc1ba;
+}
+.lightbox .lightbox__header:after {
+  content: 'x';
+  position: absolute;
+  background: #cbc1ba;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 35px;
+  height: 25px;
+  line-height: 0.6;
+  opacity: 1 !important;
+  padding: 4px;
+  right: -17px;
+  text-align: center;
+  top: -17px;
+  width: 25px;
+}
+.lightbox .lightbox__header:after:hover {
+  cursor: pointer;
+  color: #c61c2c;
+}
+.lightbox .lightbox__content {
+  border: 4px solid #cbc1ba;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #FFF;
+  color: #4b4b4b;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 90%;
+  width: 800px;
+  max-height: 100%;
+  min-height: 200px;
+  overflow: visible;
+}
+.lightbox .lightbox__body {
+  padding: 40px;
+}
+
+.ng-hidden {
   display: none;
 }

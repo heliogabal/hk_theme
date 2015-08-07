@@ -31,7 +31,16 @@
   right: 0;
   bottom: 0;
   height: auto !important;
+  a {
+    color: $primary;
+    &:visited {
+      color: $dark;
+    }
+  }
 }
+/*.leaflet-label, .leaflet-label p {
+  max-width: 250px;
+}*/
 #content {
   z-index: 101;
   position: relative;
@@ -182,12 +191,12 @@
     text-align: left;
     background: #fff;
 }
-.leaflet-popup-content-wrapper {
-    /* Bis bessere Lösung mit jQuery gefunden ist */
+/*Bis bessere Lösung mit jQuery gefunden ist  .leaflet-popup-content-wrapper {
+
     max-height: 350px;
     overflow-y: auto;
     overflow-x: hidden;
-}
+}*/
 .group-card {
   border: 2px solid $secondary;
   overflow-y: hidden;
@@ -240,6 +249,22 @@
         margin: -0.15em 0.5em 0 -0.5em;
       }
     }
+    button.toggle {
+      padding-right: .5em;
+      &::after {
+          color: #fff;
+          content: "";
+          float: right;
+          font-family: "hk";
+          line-height: 1.2;
+          width: 20px;
+        }
+    }
+    button.hide::after {
+        transform: rotate(45deg);
+      }
+
+
     .apart {
       color: $black;
       display: table;

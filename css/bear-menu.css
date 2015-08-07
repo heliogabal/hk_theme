@@ -188,6 +188,10 @@ body {
   border-color: rgba(255, 255, 255, 0.9);
 }
 
+#navigation .hauptmenu > ul li.active-trail ul:hover {
+  border-top: 0;
+}
+
 /* Service Menu */
 #navigation #block-menu-menu-service-menu ul:hover {
   border: 0;

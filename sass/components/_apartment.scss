@@ -6,6 +6,14 @@ h1#page-title {
     border: 2px solid $secondary;
     @include border-radius($border-radius);
     @include hyphenation;
+    -ms-hyphenate-limit-chars: auto 5;
+    -moz-hyphenate-limit-chars: auto 5;
+    -webkit-hyphenate-limit-chars: auto 5;
+    hyphenate-limit-chars: auto 5;
+    -ms-hyphenate-limit-lines: 2;
+    -moz-hyphenate-limit-lines: 2;
+    -webkit-hyphenate-limit-lines: 2;
+    hyphenate-limit-lines: 2;
     float: right;
     width: 300px;
     margin: 0.5rem 0;
@@ -36,8 +44,8 @@ h1#page-title {
         width: 100%;
         float: left;
       @include breakpoint($br-desk) {
-        margin-right: -316px;
-        padding-right: 316px;
+        margin-right: -366px;
+        padding-right: 366px;
       }
     }
     .group-right {
@@ -46,7 +54,7 @@ h1#page-title {
       max-with: 500px;
       @include breakpoint($br-desk) {
         float: right;
-        width: 300px;
+        width: 350px;
       }
     }
   }
@@ -60,12 +68,12 @@ h1#page-title {
     }
     .leaflet-container {
       width: 100%;
-      min-height: 300px;
+      min-height: 350px;
       max-height: 500px;
       position: static;
       @include breakpoint($br-desk) {
-      height: 300px !important;
-      width: 300px;
+      height: 350px !important;
+      width: 350px;
       }
     }
   }
@@ -82,6 +90,12 @@ h1#page-title {
     margin: .5em 0 1em 3px;
     .label-inline {
       font-weight: normal;
+      /*&::before {
+        content: "excl. ";
+      }*/
+    }
+    &::before {
+      content: "\* ";
     }
   }
   .field-name-ds-flag-merken {
@@ -165,6 +179,9 @@ h1#page-title {
     border: 2px solid $secondary;
     @include border-right-radius($border-radius);
     width: 50%;
+    &::after {
+      content: " \*";
+    }
   }
   .apartaddress {
     margin: .5em 0 1em 0;
@@ -193,6 +210,11 @@ h1#page-title {
     width: 100%;
     @include border-radius($border-radius);
     @include hyphenation;
+    -moz-hyphens: auto;
+   -o-hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+   hyphens: auto;
     padding: .5em 0;
     .views-field {
       padding: .2em .5em;
@@ -201,11 +223,11 @@ h1#page-title {
       .views-label {
         color: $dark;
         float: left;
-        width: 50%;
+        width: 65%;
       }
       .field-content {
         float: left;
-        width: 50%;
+        width: 35%;
         color: $black;
         font-weight: 500;
       }

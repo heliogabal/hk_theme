@@ -98,9 +98,9 @@
     <div class="print-content">
       <?php print $content; ?>
       <?php
-        $view_mode = 'full'; // Or 'full' for example
-        $node = node_load(3340);
-        $view = node_view($node, $view_mode);
+        $view_mode = 'print'; // Or 'full' for example
+        $nodes = node_load_multiple($nids = array(3340,3514));
+        $view = node_view_multiple($nodes, $view_mode);
       ?>
         <h3 class="pagebreak">
           <?php print $node->title;?>

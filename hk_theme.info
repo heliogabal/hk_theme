@@ -79,7 +79,7 @@ scripts[] = js/select2.min.js
 ;scripts[] = js/morphy-buttons-vendor.min.js
 ;scripts[] = js/morphy-buttons.min.js
 scripts[] = js/script.js
-;scripts[] = hk_colorbox/colorbox_hk_colorbox.js
+scripts[] = hk_colorbox/colorbox_hk_colorbox.js
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
 ; maintenance-page.tpl.php files. The name in brackets is the machine name of
