@@ -40,3 +40,23 @@ $br-tablet: 768px;
 $br-850: 850px;
 $br-desk: 1024px;
 $br-wide: 1280px;
+
+/***********
+~MIXINS
+***********/
+
+@mixin hyphenate {
+  -ms-hyphenate-limit-chars: 6 3 2;
+    -moz-hyphenate-limit-chars: 6 3 2;
+    -webkit-hyphenate-limit-chars: 6 3 2;
+    hyphenate-limit-chars: 6 3 2;
+    -ms-hyphenate-limit-lines: 2;
+    -moz-hyphenate-limit-lines: 2;
+    -webkit-hyphenate-limit-lines: 2;
+    hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    word-break: normal;
+}

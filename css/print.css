@@ -22,6 +22,9 @@ OUR CUSTOM MIXINS
 /***********
 ~BREAKPOINTS
 ***********/
+/***********
+~MIXINS
+***********/
 @media print {
   a:link,
   a:visited {

@@ -20,6 +20,9 @@ OUR CUSTOM MIXINS
 /***********
 ~BREAKPOINTS
 ***********/
+/***********
+~MIXINS
+***********/
 .comments {
   /* Wrapper for the list of comments and its title */
   margin: 1.5em 0;

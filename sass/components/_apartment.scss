@@ -5,15 +5,7 @@ h1#page-title {
   .group-merkmale {
     border: 2px solid $secondary;
     @include border-radius($border-radius);
-    @include hyphenation;
-    -ms-hyphenate-limit-chars: auto 5;
-    -moz-hyphenate-limit-chars: auto 5;
-    -webkit-hyphenate-limit-chars: auto 5;
-    hyphenate-limit-chars: auto 5;
-    -ms-hyphenate-limit-lines: 2;
-    -moz-hyphenate-limit-lines: 2;
-    -webkit-hyphenate-limit-lines: 2;
-    hyphenate-limit-lines: 2;
+    @include hyphenate;
     float: right;
     width: 300px;
     margin: 0.5rem 0;
@@ -209,12 +201,7 @@ h1#page-title {
     float: left;
     width: 100%;
     @include border-radius($border-radius);
-    @include hyphenation;
-    -moz-hyphens: auto;
-   -o-hyphens: auto;
-   -webkit-hyphens: auto;
-   -ms-hyphens: auto;
-   hyphens: auto;
+    @include hyphenate;
     padding: .5em 0;
     .views-field {
       padding: .2em .5em;
@@ -223,7 +210,8 @@ h1#page-title {
       .views-label {
         color: $dark;
         float: left;
-        max-width: 60%;
+        width: 59%;
+        margin-right: 1%;
       }
       .field-content {
         float: left;

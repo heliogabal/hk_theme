@@ -16,6 +16,9 @@ OUR CUSTOM MIXINS
 /***********
 ~BREAKPOINTS
 ***********/
+/***********
+~MIXINS
+***********/
 #navigation .hauptmenu > ul:after {
   content: "";
   display: table;

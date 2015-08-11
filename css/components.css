@@ -17,6 +17,9 @@ OUR CUSTOM MIXINS
 /***********
 ~BREAKPOINTS
 ***********/
+/***********
+~MIXINS
+***********/
 .group-contact-card {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
@@ -490,6 +493,9 @@ OUR CUSTOM MIXINS
 /***********
 ~BREAKPOINTS
 ***********/
+/***********
+~MIXINS
+***********/
 ul.views-fluid-grid-items-border-radius li.views-fluid-grid-item {
   border-radius: 5px;
 }
@@ -536,6 +542,9 @@ OUR CUSTOM MIXINS
 /* Schriftfarbe von Natascha */
 /***********
 ~BREAKPOINTS
+***********/
+/***********
+~MIXINS
 ***********/
 .group-card {
   position: relative;
@@ -679,6 +688,9 @@ OUR CUSTOM MIXINS
 /* Schriftfarbe von Natascha */
 /***********
 ~BREAKPOINTS
+***********/
+/***********
+~MIXINS
 ***********/
 /* Purchasing price facet */
 .block-facetapi {
@@ -908,6 +920,9 @@ OUR CUSTOM MIXINS
 /* Schriftfarbe von Natascha */
 /***********
 ~BREAKPOINTS
+***********/
+/***********
+~MIXINS
 ***********/
 .view-display-id-map_page {
   bottom: 0;
@@ -1378,6 +1393,9 @@ OUR CUSTOM MIXINS
 /***********
 ~BREAKPOINTS
 ***********/
+/***********
+~MIXINS
+***********/
 h1#page-title {
   border-bottom: 2px solid #c61c2c;
 }
@@ -1389,20 +1407,19 @@ h1#page-title {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  -ms-word-break: break-all;
-  word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  -ms-hyphenate-limit-chars: auto 5;
-  -moz-hyphenate-limit-chars: auto 5;
-  -webkit-hyphenate-limit-chars: auto 5;
-  hyphenate-limit-chars: auto 5;
+  -ms-hyphenate-limit-chars: 6 3 2;
+  -moz-hyphenate-limit-chars: 6 3 2;
+  -webkit-hyphenate-limit-chars: 6 3 2;
+  hyphenate-limit-chars: 6 3 2;
   -ms-hyphenate-limit-lines: 2;
   -moz-hyphenate-limit-lines: 2;
   -webkit-hyphenate-limit-lines: 2;
   hyphenate-limit-lines: 2;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  word-break: normal;
   float: right;
   width: 300px;
   margin: 0.5rem 0;
@@ -1606,17 +1623,19 @@ h1#page-title {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  -ms-word-break: break-all;
-  word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  -moz-hyphens: auto;
-  -o-hyphens: auto;
+  -ms-hyphenate-limit-chars: 6 3 2;
+  -moz-hyphenate-limit-chars: 6 3 2;
+  -webkit-hyphenate-limit-chars: 6 3 2;
+  hyphenate-limit-chars: 6 3 2;
+  -ms-hyphenate-limit-lines: 2;
+  -moz-hyphenate-limit-lines: 2;
+  -webkit-hyphenate-limit-lines: 2;
+  hyphenate-limit-lines: 2;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
+  -moz-hyphens: auto;
   hyphens: auto;
+  word-break: normal;
   padding: .5em 0;
 }
 .node-type-apartment .apartmerkmale .views-field {
@@ -1627,7 +1646,8 @@ h1#page-title {
 .node-type-apartment .apartmerkmale .views-field .views-label {
   color: #4b4b4b;
   float: left;
-  max-width: 60%;
+  width: 59%;
+  margin-right: 1%;
 }
 .node-type-apartment .apartmerkmale .views-field .field-content {
   float: left;
@@ -1739,6 +1759,9 @@ OUR CUSTOM MIXINS
 /***********
 ~BREAKPOINTS
 ***********/
+/***********
+~MIXINS
+***********/
 .footer {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 101;
@@ -1803,6 +1826,9 @@ OUR CUSTOM MIXINS
 /* Schriftfarbe von Natascha */
 /***********
 ~BREAKPOINTS
+***********/
+/***********
+~MIXINS
 ***********/
 .language-switcher {
   position: absolute;
