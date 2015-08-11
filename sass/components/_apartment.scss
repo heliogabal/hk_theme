@@ -223,11 +223,11 @@ h1#page-title {
       .views-label {
         color: $dark;
         float: left;
-        width: 65%;
+        max-width: 60%;
       }
       .field-content {
         float: left;
-        width: 35%;
+        width: 40%;
         color: $black;
         font-weight: 500;
       }

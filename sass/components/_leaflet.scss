@@ -75,7 +75,7 @@
   top: 10px;
 }
 .leaflet-bottom {
-  bottom: 60px;
+  bottom: 65px;
 }
 .view-apartment .leaflet-bottom,
 .objectmap .leaflet-bottom {
@@ -412,3 +412,7 @@
   width: 100%;
   margin-left: 0;
 }
+/* Popup Balloons always 100px from the top, Fix from Rik de Boer */
+div.leaflet-map-pane {
+    top: 125px;
+ }

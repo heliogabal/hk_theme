@@ -993,7 +993,7 @@ OUR CUSTOM MIXINS
 }
 
 .leaflet-bottom {
-  bottom: 60px;
+  bottom: 65px;
 }
 
 .view-apartment .leaflet-bottom,
@@ -1355,6 +1355,11 @@ img {
   margin-left: 0;
 }
 
+/* Popup Balloons always 100px from the top, Fix from Rik de Boer */
+div.leaflet-map-pane {
+  top: 125px;
+}
+
 div.krumo-root {
   z-index: 112 !important;
 }
@@ -1622,11 +1627,11 @@ h1#page-title {
 .node-type-apartment .apartmerkmale .views-field .views-label {
   color: #4b4b4b;
   float: left;
-  width: 65%;
+  max-width: 60%;
 }
 .node-type-apartment .apartmerkmale .views-field .field-content {
   float: left;
-  width: 35%;
+  width: 40%;
   color: #1a1a1a;
   font-weight: 500;
 }
