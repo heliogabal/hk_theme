@@ -1,4 +1,4 @@
-<?php
+ <?php
 drupal_add_library('system','ui.dialog');
 drupal_add_library('system', 'ui.tooltip');
 /**
@@ -43,7 +43,7 @@ function hk_theme_preprocess_page(&$vars) {
     if (drupal_is_front_page()) {
       //$GLOBALS['conf']['cache'] = FALSE;
       if ($is_mobile) {
-        $redirect = '/de/kaufen';
+        $redirect = '/buy';
         drupal_goto($redirect);
       }
     }
