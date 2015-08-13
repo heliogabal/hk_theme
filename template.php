@@ -9,6 +9,11 @@ function hk_theme_preprocess_html(&$variables, $hook) {
   // Add variables and paths needed for HTML5 and responsive support.
   $variables['base_path'] = base_path();
   $variables['path_to_bear_skin'] = drupal_get_path('theme', 'hk_theme');
+
+  // give colorbox its own html
+  if (isset($_GET['template']) && $_GET['template'] == 'colorbox') {
+    $vars['theme_hook_suggestions'][] = 'html__colorbox';
+  }
 }
 
 /**
@@ -35,6 +40,7 @@ function hk_theme_preprocess_page(&$vars) {
       $vars['theme_hook_suggestions'][] = 'page__colorbox';
       module_invoke('admin_menu_suppress(TRUE)');
   }
+
   // redirect to the buy page set for mobile devices, as the map does not work well for them.
   if (module_exists('mobile_detect')) {
     $detect = mobile_detect_get_object();
@@ -119,9 +125,9 @@ function hk_theme_preprocess_views_view_unformatted(&$vars) {
  * Remove the 'cache' setting from LOCALE_LANGUAGE_NEGOTIATION_BROWSER since
  * the code that utilizes this setting will in fact prevent browser negotiation.
  */
-// function hk_theme_language_negotiation_info_alter(&$negotiation_info) {
-//     unset($negotiation_info[LOCALE_LANGUAGE_NEGOTIATION_BROWSER]['cache']);
-// }
+ function hk_theme_language_negotiation_info_alter(&$negotiation_info) {
+     unset($negotiation_info[LOCALE_LANGUAGE_NEGOTIATION_BROWSER]['cache']);
+ }
 
 function hk_theme_preprocess_views_view(&$vars) {
   // Get the current view info
