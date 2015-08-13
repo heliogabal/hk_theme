@@ -20,7 +20,7 @@
         <?php print $attachment_before; ?>
         <?php endif; ?>
         <?php if ($rows): ?>
-        <!?php print $rows; ?>
+        <?php print $rows; ?>
         <?php elseif ($empty): ?>
         <?php print $empty; ?>
         <?php endif; ?>
@@ -35,7 +35,4 @@
         <?php endif; ?>
         <?php if ($footer): ?>
         <?php print $footer; ?>
-        <?php endif; ?>
-        <?php if ($feed_icon): ?>
-        <?php print $feed_icon; ?>
         <?php endif; ?>
