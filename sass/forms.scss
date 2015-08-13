@@ -241,9 +241,11 @@ a.button { /* Buttons used by contrib modules like Media */
 fieldset {
   margin-bottom: 15px;
   padding: 0;
+  border: 2px solid $secondary;
+  @include border-radius($border-radius);
   legend {
     float: left;
-    background: #EEEEEE;
+    background: $grey;
     width: 100%;
     margin-bottom: 10px;
     .fieldset-legend {

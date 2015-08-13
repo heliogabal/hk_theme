@@ -310,10 +310,16 @@ a.button {
 fieldset {
   margin-bottom: 15px;
   padding: 0;
+  border: 2px solid #cbc1ba;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 fieldset legend {
   float: left;
-  background: #EEEEEE;
+  background: #eff2f1;
   width: 100%;
   margin-bottom: 10px;
 }

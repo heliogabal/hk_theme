@@ -43,6 +43,8 @@
           placeholderOption: "first",
           allowClear: true
       });
+      $("edit-contact-name-und-0-title, #edit-field-crm-address-und-0-country").select2();
+
       //$(":file").filestyle({buttonText: "Find file"});
       // if ($('#navigation .block-menu').length) {
       //   $('#navigation .block-menu').prepend('<input type="checkbox" id="button"><label for="button" onclick>Menu</label>');

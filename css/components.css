@@ -2038,37 +2038,6 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
 }
 
-/* Anfrage in Colorbox */
-#block-crm-core-profile-ccp-anfrage {
-  display: none;
-}
-
-#cboxLoadedContent #block-crm-core-profile-ccp-anfrage {
-  display: block;
-}
-
-#edit-field-angefragte-wohnung-und-0-target-id--2 {
-  background-image: none;
-  background-color: #fff;
-  border: 0;
-}
-
-#colorbox .tabledrag-toggle-weight-wrapper {
-  display: none;
-}
-#colorbox tbody {
-  border: 0;
-}
-#colorbox td {
-  padding: 0;
-}
-#colorbox .field-multiple-drag {
-  display: none;
-}
-#colorbox #edit-field-contact-telefon-und-add-more {
-  display: none;
-}
-
 .pdf > ol {
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -2161,4 +2130,46 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
 
 .ng-hidden {
   display: none;
+}
+
+/* Inquiry in Colorbox */
+#block-crm-core-profile-ccp-anfrage {
+  display: none;
+}
+
+#cboxLoadedContent #block-crm-core-profile-ccp-anfrage {
+  display: block;
+}
+
+#edit-field-angefragte-wohnung-und-0-target-id--2 {
+  background-image: none;
+  background-color: #fff;
+  border: 0;
+}
+
+#colorbox .tabledrag-toggle-weight-wrapper {
+  display: none;
+}
+#colorbox tbody {
+  border: 0;
+}
+#colorbox td {
+  padding: 0;
+}
+#colorbox .field-multiple-drag {
+  display: none;
+}
+#colorbox #edit-field-contact-telefon-und-add-more {
+  display: none;
+}
+
+/* Contact form */
+.form-item-contact-name-und-0 {
+  margin: 1.5em 0 0;
+}
+
+.form-item-contact-name-und-0-title,
+.form-item-contact-name-und-0-given,
+.form-item-contact-name-und-0-family {
+  margin: 0;
 }
