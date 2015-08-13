@@ -2164,6 +2164,18 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
 }
 
 /* Contact form */
+.section-contact fieldset, .section-contact .field-name-field-activity-notes {
+  max-width: 533px;
+}
+.section-contact .field-name-field-e-mail {
+  float: left;
+  margin-right: 1em;
+  width: 326px;
+}
+.section-contact #edit-field-phone-und-0-value {
+  width: 193px;
+}
+
 .form-item-contact-name-und-0 {
   margin: 1.5em 0 0;
 }
@@ -2172,4 +2184,17 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
 .form-item-contact-name-und-0-given,
 .form-item-contact-name-und-0-family {
   margin: 0;
+}
+
+.form-item-contact-name-und-0-title .select2-choice {
+  height: 2.2em;
+  min-height: 30px;
+}
+
+.form-item-field-crm-address-und-0-country .select2-choice {
+  width: 275px;
+}
+
+.form-item-field-crm-address-und-0-premise {
+  display: none;
 }

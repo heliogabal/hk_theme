@@ -43,7 +43,9 @@
           placeholderOption: "first",
           allowClear: true
       });
-      $("edit-contact-name-und-0-title, #edit-field-crm-address-und-0-country").select2();
+      $("#edit-contact-name-und-0-title, #edit-field-crm-address-und-0-country").select2({
+        placeholder: Drupal.t('--'),
+      });
 
       //$(":file").filestyle({buttonText: "Find file"});
       // if ($('#navigation .block-menu').length) {
@@ -71,9 +73,9 @@
   }
 }(jQuery));
 
- (function($) {
-     Drupal.behaviors.leafletMap = {
-         attach: function(context, settings) {
+ // (function($) {
+ //     Drupal.behaviors.leafletMap = {
+ //         attach: function(context, settings) {
 //    /* RH Kartensuche */
      //    $( ".front #block-views-exp-karten-map-page, .front #search").dialog({
      //        height: "auto",
@@ -91,7 +93,7 @@
      //        }
      // }
 
- })(jQuery);
+ // })(jQuery);
 /*(function ($) {
   Drupal.behaviors.leafletZoomTo = {
     attach: function (context, settings) {
