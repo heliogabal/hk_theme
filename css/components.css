@@ -2164,15 +2164,15 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
 }
 
 /* Contact form */
-.section-contact fieldset, .section-contact .field-name-field-activity-notes {
+.section-contact fieldset, .section-contact .field-name-field-activity-notes, .section-anfrage fieldset, .section-anfrage .field-name-field-activity-notes {
   max-width: 533px;
 }
-.section-contact .field-name-field-e-mail {
+.section-contact .field-name-field-e-mail, .section-anfrage .field-name-field-e-mail {
   float: left;
   margin-right: 1em;
   width: 326px;
 }
-.section-contact #edit-field-phone-und-0-value {
+.section-contact #edit-field-phone-und-0-value, .section-anfrage #edit-field-phone-und-0-value {
   width: 193px;
 }
 
