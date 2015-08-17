@@ -53,9 +53,13 @@ html, body, button, input, select, textarea {
   /*@include bearfont-main;*/
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h5 {
   /*@include bearfont-titles;*/
   font-weight: 300;
+}
+
+h4 {
+  font-weight: 500;
 }
 
 .node-type-page h3 {

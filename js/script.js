@@ -44,7 +44,9 @@
           allowClear: true
       });
       $("#edit-contact-name-und-0-title, #edit-field-crm-address-und-0-country").select2({
-        placeholder: Drupal.t('--'),
+        placeholder: Drupal.t('please select'),
+        placeholderOption: "first",
+        allowClear: true
       });
 
       //$(":file").filestyle({buttonText: "Find file"});
