@@ -341,9 +341,11 @@
 .marker-cluster,
 .marker-cluster-small,
 .marker-cluster-medium,
-.marker-cluster-large {
+.marker-cluster-large,
+.marker-cluster-xlarge {
   background: none;
   border-radius: 0;
+  background: none;
   }
 /*.marker-cluster div:before {
     color: $primary;
@@ -353,12 +355,15 @@
     margin-right: -21px;
 }*/
 .marker-cluster div,
-.marker-cluster-small div {
+.marker-cluster-small div,
+.marker-cluster-medium div,
+.marker-cluster-large div,
+.marker-cluster-xlarge div {
  width: 32px;
   height: 42px;
   margin-left: 0;
   margin-top: 0;
-  background: url("../images/Icon_House2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: url("/sites/all/themes/hk_theme/icons/markers/Icon_House2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 
   text-align: center;
   border-radius: 0;
@@ -374,7 +379,8 @@
 }
 .marker-cluster-small span,
 .marker-cluster-medium span,
-.marker-cluster-large span {
+.marker-cluster-large span,
+.marker-cluster-xlarge span {
     background: #fff;
     border: 1px solid $secondary;
     border-radius: 15px;
@@ -385,7 +391,7 @@
     position: absolute;
     top: 16px;
 }
-.marker-cluster-small span:nth-child(2) {
+.marker-cluster-small span:nth-child(1) {
   display: none;  /* Zeigt eh nur die Objekte an, nicht die Wohnungen */
 }
 .marker-cluster div:hover, .marker-cluster span:hover {
