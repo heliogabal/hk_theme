@@ -135,7 +135,7 @@ body {
   top: 100%;
   left: 0;
   z-index: 10000;
-  width: 100%;
+  min-width: 100%;
   background: rgba(255, 255, 255, 0.9);
   opacity: 0;
   visibility: hidden;
@@ -156,13 +156,17 @@ body {
   transition-timing-function: ease-in-out;
 }
 #navigation .hauptmenu > ul ul:hover {
-  border-top: 4px solid #c61c2c;
+  border-top: 4px solid transparent;
 }
 #navigation .hauptmenu > ul ul li {
   display: block;
   width: 100%;
+  border-bottom: 4px solid transparent;
   /*@include box-shadow(0 1px 0 lighten($baseMenuBackground, 5%),
             0 2px 0 lighten($baseMenuBackground, 25%));*/
+}
+#navigation .hauptmenu > ul ul li:hover {
+  border-bottom: 4px solid #c61c2c;
 }
 #navigation .hauptmenu > ul ul li:first-child > a {
   /*@include border-radius(3px 3px 0 0);

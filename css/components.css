@@ -2204,3 +2204,11 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
 .form-item-field-crm-address-und-0-premise {
   display: none;
 }
+
+#sliding-popup.sliding-popup-bottom {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB9AAAAABCAYAAACG/TV9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAN1JREFUeNrsmDsOwzAMQyXfqPe/m9ylg0FIopyhQ8sHGPmIpj7OFDezlwkhhBA9/rnuh3v98PBkrUJ/vl/JM3qfOpbTC59s37rsw5u1BnWhbhGtFXVin9N+qxpYzWzO6GFJHjxDG54N+9ZsoK3qy56N6Ls4xozk63I48cliNtiP90IIIYQQQvwqO7mvrlVsD/YzfecTjV+QHF280ne6IB6orTSoC5hxNPVF4TdZOJNo6sIVxUxRswf1sRrYPLve9qCnuOh3DzyzM0QfS3SReN708c3/W0IIIf6ItwADAML2szM71CTgAAAAAElFTkSuQmCC);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#sliding-popup.sliding-popup-bottom #popup-text {
+  margin-left: 15%;
+}
