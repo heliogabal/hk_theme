@@ -26,7 +26,7 @@
           <?php endif; ?>
       <div id="navigation" tabindex="-1">
         <?php print render($page['navigation']); ?>
-        <a class="map-link" lang="de" href="/"><img src="/sites/all/themes/hk_theme/images/Icon_Map.png" alt="Back to Map" /></a>
+        <a class="map-link" href="/"><img src="/sites/all/themes/hk_theme/images/Icon_Map.png" width="40" height="40" alt="<?php print t('Back to Map'); ?>" /></a>
       </div><!-- /#navigation -->
     </div>
     </div>
