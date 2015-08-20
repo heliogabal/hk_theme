@@ -191,11 +191,13 @@ h1#page-title {
       top: -50px;
     }
   }
-  .field-name-apartment-characteristics {
+  .field-name-apartment-characteristics,
+  .field-name-energieausweis {
     margin: .5em 0;
     max-width: 560px;
   }
-  .apartmerkmale {
+  .apartmerkmale,
+  .energy {
     margin: .5em 0;
     border: $border;
     float: left;

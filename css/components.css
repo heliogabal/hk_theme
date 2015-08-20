@@ -1083,6 +1083,10 @@ OUR CUSTOM MIXINS
   border-radius: 0;
 }
 
+.ui-effects-transfer {
+  border: 2px dotted gray;
+}
+
 .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 0;
 }
@@ -1615,11 +1619,13 @@ h1#page-title {
     top: -50px;
   }
 }
-.node-type-apartment .field-name-apartment-characteristics {
+.node-type-apartment .field-name-apartment-characteristics,
+.node-type-apartment .field-name-energieausweis {
   margin: .5em 0;
   max-width: 560px;
 }
-.node-type-apartment .apartmerkmale {
+.node-type-apartment .apartmerkmale,
+.node-type-apartment .energy {
   margin: .5em 0;
   border: 2px solid #cbc1ba;
   float: left;
@@ -1644,24 +1650,28 @@ h1#page-title {
   word-break: normal;
   padding: .5em 0;
 }
-.node-type-apartment .apartmerkmale .views-field {
+.node-type-apartment .apartmerkmale .views-field,
+.node-type-apartment .energy .views-field {
   padding: .2em .5em;
   float: left;
   width: 100%;
 }
-.node-type-apartment .apartmerkmale .views-field .views-label {
+.node-type-apartment .apartmerkmale .views-field .views-label,
+.node-type-apartment .energy .views-field .views-label {
   color: #4b4b4b;
   float: left;
   width: 59%;
   margin-right: 1%;
 }
-.node-type-apartment .apartmerkmale .views-field .field-content {
+.node-type-apartment .apartmerkmale .views-field .field-content,
+.node-type-apartment .energy .views-field .field-content {
   float: left;
   width: 40%;
   color: #1a1a1a;
   font-weight: 500;
 }
-.node-type-apartment .apartmerkmale .views-field:nth-of-type(odd) {
+.node-type-apartment .apartmerkmale .views-field:nth-of-type(odd),
+.node-type-apartment .energy .views-field:nth-of-type(odd) {
   background: #e3e5e3;
 }
 
@@ -2203,6 +2213,16 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
 
 .form-item-field-crm-address-und-0-premise {
   display: none;
+}
+
+iframe {
+  max-height: 75px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  opacity: .9;
 }
 
 #sliding-popup.sliding-popup-bottom {
