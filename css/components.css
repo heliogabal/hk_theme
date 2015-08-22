@@ -1385,6 +1385,27 @@ div.leaflet-map-pane {
   top: 125px;
 }
 
+/* Rik de Boer */
+/* Make the Wohnung count inside the marker image white */
+.leaflet-tagged-marker div {
+  color: white;
+}
+
+/* Make the cluster population "footprint" outline pale transparent white,
+   with a thin red border. Change this to your heart's content.
+*/
+.leaflet-overlay-pane > svg.leaflet-zoom-animated > g > path.leaflet-clickable {
+  fill: white;
+  fill-opacity: 0.4;
+  stroke: red;
+  stroke-opacity: 0.6;
+  stroke-width: 1;
+  stroke-linecap: round;
+  /* butt | square */
+  stroke-linejoin: round;
+  /* miter | bevel */
+}
+
 div.krumo-root {
   z-index: 112 !important;
 }
