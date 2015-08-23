@@ -383,12 +383,16 @@
 .marker-cluster-large span,
 .marker-cluster-xlarge span {
     background: #fff;
-    border: 1px solid $secondary;
-    border-radius: 15px;
+    /*border: 1px solid $secondary;*/
+    @include border-radius (15px);
     color: $primary;
     left: 18px;
     margin-top: 15px;
-    padding: 2px 5px;
+    height: 20px;
+    width: 20px;
+    line-height: 1.7;
+    text-align: center;
+    /*padding: 2px 5px;*/
     position: absolute;
     top: 16px;
 }
@@ -427,7 +431,18 @@ div.leaflet-map-pane {
 /* Rik de Boer */
  /* Make the Wohnung count inside the marker image white */
 .leaflet-tagged-marker div {
-  color: white;
+  background: #fff;
+  height: 20px;
+  width: 20px;
+  min-width: 20px;
+  line-height: 1.9;
+  position: absolute;
+  @include border-radius(25px);
+  &.tag-below-marker {
+      color: $primary;
+      top: -12px;
+      left: 3px;
+  }
 }
 
 /* Make the cluster population "footprint" outline pale transparent white,
