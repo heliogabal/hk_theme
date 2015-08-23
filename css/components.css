@@ -1389,10 +1389,12 @@ img {
 }
 
 /* Popup Balloons always 100px from the top, Fix from Rik de Boer */
-div.leaflet-map-pane {
-  top: 125px;
-}
-
+/*div.leaflet-map-pane {
+    top: 100px;
+ }
+.page-node .leaflet-map-pane {
+    top: 25px;
+}*/
 /* Rik de Boer */
 /* Make the Wohnung count inside the marker image white */
 .leaflet-tagged-marker div {
@@ -1418,10 +1420,10 @@ div.leaflet-map-pane {
    with a thin red border. Change this to your heart's content.
 */
 .leaflet-overlay-pane > svg.leaflet-zoom-animated > g > path.leaflet-clickable {
-  fill: white;
-  fill-opacity: 0.4;
-  stroke: red;
-  stroke-opacity: 0.6;
+  fill: #fff;
+  fill-opacity: 0.2;
+  stroke: #c61c2c;
+  stroke-opacity: 1;
   stroke-width: 1;
   stroke-linecap: round;
   /* butt | square */
