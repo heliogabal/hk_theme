@@ -31,16 +31,7 @@
   right: 0;
   bottom: 0;
   height: auto !important;
-  a {
-    color: $primary;
-    &:visited {
-      color: $dark;
-    }
-  }
 }
-/*.leaflet-label, .leaflet-label p {
-  max-width: 250px;
-}*/
 #content {
   z-index: 101;
   position: relative;
@@ -84,29 +75,6 @@
 .view-apartment .leaflet-popup-content {
   width: 200px !important;
 }
-/* Exposed Form Suche
-#views-exposed-form-karte-block {
-    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
-    left: 30%;
-    padding: 1em;
-    position: absolute;
-    top: 400px;
-    z-index: 1000;
-}*/
-#views-exposed-form-karte-block {
-  padding: 0 1em;
-  height: 100px !important;
-  overflow: hidden;
-  .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
-    font-family: $helvetica-neue;
-    font-size: 1em;
-    height: 2.5em;
-    line-height: 1.5;
-  }
-}
-.front #block-views-exp-karten-map-page {
-  margin-left: 0;
-}
 
 .ui-dialog {
   width: 640px !important;
@@ -145,11 +113,8 @@
     }
   }
 }
-    .ui-effects-transfer { border: 2px dotted gray; }
+.ui-effects-transfer { border: 2px dotted gray; }
 
-// .views-widget-filter-zimmer {
-//     clear: left;
-// }
 .views-exposed-form .views-exposed-widget .form-submit {
     margin-top: 0;
 }
@@ -192,16 +157,9 @@
     text-align: left;
     background: #fff;
 }
-/*Bis bessere Lösung mit jQuery gefunden ist  .leaflet-popup-content-wrapper {
-
-    max-height: 350px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}*/
 .group-card {
   border: 2px solid $secondary;
   overflow-y: hidden;
-
 }
 .group-card:after {
     content: ".";
@@ -236,6 +194,12 @@
     .right {
       margin: 0 1em;
     }
+    a {
+      color: $primary;
+      &:visited {
+        color: $dark;
+      }
+    }
     p:first-of-type {
       margin-top: 0 !important;
     }
@@ -264,7 +228,6 @@
     button.hide::after {
         transform: rotate(45deg);
       }
-
 
     .apart {
       color: $black;
@@ -295,49 +258,7 @@
     }
   }
 }
-/* MarkeCluster overriding libraries/leaflet_markecluster/dist/MarkerClusterDefault.css*/
-.marker-cluster-small {
-  background-color: rgba(181, 226, 140, 0.6);
-  }
-.marker-cluster-small div {
-  background-color: rgba(110, 204, 57, 0.6);
-  }
-
-.marker-cluster-medium {
-  background-color: rgba(241, 211, 87, 0.6);
-  }
-.marker-cluster-medium div {
-  background-color: rgba(240, 194, 12, 0.6);
-  }
-
-.marker-cluster-large {
-  background-color: rgba(253, 156, 115, 0.6);
-  }
-.marker-cluster-large div {
-  background-color: rgba(241, 128, 23, 0.6);
-  }
-
-  /* IE 6-8 fallback colors */
-.leaflet-oldie .marker-cluster-small {
-  background-color: rgb(181, 226, 140);
-  }
-.leaflet-oldie .marker-cluster-small div {
-  background-color: rgb(110, 204, 57);
-  }
-
-.leaflet-oldie .marker-cluster-medium {
-  background-color: rgb(241, 211, 87);
-  }
-.leaflet-oldie .marker-cluster-medium div {
-  background-color: rgb(240, 194, 12);
-  }
-
-.leaflet-oldie .marker-cluster-large {
-  background-color: rgb(253, 156, 115);
-  }
-.leaflet-oldie .marker-cluster-large div {
-  background-color: rgb(241, 128, 23);
-}
+/* MarkerCluster overriding libraries/leaflet_markecluster/dist/MarkerClusterDefault.css*/
 
 .marker-cluster,
 .marker-cluster-small,
@@ -347,14 +268,7 @@
   background: none;
   border-radius: 0;
   background: none;
-  }
-/*.marker-cluster div:before {
-    color: $primary;
-    content: "";
-    font-family: hk;
-    font-size: 32px;
-    margin-right: -21px;
-}*/
+}
 .marker-cluster div,
 .marker-cluster-small div,
 .marker-cluster-medium div,
@@ -365,12 +279,10 @@
   margin-left: 0;
   margin-top: 0;
   background: url("/sites/all/themes/hk_theme/icons/markers/Icon_House2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-
   text-align: center;
   border-radius: 0;
   font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
-  /*background: rgba(0, 0, 0, 0);*/
-  }
+}
 .marker-cluster span {
     color: #fff;
     font-weight: bold;
@@ -383,7 +295,6 @@
 .marker-cluster-large span,
 .marker-cluster-xlarge span {
     background: #fff;
-    /*border: 1px solid $secondary;*/
     @include border-radius (15px);
     color: $primary;
     left: 18px;
@@ -399,12 +310,8 @@
 .marker-cluster-small span:nth-child(1) {
   display: none;  /* Zeigt eh nur die Objekte an, nicht die Wohnungen */
 }
-.marker-cluster div:hover, .marker-cluster span:hover {
-    /*transform: scale(1.2);*/
-  }
 
 /* Search Form */
-
 #block-views-exp-karten-kaufen,
 #block-views-exp-karten-map-page,
 .view-filters {
@@ -423,16 +330,8 @@
   width: 100%;
   margin-left: 0;
 }
-/* Popup Balloons always 100px from the top, Fix from Rik de Boer */
-/*div.leaflet-map-pane {
-    top: 100px;
- }
-.page-node .leaflet-map-pane {
-    top: 25px;
-}*/
 
 /* Rik de Boer */
- /* Make the Wohnung count inside the marker image white */
 .leaflet-tagged-marker div {
   background: #fff;
   height: 20px;

@@ -18,6 +18,12 @@
   #thumbslide {
     margin-left: 0;
   }
+  .icon-hk-icon-location::before {
+    font-size: 1.6em;
+    line-height: 0.75;
+    margin-left: -0.3em;
+    margin-right: 0;
+  }
 }
   .group-text {
     clear: left;
@@ -46,7 +52,7 @@
   }
 .group-card-project {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
+    @include border-radius($border-radius);
     background-color: #fff;
     border: 1px solid #ddd;
     color: #444;
@@ -58,10 +64,9 @@
       margin: .5rem 0 0;
     }
   }
-
   .group-project-card {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
+    @include border-radius($border-radius);
     background-color: #fff;
     border: 1px solid #ddd;
     color: #444;
@@ -95,7 +100,6 @@
       padding: .5rem;
     }
   }
-
 aside.group-merkmale {
   padding: 0;
 }
@@ -103,16 +107,12 @@ aside.group-merkmale .field {
   padding: 0.2em 0.5em;
 }
 aside.group-merkmale .field:nth-of-type(2n+1) {
-    background: none repeat scroll 0 0 #e3e5e3;
+    background: none repeat scroll 0 0 $rowgrey;
 }
-/*.street-block, .locality-block {
-    float: right;
-    width: 50%;
-}*/
 aside.group-merkmale .label-above,
 aside.group-merkmale .label-inline,
 aside.group-merkmale .field-label {
-    color: #4b4b4b;
+    color: $dark;
     font-weight: normal;
     display: inline-block;
     width: 50%;

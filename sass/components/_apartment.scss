@@ -51,10 +51,6 @@ h1#page-title {
     }
   }
   .view-apartment {
-    /*float: right;
-    position: relative;
-    width: 28%;
-    position: relative;*/
     .leaflet-top {
       display: none;
     }
@@ -82,9 +78,6 @@ h1#page-title {
     margin: .5em 0 1em 3px;
     .label-inline {
       font-weight: normal;
-      /*&::before {
-        content: "excl. ";
-      }*/
     }
     &::before {
       content: "\* ";
@@ -106,14 +99,6 @@ h1#page-title {
     height: 40px;
     padding: .5em 0 .5em 2.5em;
   }
-  // .fa.expose:before {
-  //   font-family: FontAwesome;
-  //   content: "\f02f";
-  //   color: $secondary;
-  //   font-size: 1.5em;
-  //   margin: 0 .2em;
-  //   display: inline-block;
-  // }
   .field-name-field-apart-living-space {
     .label-inline,
     .field-label {
@@ -141,7 +126,6 @@ h1#page-title {
       font-weight: normal;
       position: absolute;
       bottom: 5px;
-
       margin-left: -22%;
     }
     padding: .5em 1em 1.5em 1em;
@@ -285,10 +269,13 @@ h1#page-title {
     display: block;
   }
 }
+.field-name-thumbslider {
+    float: left;
+    max-width: 790px;
+}
 #thumbslide {
-  margin-left: 160px;
   li {
-    margin: 0 5px;
+    margin: 0 10px 0 0;
     opacity: .9;
     // width: 150px;
     &:hover {

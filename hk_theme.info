@@ -34,20 +34,18 @@ stylesheets[all][] = system.menus.css
 
 ; Then we add our own stylesheets.
 stylesheets[all][] = css/normalize.css
-stylesheets[all][] = css/wireframes.css
+;stylesheets[all][] = css/wireframes.css
 stylesheets[all][] = css/layout.css
 stylesheets[all][] = css/tabs.css
 stylesheets[all][] = css/pages.css
 stylesheets[all][] = css/blocks.css
 stylesheets[all][] = css/navigation.css
 stylesheets[all][] = css/bear-menu.css
-stylesheets[all][] = css/morphy-buttons-vendor.min.css
-stylesheets[all][] = css/morphy-buttons.min.css
-stylesheets[all][] = css/views-styles.css
-stylesheets[all][] = css/comments.css
+;stylesheets[all][] = css/morphy-buttons-vendor.min.css
+;stylesheets[all][] = css/morphy-buttons.min.css
+;stylesheets[all][] = css/views-styles.css
 stylesheets[all][] = css/forms.css
-stylesheets[all][] = css/panels.css
-stylesheets[all][] = css/sidebars.css
+;stylesheets[all][] = css/panels.css
 stylesheets[all][] = css/print.css
 stylesheets[all][] = css/formalize.css
 stylesheets[all][] = css/select2.css

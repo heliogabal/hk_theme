@@ -145,7 +145,6 @@ OUR CUSTOM MIXINS
   background: none repeat scroll 0 0 #FFFFFF;
   border: 0;
   border-radius: 0;
-  /*border: 5px solid #FFFFFF;*/
   margin: 30px 0;
   position: relative;
 }
@@ -566,6 +565,12 @@ OUR CUSTOM MIXINS
 .node-type-objekt #thumbslide {
   margin-left: 0;
 }
+.node-type-objekt .icon-hk-icon-location::before {
+  font-size: 1.6em;
+  line-height: 0.75;
+  margin-left: -0.3em;
+  margin-right: 0;
+}
 
 .group-text {
   clear: left;
@@ -596,7 +601,11 @@ OUR CUSTOM MIXINS
 
 .group-card-project {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
   background-color: #fff;
   border: 1px solid #ddd;
   color: #444;
@@ -611,7 +620,11 @@ OUR CUSTOM MIXINS
 
 .group-project-card {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
   background-color: #fff;
   border: 1px solid #ddd;
   color: #444;
@@ -658,10 +671,6 @@ aside.group-merkmale .field:nth-of-type(2n+1) {
   background: none repeat scroll 0 0 #e3e5e3;
 }
 
-/*.street-block, .locality-block {
-    float: right;
-    width: 50%;
-}*/
 aside.group-merkmale .label-above,
 aside.group-merkmale .label-inline,
 aside.group-merkmale .field-label {
@@ -698,10 +707,6 @@ OUR CUSTOM MIXINS
   z-index: 112;
   margin-right: 1em;
   height: 3em;
-}
-.block-facetapi h2 {
-  /*line-height: 30px;
-  padding-bottom: 8%;*/
 }
 
 .view-wohnungssuche {
@@ -959,16 +964,7 @@ OUR CUSTOM MIXINS
   bottom: 0;
   height: auto !important;
 }
-.leaflet-container a {
-  color: #c61c2c;
-}
-.leaflet-container a:visited {
-  color: #4b4b4b;
-}
 
-/*.leaflet-label, .leaflet-label p {
-  max-width: 250px;
-}*/
 #content {
   z-index: 101;
   position: relative;
@@ -1018,31 +1014,6 @@ OUR CUSTOM MIXINS
 
 .view-apartment .leaflet-popup-content {
   width: 200px !important;
-}
-
-/* Exposed Form Suche
-#views-exposed-form-karte-block {
-    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
-    left: 30%;
-    padding: 1em;
-    position: absolute;
-    top: 400px;
-    z-index: 1000;
-}*/
-#views-exposed-form-karte-block {
-  padding: 0 1em;
-  height: 100px !important;
-  overflow: hidden;
-}
-#views-exposed-form-karte-block .ui-widget input, #views-exposed-form-karte-block .ui-widget select, #views-exposed-form-karte-block .ui-widget textarea, #views-exposed-form-karte-block .ui-widget button {
-  font-family: "Neue Helvetica W01", Helvetica, Arial, "Nimbus Sans L", sans-serif;
-  font-size: 1em;
-  height: 2.5em;
-  line-height: 1.5;
-}
-
-.front #block-views-exp-karten-map-page {
-  margin-left: 0;
 }
 
 .ui-dialog {
@@ -1141,12 +1112,6 @@ OUR CUSTOM MIXINS
   background: #fff;
 }
 
-/*Bis bessere Lösung mit jQuery gefunden ist  .leaflet-popup-content-wrapper {
-
-    max-height: 350px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}*/
 .group-card {
   border: 2px solid #cbc1ba;
   overflow-y: hidden;
@@ -1187,6 +1152,12 @@ img {
 }
 .leaflet-popup-content .right {
   margin: 0 1em;
+}
+.leaflet-popup-content a {
+  color: #c61c2c;
+}
+.leaflet-popup-content a:visited {
+  color: #4b4b4b;
 }
 .leaflet-popup-content p:first-of-type {
   margin-top: 0 !important;
@@ -1245,56 +1216,7 @@ img {
   padding: 0.5em 1em 0.5em 0;
 }
 
-/* MarkeCluster overriding libraries/leaflet_markecluster/dist/MarkerClusterDefault.css*/
-.marker-cluster-small {
-  background-color: rgba(181, 226, 140, 0.6);
-}
-
-.marker-cluster-small div {
-  background-color: rgba(110, 204, 57, 0.6);
-}
-
-.marker-cluster-medium {
-  background-color: rgba(241, 211, 87, 0.6);
-}
-
-.marker-cluster-medium div {
-  background-color: rgba(240, 194, 12, 0.6);
-}
-
-.marker-cluster-large {
-  background-color: rgba(253, 156, 115, 0.6);
-}
-
-.marker-cluster-large div {
-  background-color: rgba(241, 128, 23, 0.6);
-}
-
-/* IE 6-8 fallback colors */
-.leaflet-oldie .marker-cluster-small {
-  background-color: #b5e28c;
-}
-
-.leaflet-oldie .marker-cluster-small div {
-  background-color: #6ecc39;
-}
-
-.leaflet-oldie .marker-cluster-medium {
-  background-color: #f1d357;
-}
-
-.leaflet-oldie .marker-cluster-medium div {
-  background-color: #f0c20c;
-}
-
-.leaflet-oldie .marker-cluster-large {
-  background-color: #fd9c73;
-}
-
-.leaflet-oldie .marker-cluster-large div {
-  background-color: #f18017;
-}
-
+/* MarkerCluster overriding libraries/leaflet_markecluster/dist/MarkerClusterDefault.css*/
 .marker-cluster,
 .marker-cluster-small,
 .marker-cluster-medium,
@@ -1305,13 +1227,6 @@ img {
   background: none;
 }
 
-/*.marker-cluster div:before {
-    color: $primary;
-    content: "";
-    font-family: hk;
-    font-size: 32px;
-    margin-right: -21px;
-}*/
 .marker-cluster div,
 .marker-cluster-small div,
 .marker-cluster-medium div,
@@ -1325,7 +1240,6 @@ img {
   text-align: center;
   border-radius: 0;
   font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
-  /*background: rgba(0, 0, 0, 0);*/
 }
 
 .marker-cluster span {
@@ -1341,7 +1255,6 @@ img {
 .marker-cluster-large span,
 .marker-cluster-xlarge span {
   background: #fff;
-  /*border: 1px solid $secondary;*/
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
@@ -1364,10 +1277,6 @@ img {
   /* Zeigt eh nur die Objekte an, nicht die Wohnungen */
 }
 
-.marker-cluster div:hover, .marker-cluster span:hover {
-  /*transform: scale(1.2);*/
-}
-
 /* Search Form */
 #block-views-exp-karten-kaufen,
 #block-views-exp-karten-map-page,
@@ -1388,15 +1297,7 @@ img {
   margin-left: 0;
 }
 
-/* Popup Balloons always 100px from the top, Fix from Rik de Boer */
-/*div.leaflet-map-pane {
-    top: 100px;
- }
-.page-node .leaflet-map-pane {
-    top: 25px;
-}*/
 /* Rik de Boer */
-/* Make the Wohnung count inside the marker image white */
 .leaflet-tagged-marker div {
   background: #fff;
   height: 20px;
@@ -1521,12 +1422,6 @@ h1#page-title {
     width: 350px;
   }
 }
-.node-type-apartment .view-apartment {
-  /*float: right;
-  position: relative;
-  width: 28%;
-  position: relative;*/
-}
 .node-type-apartment .view-apartment .leaflet-top {
   display: none;
 }
@@ -1556,9 +1451,6 @@ h1#page-title {
 }
 .node-type-apartment .field-name-field-apart-commission .label-inline {
   font-weight: normal;
-  /*&::before {
-    content: "excl. ";
-  }*/
 }
 .node-type-apartment .field-name-field-apart-commission::before {
   content: "\* ";
@@ -1784,11 +1676,13 @@ h1#page-title {
   display: block;
 }
 
-#thumbslide {
-  margin-left: 160px;
+.field-name-thumbslider {
+  float: left;
+  max-width: 790px;
 }
+
 #thumbslide li {
-  margin: 0 5px;
+  margin: 0 10px 0 0;
   opacity: .9;
 }
 #thumbslide li:hover {
@@ -1861,7 +1755,7 @@ OUR CUSTOM MIXINS
 }
 .footer footer .menu-footer ul li a {
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   padding: 0.5em 1em 1.5em;
   display: block;
   border-top: 4px solid transparent;
@@ -1918,7 +1812,7 @@ OUR CUSTOM MIXINS
   display: block;
   padding: .5em 1em;
   color: #91988e;
-  font-weight: bold;
+  font-weight: 500;
 }
 .language-switcher li a:hover {
   color: #c61c2c;
@@ -2087,8 +1981,6 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
   outline: 0;
   background: #fff;
   z-index: 10000;
-  /*position: relative;
-  overflow: visible;*/
   border: 4px solid #cbc1ba;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -2271,12 +2163,24 @@ iframe {
   opacity: .9;
 }
 
-#sliding-popup.sliding-popup-bottom {
+#sliding-popup .popup-content {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB9AAAAABCAYAAACG/TV9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAN1JREFUeNrsmDsOwzAMQyXfqPe/m9ylg0FIopyhQ8sHGPmIpj7OFDezlwkhhBA9/rnuh3v98PBkrUJ/vl/JM3qfOpbTC59s37rsw5u1BnWhbhGtFXVin9N+qxpYzWzO6GFJHjxDG54N+9ZsoK3qy56N6Ls4xozk63I48cliNtiP90IIIYQQQvwqO7mvrlVsD/YzfecTjV+QHF280ne6IB6orTSoC5hxNPVF4TdZOJNo6sIVxUxRswf1sRrYPLve9qCnuOh3DzyzM0QfS3SReN708c3/W0IIIf6ItwADAML2szM71CTgAAAAAElFTkSuQmCC);
   background-color: rgba(0, 0, 0, 0.5);
 }
-#sliding-popup.sliding-popup-bottom #popup-text {
+#sliding-popup .popup-content #popup-text {
   margin-left: 15%;
+  font-weight: normal !important;
+}
+
+#popup-buttons button {
+  background-color: #c61c2c;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  border: 0;
 }
 
 div.krumo-root {

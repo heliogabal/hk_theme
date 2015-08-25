@@ -24,7 +24,6 @@ OUR CUSTOM MIXINS
 /***********
 ~MIXINS
 ***********/
-/*$site-max-width: 1200px;*/
 #page {
   width: 100%;
 }
@@ -64,26 +63,6 @@ OUR CUSTOM MIXINS
   }
 }
 
-/*.footer {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
-    bottom: 0;
-    height: 90px;
-    position: fixed;
-    width: 100%;
-    z-index: 103;
-    footer {
-      width: 90%;
-      margin: 0 auto;
-      max-width: 1400px;
-      position: relative;
-    }
-}*/
-/*.wrapper.footer {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1600px;
-    position: relative;
-  }*/
 body.front h1#page-title {
   display: none;
 }

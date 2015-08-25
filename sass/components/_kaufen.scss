@@ -1,12 +1,6 @@
 .view-display-id-kaufen,
 .page-mieten,
 .view-merkliste {
-  // .view-content {
-  //   img {
-  //     float: left;
-  //     margin-right: 1em;
-  //   }
-  // }
   .views-row-even,
   .views-row-odd {
     float: left;
@@ -14,16 +8,7 @@
     @include breakpoint($br-desk) {
     width: 49%;
     }
-    // padding: .5em;
     margin-bottom: 1em;
-    // background: #fff;
-    // @include border-radius($border-radius);
-    // @include box-shadow($box-shadow);
-    // h2 {
-    //   line-height: 1.2;
-    //   font-size: 1em;
-    //   margin: 0 40px 0 0;
-    // }
   }
   .views-row-odd {
     float: right;
@@ -60,5 +45,4 @@
         font-size: 1.75em;
       }
     }
-
 }

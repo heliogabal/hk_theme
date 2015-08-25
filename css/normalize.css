@@ -141,20 +141,9 @@ textarea {
   font-family: "Neue Helvetica W01", Helvetica, Arial, "Nimbus Sans L", sans-serif;
 }
 
-/*
- * Addresses margins handled incorrectly in IE6/7
- */
-body {
-  margin: 0;
-}
-
 /* =============================================================================
    Links
    ========================================================================== */
-/*
- * The order of link states are based on Eric Meyer's article:
- * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
- */
 /*
  * Addresses outline displayed oddly in Chrome
  */

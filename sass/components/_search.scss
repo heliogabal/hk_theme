@@ -6,10 +6,6 @@
   z-index: 112;
   margin-right: 1em;
   height: 3em;
-  h2 {
-  /*line-height: 30px;
-  padding-bottom: 8%;*/
-  }
 }
 .view-wohnungssuche {
   clear: left;
@@ -42,10 +38,6 @@
 .select2-search {
   display: none;
 }
-// .select2-drop-active, .select2-dropdown-open {
-//   border: 2px solid;
-//   border-color: -moz-use-text-color $primary $primary;
-// }
 .select2-container-active .select2-choice, .select2-container-active .select2-choices {
   border: 2px solid $primary;
 }
@@ -166,10 +158,9 @@
 }
 
 /* Hide Search Bar first on all pages but front and buy */
-
 .not-front #block-views-exp-karten-kaufen,
 .not-front #search {
-    display: none;
+  display: none;
 }
 #search, .front .ui-dialog {
   @include breakpoint($breakpoint-small-width) {
@@ -179,5 +170,5 @@
 .page-kaufen #block-views-exp-karten-kaufen,
 .page-buy #search,
 .page-rent #search {
-    display: block;
-  }
+  display: block;
+}
