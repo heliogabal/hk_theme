@@ -2154,7 +2154,7 @@ a.fav_active i, .favorite i.icon-hk-icon-favorite {
 }
 
 iframe {
-  max-height: 75px;
+  /*max-height: 75px;*/
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
