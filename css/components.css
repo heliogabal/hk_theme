@@ -20,6 +20,13 @@ OUR CUSTOM MIXINS
 /***********
 ~MIXINS
 ***********/
+/***********
+~SPRITES
+***********/
+.sprite-sprite {
+  background: url('../images/sprite-s56ceb37b41.png') no-repeat;
+}
+
 .group-contact-card {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
@@ -495,6 +502,13 @@ OUR CUSTOM MIXINS
 /***********
 ~MIXINS
 ***********/
+/***********
+~SPRITES
+***********/
+.sprite-sprite {
+  background: url('../images/sprite-s56ceb37b41.png') no-repeat;
+}
+
 ul.views-fluid-grid-items-border-radius li.views-fluid-grid-item {
   border-radius: 5px;
 }
@@ -545,6 +559,13 @@ OUR CUSTOM MIXINS
 /***********
 ~MIXINS
 ***********/
+/***********
+~SPRITES
+***********/
+.sprite-sprite {
+  background: url('../images/sprite-s56ceb37b41.png') no-repeat;
+}
+
 .group-card {
   position: relative;
   margin-bottom: 1em;
@@ -701,6 +722,13 @@ OUR CUSTOM MIXINS
 /***********
 ~MIXINS
 ***********/
+/***********
+~SPRITES
+***********/
+.sprite-sprite {
+  background: url('../images/sprite-s56ceb37b41.png') no-repeat;
+}
+
 /* Purchasing price facet */
 .block-facetapi {
   float: left;
@@ -929,6 +957,13 @@ OUR CUSTOM MIXINS
 /***********
 ~MIXINS
 ***********/
+/***********
+~SPRITES
+***********/
+.sprite-sprite {
+  background: url('../images/sprite-s56ceb37b41.png') no-repeat;
+}
+
 .view-display-id-map_page {
   bottom: 0;
   left: 0;
@@ -1353,6 +1388,13 @@ OUR CUSTOM MIXINS
 /***********
 ~MIXINS
 ***********/
+/***********
+~SPRITES
+***********/
+.sprite-sprite {
+  background: url('../images/sprite-s56ceb37b41.png') no-repeat;
+}
+
 h1#page-title {
   border-bottom: 2px solid #c61c2c;
 }
@@ -1718,6 +1760,13 @@ OUR CUSTOM MIXINS
 /***********
 ~MIXINS
 ***********/
+/***********
+~SPRITES
+***********/
+.sprite-sprite {
+  background: url('../images/sprite-s56ceb37b41.png') no-repeat;
+}
+
 .footer {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 101;
@@ -1786,6 +1835,13 @@ OUR CUSTOM MIXINS
 /***********
 ~MIXINS
 ***********/
+/***********
+~SPRITES
+***********/
+.sprite-sprite {
+  background: url('../images/sprite-s56ceb37b41.png') no-repeat;
+}
+
 .language-switcher {
   position: absolute;
   right: 0;

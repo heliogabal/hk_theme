@@ -31,6 +31,13 @@ OUR CUSTOM MIXINS
 ~MIXINS
 ***********/
 /***********
+~SPRITES
+***********/
+.sprite-sprite {
+  background: url('../images/sprite-s56ceb37b41.png') no-repeat;
+}
+
+/***********
 ~GENERIC
 ***********/
 body {

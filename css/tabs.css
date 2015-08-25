@@ -28,6 +28,13 @@ OUR CUSTOM MIXINS
 /***********
 ~MIXINS
 ***********/
+/***********
+~SPRITES
+***********/
+.sprite-sprite {
+  background: url('../images/sprite-s56ceb37b41.png') no-repeat;
+}
+
 /*
  * Basic positioning styles shared by primary and secondary tabs.
  */

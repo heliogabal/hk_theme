@@ -19,6 +19,13 @@ OUR CUSTOM MIXINS
 /***********
 ~MIXINS
 ***********/
+/***********
+~SPRITES
+***********/
+.sprite-sprite {
+  background: url('../images/sprite-s56ceb37b41.png') no-repeat;
+}
+
 /*
 Version: 3.4.1 Timestamp: Thu Jun 27 18:02:10 PDT 2013
 */

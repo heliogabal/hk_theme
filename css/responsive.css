@@ -19,6 +19,13 @@ OUR CUSTOM MIXINS
 /***********
 ~MIXINS
 ***********/
+/***********
+~SPRITES
+***********/
+.sprite-sprite {
+  background: url('../images/sprite-s56ceb37b41.png') no-repeat;
+}
+
 @media (max-width: 1280px) {
   .region-navigation #block-menu-menu-service-menu ul.menu,
   #navigation .block-menu ul, #navigation .menu-block-wrapper ul {
