@@ -100,9 +100,15 @@
     background: #fff !important;
     border: 0 !important;
     .ui-icon-closethick {
-      background: url(../images/Icon_x_Kreis.png) no-repeat scroll 0 0;
+      /*background: url(../images/Icon_x_Kreis.png) no-repeat scroll 0 0;*/
+      /*@include sprite-sprite(Icon_x_Kreis);
+      background-position: 80px 0 !important;*/
+      @extend .sprite-Icon_x_Kreis;
       width: 40px;
       height: 40px;
+    }
+    .ui-icon-closethick:hover {
+      @extend .sprite-Icon_x_Kreis_aktiv;
     }
     .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default,
     .ui-state-hover, .ui-state-focus {
@@ -278,7 +284,10 @@
   height: 42px;
   margin-left: 0;
   margin-top: 0;
-  background: url("/sites/all/themes/hk_theme/icons/markers/Icon_House2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  /*background: url("/sites/all/themes/hk_theme/icons/markers/Icon_House2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+  /*@include sprite-sprite(Icon_House2);
+  background-position: 362px 0 !important;*/
+  @extend .sprite-Icon_House2;
   text-align: center;
   border-radius: 0;
   font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;

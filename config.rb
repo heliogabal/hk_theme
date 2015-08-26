@@ -10,8 +10,8 @@ Encoding.default_external = "utf-8"
 
 
 # Change this to :production when ready to deploy the CSS to the live server.
-environment = :development
-#environment = :production
+#environment = :development
+environment = :production
 
 # In development, we can turn on the FireSass-compatible debug_info.
 #firesass = false
@@ -60,4 +60,4 @@ line_comments = false
 
 # Pass options to sass. For development, we turn on the FireSass-compatible
 # debug_info if the firesass config variable above is true.
-# sass_options = (environment == :development && firesass == true) ? {:debug_info => true} : {}
+sass_options = (environment == :development && firesass == true) ? {:debug_info => true} : {}

@@ -22,7 +22,11 @@ h1#page-title {
       padding: 0;
       li {
         list-style: none;
-        background: url(../images/Icon_Check.png) -10px 50% no-repeat;
+        /*background: url(../images/Icon_Check.png) -10px 50% no-repeat;*/
+        /*@include sprite-sprites(Icon_Check);*/
+        background-position: -10px -55px !important;
+        @extend .sprite-Icon_Check;
+        /*@include sprite-background-position($sprite-sprite, Icon_Check, -15px, -14px);*/
         padding: .25em 0 .25em 30px;
       }
     }
@@ -95,7 +99,10 @@ h1#page-title {
   a.expose {
     color: $dark;
     display: inline-block;
-    background: url(../images/Icon_Print.png) 1px 0 no-repeat;
+    /*background: url(../images/Icon_Print.png) 1px 0 no-repeat;*/
+    /*@include sprite-sprite(Icon_Print);
+    background: sprite($sprite, Icon_Print) no-repeat;*/
+    @extend .sprite-Icon_Print;
     height: 40px;
     padding: .5em 0 .5em 2.5em;
   }
@@ -209,7 +216,17 @@ h1#page-title {
     .views-field:nth-of-type(odd) {
       background: $rowgrey;
     }
+    .views-field-field-obj-enev-file {
+    .views-label-field-obj-enev-file,
+    .field-content {
+      width: 100%;
+      }
+    }
   }
+}
+.file img {
+  padding-top: 5px;
+  margin-right: .3em;
 }
 .ui-widget {
   font: 1em/1.5 "Neue Helvetica W01";

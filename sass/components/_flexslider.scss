@@ -59,11 +59,13 @@
     .flex-direction-nav a.flex-prev {
       left: -50px;
       background: url(../images/Arrow_left.png) 0 50% no-repeat;
+      /*@include sprite-sprite(Arrow_left);*/
     }
     .flex-direction-nav a.flex-next {
       right: -50px;
       text-align: right;
       background: url(../images/Arrow_right.png) 0 50% no-repeat;
+      /*@include sprite-sprite(Arrow_right);*/
     }
     .flexslider:hover .flex-direction-nav .flex-prev {
       opacity: 1;
@@ -247,12 +249,14 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav a.flex-prev {
       left: -50px;
       background: url(../images/Arrow_left.png) 0 55% no-repeat;
+      /*@include sprite-sprite(Arrow_left);*/
       padding-right: 2em;
     }
     .flex-direction-nav a.flex-next {
       right: -50px;
       text-align: right;
       background: url(../images/Arrow_right.png) 0 55% no-repeat;
+      /*@include sprite-sprite(Arrow_right);*/
       padding-left: 2em;
     }
     .flexslider:hover .flex-direction-nav .flex-prev {
