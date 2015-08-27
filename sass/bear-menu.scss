@@ -219,7 +219,8 @@ body {
       width: 40px;
       a {
         color: $greyer;
-        &:hover {
+        &:hover,
+        &.active {
         color: $primary;
         border:0;
         background: none;
