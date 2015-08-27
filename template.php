@@ -54,8 +54,57 @@ function hk_theme_preprocess_page(&$vars) {
       }
     }
   }
+  /* idevels*/
+    if (module_exists('drudesk') && current_path() == 'favorites' && ($favorites = _drudesk_favorites_exists())) {
+    drupal_add_js(drupal_get_path('module', 'ng_lightbox') . '/js/ng-lightbox.js');
+
+    $element = array(
+      '#type' => 'container',
+      '#attributes' => array(
+        'class' => array('inquiry-button-wrapper', 'first'),
+      ),
+      'button' => array(
+        '#theme' => 'link',
+        '#text' => t('Inquiry'),
+        '#path' => 'anfrage',
+        '#options' => array(
+          'html' => FALSE,
+          'query' => array(
+            'destination' => 'favorites',
+          ),
+          'attributes' => array(
+            'class' => array('btn', 'full', 'ng-lightbox'),
+          ),
+        ),
+      ),
+    );
+
+    if ($favorites == 1) {
+      global $user;
+      $element['button']['#options']['query']['field_angefragte_wohnung'] = db_select('flagging', 'f')
+        ->fields('f', array('entity_id'))
+        ->condition('uid', $user->uid)
+        ->condition('sid', session_id())
+        ->execute()
+        ->fetchField();
+    }
+
+    $vars['title_prefix'][] = $element;
+    $element['#attributes']['class'][1] = 'last';
+    $vars['feed_icons'] .= render($element);
+  }
 
 }
+
+/**
+ * Implements hook_preprocess_link().
+ */
+function hk_theme_preprocess_link(&$variables) {
+  if (module_exists('drudesk') && isset($variables['options']['icon']) && $variables['options']['icon']['icon'] == 'icon-hk_icon_favorite' && _drudesk_favorites_exists()) {
+    $variables['options']['attributes']['class'][] = 'active';
+  }
+}
+/* idevels end */
 
 /**
 * Load modified markercluster js

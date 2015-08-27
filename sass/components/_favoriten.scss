@@ -66,3 +66,20 @@ a.flagged, a.unflag-action {
 a.fav_active i, .favorite i.icon-hk-icon-favorite {
   color: $primary;
 }
+
+/* idevels*/
+.inquiry-button-wrapper {
+  clear: both;
+  overflow: hidden;
+}
+.inquiry-button-wrapper.first {
+  margin-bottom: -40px;
+}
+.inquiry-button-wrapper.last {
+  position: relative;
+  top: -12px;
+}
+.inquiry-button-wrapper .btn {
+  float: right;
+  margin: 0;
+}
