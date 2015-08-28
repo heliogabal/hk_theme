@@ -166,6 +166,7 @@ body {
     visibility: hidden;
     margin: 2 * $gutter 0 0 0;
     background: $secondaryMenuBackground;
+    white-space: nowrap;
     /*@include menu-background(lighten($baseMenuBackground, 15%), false);*/
     @include transition-property("margin, opacity");
     @include transition-duration(".15s");
