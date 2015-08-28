@@ -3,7 +3,7 @@
 .view-merkliste {
   .views-row-even,
   .views-row-odd {
-    float: right;
+    float: left;
     width: 100%;
     @include breakpoint($br-desk) {
     width: 49%;
