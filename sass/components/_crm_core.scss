@@ -8,7 +8,13 @@
 #edit-field-angefragte-wohnung-und-0-target-id--2 {
   background-image: none;
   background-color: #fff;
+  color: #666;
   border: 0;
+}
+.form-item-field-angefragte-wohnung-und-0-target-id {
+  label {
+    display: inline;
+  }
 }
 
 #colorbox {
@@ -52,8 +58,7 @@
   margin: 0;
 }
 .form-item-contact-name-und-0-title .select2-choice {
-  height: 2.2em;
-  min-height: 30px;
+  height: 26px;
 }
 .form-item-field-crm-address-und-0-country .select2-choice {
   width: 275px;

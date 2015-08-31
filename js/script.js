@@ -20,33 +20,33 @@
       //$('#search select.form-select').select2();
       $('.bezirk select').select2({
           placeholder: Drupal.t('Borough'),
-          placeholderOption: "first",
-          allowClear: true
+          placeholderOption: "first"
+          //allowClear: true
       });
-      $('.kategorie select').select2({
-          placeholder: Drupal.t('Category'),
-          placeholderOption: "first",
-          allowClear: true
-      });
+       $('.kategorie select').select2({
+           placeholder: Drupal.t('Category'),
+           placeholderOption: "first"
+      //     //allowClear: true
+       });
       $('.preis select').select2({
           placeholder: Drupal.t('Price'),
-          placeholderOption: "first",
-          allowClear: true
+          placeholderOption: "first"
+          //allowClear: true
       });
       $('.zimmer select').select2({
           placeholder: Drupal.t('Rooms'),
-          placeholderOption: "first",
-          allowClear: true
+          placeholderOption: "first"
+          //allowClear: true
       });
       $('.flaeche select').select2({
           placeholder: Drupal.t('Space (ca.)'),
-          placeholderOption: "first",
-          allowClear: true
+          placeholderOption: "first"
+          //allowClear: true
       });
-      $("#edit-contact-name-und-0-title, #edit-field-crm-address-und-0-country").select2({
+      $(".field-name-contact-name select, #edit-field-crm-address-und-0-country").select2({
         placeholder: Drupal.t('please select'),
-        placeholderOption: "first",
-        allowClear: true
+        placeholderOption: "first"
+        //allowClear: true
       });
 
       //$(":file").filestyle({buttonText: "Find file"});

@@ -23,6 +23,12 @@
     clear: both;
   }
 }
+/* Karte Expose*/
+.page-view {
+  .leaflet-container {
+    position: static;
+  }
+}
 /* Karte Vollbild */
 .leaflet-container {
   position: absolute;

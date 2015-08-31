@@ -11,9 +11,9 @@ function hk_theme_preprocess_html(&$variables, $hook) {
   $variables['path_to_bear_skin'] = drupal_get_path('theme', 'hk_theme');
 
   // give colorbox its own html
-  if (isset($_GET['template']) && $_GET['template'] == 'colorbox') {
-    $vars['theme_hook_suggestions'][] = 'html__colorbox';
-  }
+  // if (isset($_GET['template']) && $_GET['template'] == 'colorbox') {
+  //   $vars['theme_hook_suggestions'][] = 'html__colorbox';
+  // }
 }
 
 /**
@@ -36,10 +36,10 @@ function hk_theme_preprocess_page(&$vars) {
   // $vars['user_menu'] =  theme('links', array('links' => menu_navigation_links('user-menu'), 'attributes' => array('class '=> array('links', 'site-menu'))));
 
   // Extra Template für Colorbox Load
-  if (isset ($_GET['template']) && $_GET['template'] == 'colorbox') {
-      $vars['theme_hook_suggestions'][] = 'page__colorbox';
-      module_invoke('admin_menu_suppress(TRUE)');
-  }
+  // if (isset ($_GET['template']) && $_GET['template'] == 'colorbox') {
+  //     $vars['theme_hook_suggestions'][] = 'page__colorbox';
+  //     module_invoke('admin_menu_suppress(TRUE)');
+  // }
 
   // redirect to the buy page set for mobile devices, as the map does not work well for them.
   if (module_exists('mobile_detect')) {
