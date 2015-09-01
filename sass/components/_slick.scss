@@ -1,0 +1,28 @@
+.slick-wrapper,
+.slick-slider,
+.slick--skin--boxed > .slick__slider > .slick-list {
+  margin: 0;
+}
+.slick--slider {
+  margin-bottom: 10px;
+}
+.slick--display--thumbnail {
+  float: left;
+  max-width: 800px;
+  width: auto;
+}
+.slick__slide {
+  width: 150px;
+  margin-right: 10px;
+}
+.slick-prev::before,
+.slick-next::before {
+  color: $primary;
+}
+.slick-prev::before:hover,
+.slick-next::before:hover {
+  color: $secondary;
+}
+.slick-next {
+    right: 10px;
+}
