@@ -3,7 +3,7 @@
 .language-switcher {
   position: absolute;
   right: 0;
-  bottom: -13em;
+  top: 150px;
   li {
     list-style: none;
     background: rgba(255,255,255,.9);
@@ -12,17 +12,20 @@
     border: 2px solid $secondary;
     border-right: 0;
     @include box-shadow($box-shadow);
-    width: 55px;
+    width: 40px;
     margin-bottom: .5em;
     a {
       display: block;
-      padding: .5em 1em;
+      padding: .5em 1em .5em .5em;
       color: $greyer;
       font-weight: 500;
       &:hover {
         color: $primary;
         text-decoration: none;
       }
+    }
+    &.zh-hans {
+      display: none;
     }
   }
 }

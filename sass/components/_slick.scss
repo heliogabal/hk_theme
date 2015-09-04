@@ -3,13 +3,22 @@
 .slick--skin--boxed > .slick__slider > .slick-list {
   margin: 0;
 }
+.slick ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    margin: 0;
+  }
+}
 .slick--slider {
   margin-bottom: 10px;
 }
 .slick--display--thumbnail {
   float: left;
-  max-width: 800px;
+  /*max-width: 800px;*/
   width: auto;
+  margin-bottom: 1.5em;
 }
 .slick__slide {
   width: 150px;
@@ -25,4 +34,7 @@
 }
 .slick-next {
     right: 10px;
+}
+.slide__caption {
+    display: none;
 }

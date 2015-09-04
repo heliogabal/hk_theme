@@ -91,9 +91,9 @@
 
 /* Search Box Select Widths */
 .select2-container {
-  min-width: 115px;
+  min-width: 117px;
 }
-#search {
+.front #search {
   &.ui-dialog-content {
     padding: 0 1em;
   }
@@ -106,7 +106,7 @@
   }
   .zimmer .select2-container,
   .flaeche .select2-container {
-    width: 115px !important;
+    width: 117px !important;
   }
 }
 /* Current Search Block */
@@ -116,13 +116,12 @@
     margin: 0;
     padding: .5em 0;
   }
-  .front .preis {
-    clear: left;
-  }
 }
 .ergebnis {
-  float: right;
-  margin: 1.5em 0 0 0;
+    float: right;
+    margin: .5em 0px 0px;
+    max-width: 75px;
+    line-height: 1.2;
   .current-search-item {
     margin-bottom: .5em;
     ul {
@@ -159,13 +158,21 @@
 .not-front #search {
   display: none;
 }
-#search, .front .ui-dialog {
+/*#search, .front .ui-dialog {
   @include breakpoint($breakpoint-small-width) {
     display: none !important;
   }
-}
+}*/
 .page-kaufen #block-views-exp-karten-kaufen,
 .page-buy #search,
 .page-rent #search {
   display: block;
+  @include breakpoint($breakpoint-med-small-width) {
+    display: none;
+  }
+  .block-facetapi {
+    width: 18%;
+    min-width: 130px;
+    margin-right: 2%;
+  }
 }

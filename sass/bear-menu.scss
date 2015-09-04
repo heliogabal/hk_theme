@@ -67,9 +67,12 @@ body {
   }
   ul {
     margin: 0;
-    @media screen and (min-width: 678px) {
-      margin: 38px 0 .5em 0;
+    @media screen and (min-width: 560px) {
+      margin: 0;
       line-height: 1;
+    }
+    @media screen and (min-width: 731px) {
+      margin: 38px 0 0 0;
     }
     @include breakpoint($br-desk) {
       margin: 38px 0 0 2em;
@@ -220,6 +223,7 @@ body {
       width: 40px;
       a {
         color: $greyer;
+        text-decoration: none;
         &:hover,
         &.active {
         color: $primary;
@@ -239,4 +243,4 @@ body {
   }
 }
 // Last but not least: the responsive stuff
-@import "bear-menu-responsive";
+//@import "bear-menu-responsive";

@@ -290,7 +290,7 @@ html[xmlns] .flexslider .slides {
   z-index: 10;
   overflow: hidden;
   cursor: pointer;
-  color: #000;
+  color: $black;
 }
 .flex-pauseplay a:before {
   font-family: "flexslider-icon";
@@ -337,7 +337,7 @@ html[xmlns] .flexslider .slides {
   background: rgba(0, 0, 0, 0.7);
 }
 .flex-control-paging li a.flex-active {
-  background: #000;
+  background: $black;
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
 }

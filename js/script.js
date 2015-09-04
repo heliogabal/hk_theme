@@ -17,6 +17,11 @@
    Drupal.behaviors.BearScripts = {
      attach: function (context, settings) {
 
+      $('#block-system-main-menu').meanmenu({
+        meanMenuContainer: '.header',
+        meanScreenWidth: "560"
+      });
+
       //$('#search select.form-select').select2();
       $('.bezirk select').select2({
           placeholder: Drupal.t('Borough'),

@@ -164,7 +164,7 @@ Version: 3.4.1 Timestamp: Thu Jun 27 18:02:10 PDT 2013
     top: 100%;
 
     background: #fff;
-    color: #000;
+    color: $black;
     border: 1px solid #aaa;
     border-top: 0;
 
@@ -428,7 +428,7 @@ Version: 3.4.1 Timestamp: Thu Jun 27 18:02:10 PDT 2013
 
 .select2-results .select2-highlighted ul {
     background: white;
-    color: #000;
+    color: $black;
 }
 
 

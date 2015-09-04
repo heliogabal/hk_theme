@@ -43,6 +43,17 @@ h4 {
 strong, b, bold {
   font-weight: 500;
 }
+p {
+  line-height: 1.5;
+}
+a {
+  color: $primary;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 #main {
   clear: both;
   @include border-bottom-radius($border-radius);
@@ -59,7 +70,7 @@ strong, b, bold {
     padding: 0 1em;
   }
   img {
-    margin-right: 0;
+    margin: 0;
   }
 }
 @include breakpoint ($breakpoint-small-width) {

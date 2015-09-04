@@ -112,7 +112,7 @@ ul.secondary {
   a:active {
     @include single-text-shadow(#333, 1px, 1px, 0);
     background-color: #666;
-    border-color: #000;
+    border-color: $black;
     color: #fff;
   }
 }

@@ -33,7 +33,7 @@ base theme  = zen
 stylesheets[all][] = system.menus.css
 
 ; Then we add our own stylesheets.
-stylesheets[all][] = css/normalize.css
+;stylesheets[all][] = css/normalize.css
 ;stylesheets[all][] = css/wireframes.css
 stylesheets[all][] = css/layout.css
 stylesheets[all][] = css/tabs.css
@@ -53,6 +53,7 @@ stylesheets[all][] = css/responsive-nav.css
 stylesheets[all][] = css/bear.css
 stylesheets[all][] = css/components.css
 stylesheets[all][] = hk_colorbox/colorbox_hk_colorbox.css
+stylesheets[][all][] = css/meanmenu.min.css
 ;stylesheets[all][] = css/pdfprint.css
 
 
@@ -78,6 +79,7 @@ scripts[] = js/select2.min.js
 ;scripts[] = js/morphy-buttons.min.js
 scripts[] = js/script.js
 scripts[] = hk_colorbox/colorbox_hk_colorbox.js
+scripts[] = js/jquery.meanmenu.min.js
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
 ; maintenance-page.tpl.php files. The name in brackets is the machine name of

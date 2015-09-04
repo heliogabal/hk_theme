@@ -47,7 +47,7 @@
   #page,
   #main,
   #content { /* Turn off any background colors or images */
-    color: #000;
+    color: $black;
     background-color: transparent !important;
     background-image: none !important;
   }

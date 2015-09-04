@@ -55,14 +55,19 @@
 .form-item-contact-name-und-0-title,
 .form-item-contact-name-und-0-given,
 .form-item-contact-name-und-0-family {
-  margin: 0;
+  margin: 0 0 .5em 0;
 }
 .form-item-contact-name-und-0-title .select2-choice {
-  height: 26px;
+  height: 30px;
 }
 .form-item-field-crm-address-und-0-country .select2-choice {
   width: 275px;
 }
+@media screen and (max-width: 480px) {
+  .form-item-field-crm-address-und-0-country .select2-choice {
+    max-width: 225px;
+    }
+  }
 .form-item-field-crm-address-und-0-premise {
   display: none;
 }
