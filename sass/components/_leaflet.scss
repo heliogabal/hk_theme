@@ -389,3 +389,30 @@
   stroke-linecap: round; /* butt | square */
   stroke-linejoin: round; /* miter | bevel */
 }
+
+.leaflet-control-container .leaflet-control-attribution{
+  a {
+    color: $dark;
+  }
+}
+
+/* Anfahrt Kartenblock */
+.section-anfahrt {
+  .leaflet-container {
+    position: static;
+    height: 500px !important;
+  }
+  .leaflet-top {
+    top: 0;
+  }
+  .leaflet-bottom {
+    bottom: 0;
+  }
+  .leaflet-marker-icon {
+    width: 101px !important;
+    height: 32px !important;
+  }
+  .leaflet-popup-content h2 {
+    display: block;
+  }
+}

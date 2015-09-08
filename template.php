@@ -52,6 +52,10 @@ function hk_theme_preprocess_page(&$vars) {
         $redirect = '/buy';
         drupal_goto($redirect);
       }
+      // if ($is_tablet) {
+      //   $redirect = '/';
+      //   drupal_goto($redirect);
+      // }
     }
   }
   /* idevels*/
@@ -187,7 +191,7 @@ function hk_theme_preprocess_views_view(&$vars) {
     //drupal_add_js( /* parameters */ );
     drupal_add_css(path_to_theme() . '/css/pdfprint.css');
   }
-}
+ }
 
 /**
  * Implements hook_wysiwyg_editor_settings_alter()
