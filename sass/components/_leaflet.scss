@@ -397,7 +397,7 @@
 }
 
 /* Anfahrt Kartenblock */
-.section-anfahrt {
+.section-anfahrt, .section-directions {
   .leaflet-container {
     position: static;
     height: 500px !important;
