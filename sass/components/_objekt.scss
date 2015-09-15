@@ -1,5 +1,5 @@
 @import "base";
-.field .field-label {
+.field .field-label, .field .label-above {
     font-weight: 500;
 }
 .group-card {
@@ -31,19 +31,20 @@
   .group-text {
     clear: left;
   }
-  .field-name-field-obj-apartments {
+  .field-name-wohnungsliste {
     margin-top: 1.5em;
-    .field-items {
+    .label-above {
+      margin-bottom: .5em;
+    }
+    .group-card {
+      float: left;
+      width: 49%;
+      margin-right: 0;
       margin-top: .5em;
     }
-    .field-item {
-      float: left;
-      width: 45%;
-      margin-right: 5%;
-    }
-    .field-item.odd {
+    .group-card:nth-child(even) {
       margin-right: 0;
-      margin-left: 5%;
+      margin-left: 2%;
     }
     .field-name-field-apart-living-space,
     .field-name-field-apart-price {
