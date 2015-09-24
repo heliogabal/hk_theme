@@ -46,16 +46,21 @@ function hk_theme_preprocess_page(&$vars) {
     $detect = mobile_detect_get_object();
     $is_mobile = $detect->isMobile();
     $is_tablet = $detect->isTablet();
+    global $language;
     if (drupal_is_front_page()) {
-      //$GLOBALS['conf']['cache'] = FALSE;
-      if ($is_mobile) {
+      $GLOBALS['conf']['cache'] = FALSE;
+       //if ($is_tablet) {
+         // $redirect = '/map';
+         // drupal_goto($redirect);
+       //}
+      if ($language->name == "EN" && $is_mobile) {
         $redirect = '/buy';
         drupal_goto($redirect);
       }
-      // if ($is_tablet) {
-      //   $redirect = '/';
-      //   drupal_goto($redirect);
-      // }
+      if ($language->name == "DE" && $is_mobile) {
+        $redirect = '/kaufen';
+        drupal_goto($redirect);
+      }
     }
   }
   /* idevels*/

@@ -31,7 +31,7 @@
         float: left;
       }
     }
-    .flexslider .flex-direction-nav a, .flexslider .flex-direction-nav a {
+    .flexslider .flex-direction-nav a {
       display: block;
     }
     .flex-direction-nav a {
@@ -55,6 +55,7 @@
       width: 50px;
       height: 100%;
       z-index: 10;
+      outline: 0;
     }
     .flex-direction-nav a.flex-prev {
       left: -50px;
@@ -242,6 +243,7 @@ html[xmlns] .flexslider .slides {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  outline: 0;
 }
 .flex-direction-nav a.flex-next::before, .flex-direction-nav a::before {
   content: "";
@@ -370,6 +372,21 @@ html[xmlns] .flexslider .slides {
   opacity: 1;
   cursor: default;
 }
+/* Referenzen Slider */
+.views-field-field-ref-foto {
+    max-height: 850px;
+    float: left;
+}
+.views-field-title-field {
+    float: left;
+    margin-left: 2em;
+    padding: 1em;
+}
+.page-references .flexslider li p {
+  background: #fff;
+  text-align: left;
+}
+
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/

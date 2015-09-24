@@ -42,7 +42,7 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <!-- Piwik -->
-<!--<script type="text/javascript">
+<script type="text/javascript">
   var _paq = _paq || [];
   _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
   _paq.push(["setDomains", ["*.herbert-kohlmeyer.de","*.herbert-kohlmeyer.com"]]);
@@ -56,7 +56,7 @@
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><p><img src="//inglist.de/piwik/piwik.php?idsite=38" style="border:0;" alt="" /></p></noscript>-->
+<noscript><p><img src="//inglist.de/piwik/piwik.php?idsite=38" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 </body>
 </html>

@@ -52,6 +52,9 @@
   }
   #main {
     margin-top: 0;
+    @include breakpoint($breakpoint-med-small-width) {
+      max-width: 95%;
+    }
     @include breakpoint($br-tablet) {
       margin-top: 40px;
       margin-bottom: 100px;
@@ -188,7 +191,7 @@
 }
 .group-card {
   border: 2px solid $secondary;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .group-card:after {
     content: ".";
@@ -255,16 +258,18 @@
     button.hide::after {
         transform: rotate(45deg);
       }
-
+    .views-row-odd .apart {
+      background: $grey;
+    }
     .apart {
       color: $black;
       display: table;
       float: left;
       width: 100%;
       clear: right;
-      &:nth-child(odd) {
+      /*&:nth-child(odd) {
         background: $grey;
-      }
+      }*/
       span {
         display: table-cell;
         width: 20%;
@@ -315,7 +320,7 @@
 }
 .marker-cluster span {
     color: #fff;
-    font-weight: bold;
+    font-weight: normal;
     position: absolute;
     top: 6px;
     left: 11px;
@@ -337,7 +342,7 @@
     position: absolute;
     top: 16px;
 }
-.marker-cluster-small span:nth-child(1) {
+.leaflet-marker-icon span:nth-child(even) {
   display: none;  /* Zeigt eh nur die Objekte an, nicht die Wohnungen */
 }
 
