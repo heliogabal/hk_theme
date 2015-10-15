@@ -92,7 +92,10 @@
 #flexslider-1 {
     margin-top: -10px;
   }
-
+/* Misterious Berlin Flexslider...*/
+#flexslider-2 {
+    display: none;
+}
 .flexslider {
   background: none repeat scroll 0 0 #FFFFFF;
   border: 0;
@@ -101,12 +104,10 @@
   position: relative;
 }
 .flexslider li p {
-  text-align: center;
-  font-size: 110%;
-  background: #f5f5f5;
+  text-align: left;
+  background: #fff;
   margin: 0;
   padding: 10px 0;
-  font-size: 90%;
   @include bearfont-titles;
 }
 /*

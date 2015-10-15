@@ -13,7 +13,7 @@
     float: left;
   }
 }
-.node-type-objekt {
+/*.node-type-objekt {
   .flexslider {
     width: 74%;
     float: left;
@@ -21,14 +21,16 @@
   #thumbslide {
     margin-left: 0;
   }
-  /*.icon-hk-icon-location::before {
+  .icon-hk-icon-location::before {
     font-size: 1.6em;
     line-height: 0.75;
     margin-left: -0.3em;
     margin-right: 0;
-  }*/
-}
-  .group-text {
+  }
+}*/
+  .group-text,
+  .group-akkordion,
+  .field-name-field-object-txt-map-popup {
     clear: left;
   }
   .field-name-wohnungsliste {

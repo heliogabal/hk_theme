@@ -35,7 +35,8 @@ h1.page-title {
       }
     }
   }
-.node-type-apartment {
+.node-type-apartment,
+.wug {
   .ds-2col-stacked-fluid {
     .group-header {
       margin-bottom: -25px;
@@ -58,21 +59,9 @@ h1.page-title {
       }
     }
   }
-  .view-apartment {
     .leaflet-top {
       display: none;
     }
-    .leaflet-container {
-      width: 100%;
-      min-height: 350px;
-      max-height: 500px;
-      position: static;
-      @include breakpoint($br-desk) {
-      height: 350px !important;
-      width: 350px;
-      }
-    }
-  }
   .objekt-id, .field-name-field-apart-no {
     display: inline-block;
     color: $dark;
@@ -170,12 +159,19 @@ h1.page-title {
       content: " \*";
     }
   }
-  .apartaddress {
+  .apartaddress,
+  .field-name-field-address {
     margin: .5em 0 1em 0;
     float: left;
     width: 100%;
     i {
       display: none;
+    }
+    .street-block, .thoroughfare, .locality-block {
+      display: inline;
+    }
+    .thoroughfare:after {
+      content: ", ";
     }
     @media screen and (min-width: 1025px) {
       float: none;

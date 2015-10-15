@@ -16,7 +16,8 @@
 }
 /* Karte Objekt */
 .objectmap,
-.page-node-expose {
+.page-node-expose,
+.section-kontakt {
   .leaflet-container {
     position: relative;
     height: 400px !important;
@@ -37,6 +38,19 @@
   right: 0;
   bottom: 0;
   height: auto !important;
+}
+.view-apartment,
+.view-mode-wohn_und_geschaeftshaus {
+  .leaflet-container {
+      width: 100%;
+      min-height: 350px;
+      max-height: 500px;
+      position: static;
+      @include breakpoint($br-desk) {
+      height: 350px !important;
+      width: 350px;
+      }
+    }
 }
 #content {
   z-index: 101;
@@ -80,7 +94,8 @@
   bottom: 65px;
 }
 .view-apartment .leaflet-bottom,
-.objectmap .leaflet-bottom {
+.objectmap .leaflet-bottom,
+.field-name-field-objekt-wkt .leaflet-bottom {
   bottom: 0px;
 }
 .view-apartment .leaflet-popup-content {
@@ -402,7 +417,8 @@
 }
 
 /* Anfahrt Kartenblock */
-.section-anfahrt, .section-directions {
+.section-anfahrt, .section-directions,
+.section-kontakt, .section-contact {
   .leaflet-container {
     position: static;
     height: 500px !important;
