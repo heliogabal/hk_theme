@@ -53,7 +53,7 @@ stylesheets[all][] = css/responsive-nav.css
 stylesheets[all][] = css/bear.css
 stylesheets[all][] = css/components.css
 stylesheets[all][] = hk_colorbox/colorbox_hk_colorbox.css
-stylesheets[][all][] = css/meanmenu.min.css
+stylesheets[all][] = css/meanmenu.min.css
 ;stylesheets[all][] = css/pdfprint.css
 
 

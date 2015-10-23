@@ -41,28 +41,7 @@ function hk_theme_preprocess_page(&$vars) {
   //     module_invoke('admin_menu_suppress(TRUE)');
   // }
 
-  // redirect to the buy page set for mobile devices, as the map does not work well for them.
-  if (module_exists('mobile_detect')) {
-    $detect = mobile_detect_get_object();
-    $is_mobile = $detect->isMobile();
-    $is_tablet = $detect->isTablet();
-    global $language;
-    if (drupal_is_front_page()) {
-      $GLOBALS['conf']['cache'] = FALSE;
-       //if ($is_tablet) {
-         // $redirect = '/map';
-         // drupal_goto($redirect);
-       //}
-      if ($language->name == "EN" && $is_mobile) {
-        $redirect = '/buy';
-        drupal_goto($redirect);
-      }
-      if ($language->name == "DE" && $is_mobile) {
-        $redirect = '/kaufen';
-        drupal_goto($redirect);
-      }
-    }
-  }
+
   /* idevels*/
     if (module_exists('drudesk') && current_path() == 'favorites' && ($favorites = _drudesk_favorites_exists())) {
     drupal_add_js(drupal_get_path('module', 'ng_lightbox') . '/js/ng-lightbox.js');
