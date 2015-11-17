@@ -103,8 +103,8 @@
 }
 
 .ui-dialog {
-  width: 640px !important;
-  height: auto !important;
+  /*width: 640px !important;
+  height: auto !important;*/
   border: 2px solid $secondary;
   .ui-dialog-titlebar {
     line-height: 0;
@@ -143,6 +143,11 @@
       color: transparent;
       border-radius: 0;
     }
+  }
+}
+@media screen and (max-width: 560px) {
+  .front .ui-dialog {
+    max-width: 270px;
   }
 }
 .ui-effects-transfer { border: 2px dotted gray; }
@@ -188,6 +193,12 @@
     position: relative;
     text-align: left;
     background: #fff;
+    @media screen and (max-width: 560px) {
+      max-width: 320px;
+      img {
+        margin-bottom: 1em;
+      }
+    }
     h2 {
         font-size: 1em;
         line-height: 1.2;
@@ -195,8 +206,7 @@
     }
     .apartaddress {
       display: inline-block;
-      margin-left: .75em;
-      margin-top: .75em;
+      margin: .75em .5em .25em .75em;
       i {
         margin: -0.1em 0.6em 0 -.85em;
         line-height: 1;

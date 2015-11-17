@@ -3,10 +3,16 @@
 
 }
 @include breakpoint($breakpoint-med-small-width) {
-
+  .not-front #main {
+    position: relative;
+    top: 60px;
+  }
 }
 @include breakpoint($breakpoint-medium-width) {
-
+  .not-front #main {
+      position: relative;
+      top: 90px;
+    }
 }
 @include breakpoint($breakpoint-large-width) {
 

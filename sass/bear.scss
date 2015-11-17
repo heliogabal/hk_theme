@@ -71,6 +71,11 @@ img {
   }
   img {
     margin: 0;
+    @media screen and (max-width: 560px) {
+      height: 60px;
+      width: 110px;
+      position: fixed;
+    }
   }
 }
 @include breakpoint ($breakpoint-small-width) {

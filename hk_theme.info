@@ -50,10 +50,11 @@ stylesheets[all][] = css/print.css
 stylesheets[all][] = css/formalize.css
 stylesheets[all][] = css/select2.css
 stylesheets[all][] = css/responsive-nav.css
+stylesheets[all][] = css/responsive.css
 stylesheets[all][] = css/bear.css
 stylesheets[all][] = css/components.css
 stylesheets[all][] = hk_colorbox/colorbox_hk_colorbox.css
-stylesheets[all][] = css/meanmenu.min.css
+;stylesheets[all][] = css/meanmenu.min.css
 ;stylesheets[all][] = css/pdfprint.css
 
 

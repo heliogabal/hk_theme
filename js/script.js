@@ -17,11 +17,16 @@
    Drupal.behaviors.BearScripts = {
      attach: function (context, settings) {
 
-      $('#block-system-main-menu').meanmenu({
+      $('#block-si-menumerge-menu-merge').meanmenu({
         meanMenuContainer: '.header',
-        meanScreenWidth: "560"
+        meanScreenWidth: "1024"
       });
-
+      // $('#block-menu-menu-menu-footer-menu ul.menu').slicknav ({
+      //   label: '',
+      //   duration: 1000,
+      //   easingOpen: "easeOutBounce",
+      //   prependTo: '.footer'
+      // })
       //$('#search select.form-select').select2();
       $('.bezirk select').select2({
           placeholder: Drupal.t('Borough'),
