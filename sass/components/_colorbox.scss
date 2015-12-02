@@ -5,4 +5,11 @@
   border: 4px solid $secondary;
   @include border-radius(10px);
   @include box-shadow($box-shadow);
+  img {
+    margin: 0;
+  }
+  #cboxTitle {
+    padding: 0 2em 0.5em 1em;
+    bottom: -2.5em;
+  }
 }

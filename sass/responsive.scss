@@ -1,11 +1,18 @@
 @import "base";
 @include breakpoint($breakpoint-small-width) {
-
+  .leaflet-popup-content {
+    display: table;
+    width: 100%;
+    max-width: 315px;
+  }
 }
 @include breakpoint($breakpoint-med-small-width) {
   .not-front #main {
     position: relative;
     top: 60px;
+  }
+  .ismobiledevice .leaflet-bottom {
+    bottom: 0;
   }
 }
 @include breakpoint($breakpoint-medium-width) {
@@ -15,7 +22,13 @@
     }
 }
 @include breakpoint($breakpoint-large-width) {
-
+ 
+}
+@include breakpoint($br-tablet) {
+  .leaflet-popup-content {
+    width: 550px !important;
+    max-width: none;
+  }
 }
 @include breakpoint($breakpoint-full-width) {
   .region-navigation #block-menu-menu-service-menu ul.menu,
