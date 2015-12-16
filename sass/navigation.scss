@@ -99,10 +99,10 @@ li a.active {
         z-index: 10;
         opacity: 1;
         background: transparent;
-        margin: 1em 0 0 0;
-        @include breakpoint($br-desk) {
-          margin: 38px 0 0 2em;
-        }
+        margin: 3em 0 0 0;
+        /*@include breakpoint($br-desk) {
+          margin: 43px 0 0 2em;
+        }*/
         li a {
           width: auto;
           padding: 0;

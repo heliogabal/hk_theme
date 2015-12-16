@@ -51,7 +51,7 @@ a.meanmenu-reveal {
     float: left;
     width: 100%;
     position: fixed;
-    top: 25px;
+    top: 19px;
     right: 0;
     padding: 0;
     min-height: 50px;
@@ -63,10 +63,10 @@ a.meanmenu-reveal {
     width: 22px;
     height: 22px;
     padding: 8px;
-    border: 2px solid $secondary;
+    /*border: 2px solid $secondary;*/
     border-right: 0;
     @include border-radius($border-radius 0 0 $border-radius);
-    background: #fff;
+    /*background: #fff;*/
     position: absolute;
     top: 0;
     right: 0;
@@ -92,8 +92,9 @@ a.meanmenu-reveal {
   .mean-nav {
     float: left;
     width: 100%;
-    background: white;
-    margin-top: 41px;
+    /*background: rgba(255,255,255,0.9);*/
+    margin-top: 60px;
+    overflow: auto;
     .wrapper {
       width: 100%;
       padding: 0;
@@ -108,13 +109,14 @@ a.meanmenu-reveal {
         position: relative;
         float: left;
         width: 100%;
-        border-bottom: 4px solid $greyer;
+        background: rgba(255,255,255,0.9);
+        /*border-bottom: 4px solid $greyer;*/
         list-style: none !important;
         .collapsed, .expanded {
           list-style: none !important;
         }
         &:hover {
-          border-bottom: 4px solid $primary;
+          /*border-bottom: 4px solid $primary;*/
         }
         a {
           display: block;
@@ -122,8 +124,9 @@ a.meanmenu-reveal {
           width: 90%;
           padding: 1em 5%;
           margin: 0;
-          text-align: left;
+          text-align: center;
           color: $dark;
+          font-weight: 500;
           /*border-bottom: 1px solid $grey;
           border-bottom: 1px solid rgba($grey, 0.4);*/
           text-decoration: none;
@@ -156,22 +159,22 @@ a.meanmenu-reveal {
         }
         ul {
           @include clearfix;
-          /*background: #e6e6e6;*/
+          /*background: #e6e6e6;
           -webkit-box-shadow: inset 0 1px 10px rgba(0,0,0,0.1);
           -moz-box-shadow: inset 0 1px 10px rgba(0,0,0,0.1);
           -ms-box-shadow: inset 0 1px 10px rgba(0,0,0,0.1);
           -o-box-shadow: inset 0 1px 10px rgba(0,0,0,0.1);
-          box-shadow: inset 0 1px 10px rgba(0,0,0,0.1);
+          box-shadow: inset 0 1px 10px rgba(0,0,0,0.1);*/
           li {
             border-bottom: 0;
-            border-top: 1px solid $greyer;
+            /*border-top: 1px solid $greyer;*/
             &:last-child {
               border-bottom: 0;
             }
             a {
               width: 80%;
               padding: 1em 10%;
-              border-bottom: 1px dotted $grey;
+              /*border-bottom: 1px dotted $grey;*/
               text-shadow: none !important;
               visibility: visible;
               font-size: 80%;
@@ -211,5 +214,27 @@ a.meanmenu-reveal {
     padding: 0;
     margin: 0;
     clear: both;
+  }
+}
+@include breakpoint($br-tablet) {
+  .block-si-menumerge {
+    font: 500 1em $helvetica-neue;
+    float: right;
+    max-width: 860px;
+    ul.menu {
+      margin: 1em 0 0 0;
+      > li {
+        a, a:active {
+          float: left;
+          padding: 0.5em;
+          text-transform: uppercase;
+          text-align: center;
+          width: 100%;
+          &.active {
+            color: $black;
+          }
+        }
+      }
+    }
   }
 }

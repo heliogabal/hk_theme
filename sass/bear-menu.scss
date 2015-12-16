@@ -72,10 +72,10 @@ body {
       line-height: 1;
     }
     @media screen and (min-width: 731px) {
-      margin: 38px 0 0 0;
+      margin: 44px 0 0 0;
     }
     @include breakpoint($br-desk) {
-      margin: 38px 0 0 2em;
+      margin: 44px 0 0 2em;
     }
     padding: 0;
     list-style: none;
@@ -124,7 +124,7 @@ body {
     /*@include box-shadow(1px 0 0 lighten($baseMenuBackground, 20%));*/
     > a {
       float: left;
-      padding: 0.8em 1em 1.2em;
+      padding: 0.8em;
       text-transform: uppercase;
       text-align: center;
       width: 100%;
@@ -180,11 +180,12 @@ body {
     li {
       display: block;
       width: $subMenuItemWidth;
-      border-bottom: 4px solid transparent;
+      text-align: center;
+      /*border-bottom: 4px solid transparent;*/
       /*@include box-shadow(0 1px 0 lighten($baseMenuBackground, 5%),
                 0 2px 0 lighten($baseMenuBackground, 25%));*/
       &:hover {
-        border-bottom: 4px solid $primary;
+        /*border-bottom: 4px solid $primary;*/
       }
       &:first-child > a {
         /*@include border-radius(3px 3px 0 0);
@@ -242,5 +243,3 @@ body {
     width: 1px;
   }
 }
-// Last but not least: the responsive stuff
-//@import "bear-menu-responsive";
