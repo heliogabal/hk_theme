@@ -7,6 +7,7 @@
 
 <head profile="<?php print $grddl_profile; ?>">
   <script type="text/javascript" src="http://fast.fonts.net/jsapi/69c28897-3128-41dd-a024-e20f5106e17e.js"></script>
+  <meta name="google-site-verification" content="knQSpp_mc-a5nAUxUS_QaBDLS1tddahIn2dIhhGQ4EM" />
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
 
