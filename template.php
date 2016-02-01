@@ -9,11 +9,6 @@ function hk_theme_preprocess_html(&$variables, $hook) {
   // Add variables and paths needed for HTML5 and responsive support.
   $variables['base_path'] = base_path();
   $variables['path_to_bear_skin'] = drupal_get_path('theme', 'hk_theme');
-
-  // give colorbox its own html
-  // if (isset($_GET['template']) && $_GET['template'] == 'colorbox') {
-  //   $vars['theme_hook_suggestions'][] = 'html__colorbox';
-  // }
 }
 
 /**
@@ -29,89 +24,12 @@ function hk_theme_links($variables) {
   return theme_links($variables);
 }
 
-/**
- * Implements template_preprocess_page().
- */
-function hk_theme_preprocess_page(&$vars) {
-  // $vars['user_menu'] =  theme('links', array('links' => menu_navigation_links('user-menu'), 'attributes' => array('class '=> array('links', 'site-menu'))));
-
-  // Extra Template für Colorbox Load
-  // if (isset ($_GET['template']) && $_GET['template'] == 'colorbox') {
-  //     $vars['theme_hook_suggestions'][] = 'page__colorbox';
-  //     module_invoke('admin_menu_suppress(TRUE)');
-  // }
-
-    // Mobile Detect: redirect to the buy page set for mobile devices, as the map does not work well for them.
-  // if (module_exists('mobile_detect')) {
-// $detect = mobile_detect_get_object();
-//     $is_mobile = $detect->isMobile();
-//     $is_tablet = $detect->isTablet();
-//     global $language;
-//     if (drupal_is_front_page()) {
-//       $GLOBALS['conf']['cache'] = FALSE;
-//        if ($is_tablet) {
-//           $redirect = '/map';
-//           drupal_goto($redirect);
-//        }
-//       if ($is_mobile && $language->name == "DE") {
-//         $redirect = '/kaufen';
-//         drupal_goto($redirect);
-//       }
-//       if ($is_mobile && $language->name == "EN") {
-//         $redirect = '/buy';
-//         drupal_goto($redirect);
-//       }
-//       if ($is_mobile && $language->name == "RU") {
-//         $redirect = '/buy';
-//         drupal_goto($redirect);
-//       }
-//       if ($is_mobile && $language->name == "中") {
-//         $redirect = '/buy';
-//         drupal_goto($redirect);
-//       }
-//     }
-//   }
-  /* End Mobile Detect */
-
-
-/**
-* Load modified markercluster js
-*/
-
-//function hk_theme_js_alter (&$javascript) {
-  //$javascript[libraries_get_path('leaflet_markercluster') . '/dist/leaflet.markercluster.js']['data'] = drupal_get_path('theme',$GLOBALS['theme']) . '/js/leaflet.markercluster.js';
-//}
-
 // Hide active language in language switcher block
 function hk_theme_links__locale_block($variables) {
   global $language;
   unset($variables['links'][$language->language]);
   return theme('links', $variables);
 }
-
-// Set exposed filter labels as translatable -any- option because better exposed filter is not i18n
-// function hk_theme_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
-//   if ($form_id == 'views_exposed_form' && $form_state['view']->name == 'karten') {
-//     $form['bezirk']['#options']['All'] = t('borough');
-//     $form['preis']['#options']['All'] = t('price');
-//     $form['preis_group']['#options']['All'] = t('price');
-//     $form['zimmer']['#options']['All'] = t('rooms');
-//     $form['kategorie']['#options']['All'] = t('buy');
-//     $form['flaeche']['#options']['All'] = t('surface area');
-//     // and so on.
-//   }
-// }
-
-/**
- * Implements hook_ctools_plugin_post_alter().
- */
-// function hk_theme_ctools_plugin_post_alter(&$plugin, &$info) {
-//   // Workaround to render facet blocks last, this actually sets all block
-//   // to render last.
-//   if ('content_types' == $plugin['plugin type'] && 'block' == $plugin['name']) {
-//     $plugin['render last'] = TRUE;
-//   }
-// }
 
 /**
  * Implements template_preprocess_views_view_unformatted().
@@ -123,19 +41,7 @@ function hk_theme_preprocess_views_view_unformatted(&$vars) {
       $vars['theme_hook_suggestions'] = array('views_view_unformatted__content_only');
     }
 }
-/**
-* Implements hook_preprocess_HOOK
-*
-* Replace Object NID field with node teaser.
-*/
-// function hk_theme_preprocess_views_view_fields(&$vars) {
-//   //dpm($vars);
-//   if ($vars['view']->name == 'karten') {
-//     $node = node_load($vars['row']->entity);
-//     $node_view = node_view($node, 'map-popup');
-//     $vars['fields']['nid_1']->content = theme('node', $node_view);
-//   }
-// }
+
 /**
  * Implements hook_language_negotiation_info_alter().
  *
@@ -171,6 +77,7 @@ function hk_theme_wysiwyg_editor_settings_alter(&$settings, $context) {
     $settings['scayt_sLang'] = 'de_DE';
   }
 }
+
 function hk_theme_process_token_tree(&$variables) {
   $variables['recursion_limit'] = variable_get('token_recursion_limit', 1);
 }
