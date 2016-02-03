@@ -1,6 +1,11 @@
 .page-buy,
 .page-mieten,
-.view-merkliste {
+.view-merkliste,
+.view-apartment {
+  img {
+      float: left;
+      margin-right: 1em;
+    }
   .views-row-even,
   .views-row-odd {
     float: left;

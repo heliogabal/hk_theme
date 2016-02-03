@@ -235,15 +235,15 @@
         color: $black;
       }
     }
-    img {
-      float: left;
-      margin-right: 1em;
-    }
+
 .leaflet-popup-content {
     line-height: 1.4;
     margin: 0;
     display: table;
-
+    img {
+      float: left;
+      margin-right: 1em;
+    }
     h2 {
       margin-right: 1em;
       display: none;

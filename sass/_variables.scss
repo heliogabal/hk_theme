@@ -59,3 +59,14 @@ $br-wide: 1280px;
     hyphens: auto;
     word-break: normal;
 }
+
+/************
+~PLACEHOLDER
+*************/
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
