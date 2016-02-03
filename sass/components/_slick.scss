@@ -63,7 +63,6 @@
   }
 }
 
-
 .slick-prev::before,
 .slick-next::before {
   color: $primary;
@@ -77,4 +76,8 @@
 }
 .slide__caption {
     display: none;
+}
+/* Photobox Style */
+.pbThumbs li.active a img {
+  border-color: $primary;
 }
