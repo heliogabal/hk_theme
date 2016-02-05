@@ -4,12 +4,6 @@
   margin-bottom: 1em;
   @include box-shadow($box-shadow);
 }
-.page-projekte {
-  .flexslider {
-    width: 100%;
-    float: left;
-  }
-}
 .node-type-objekt {
   .flexslider {
     width: 60%;
@@ -20,7 +14,7 @@
   .group-text {
     clear: left;
   }
-.group-card-project {
+/*.group-card-project {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
     background-color: #fff;
@@ -69,4 +63,4 @@
     .group-card-content {
       padding: .5rem;
     }
-  }
+  }*/
