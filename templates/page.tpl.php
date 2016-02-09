@@ -86,7 +86,7 @@
   <?php print render($page['footer']); ?>
 </div>
 <?php
-   if(!$is_front){
-     print views_embed_view('karten','map_page');
-   }
+  // if(!$is_front){
+  //   print views_embed_view('karten','map_page');
+  // }
 ?>
