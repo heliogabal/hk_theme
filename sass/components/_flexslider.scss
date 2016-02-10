@@ -107,6 +107,10 @@
   padding: 10px 0;
   @include bearfont-titles;
 }
+.flex-caption {
+    float: left;
+    margin-left: 2em;
+}
 /*
  * jQuery FlexSlider v2.4.0
  * http://www.woothemes.com/flexslider/
